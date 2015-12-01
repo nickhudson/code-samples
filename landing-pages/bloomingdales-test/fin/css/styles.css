@@ -1,0 +1,266 @@
+@font-face {
+  font-family: ProximaNova;
+  src: url("../fonts/ProximaNova-Regular-webfont.eot");
+  src: url("../fonts/ProximaNova-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Regular-webfont.woff") format("woff"), url("../fonts/ProximaNova-Regular-webfont.ttf") format("truetype"), url("../fonts/ProximaNova-Regular-webfont.svg#svgFontName") format("svg"); }
+
+@font-face {
+  font-family: ProximaNova-Italic;
+  src: url("../fonts/ProximaNova-RegItalic-webfont.eot");
+  src: url("../fonts/ProximaNova-RegItalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-RegItalic-webfont.woff") format("woff"), url("../fonts/ProximaNova-RegItalic-webfont.ttf") format("truetype"), url("../fonts/ProximaNova-RegItalic-webfont.svg#svgFontName") format("svg"); }
+
+@font-face {
+  font-family: ProximaNova-Bold;
+  src: url("../fonts/ProximaNova-Bold-webfont.eot");
+  src: url("../fonts/ProximaNova-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Bold-webfont.woff") format("woff"), url("../fonts/ProximaNova-Bold-webfont.ttf") format("truetype"), url("../fonts/ProximaNova-Bold-webfont.svg#svgFontName") format("svg"); }
+
+@font-face {
+  font-family: ProximaNova-Bold-Italic;
+  src: url("../fonts/ProximaNova-BoldIt-webfont.eot");
+  src: url("../fonts/ProximaNova-BoldIt-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-BoldIt-webfont.woff") format("woff"), url("../fonts/ProximaNova-BoldIt-webfont.ttf") format("truetype"), url("../fonts/ProximaNova-BoldIt-webfont.svg#svgFontName") format("svg"); }
+
+article, aside, footer, header, hgroup, main, nav, section {
+  display: block; }
+
+body {
+  width: 100%;
+  min-width: 780px;
+  margin: 0 auto;
+  padding: 0;
+  background-color: #ffffff;
+  font-family: "ProximaNova-Light", "Open Sans", "Gill Sans MT", "Gill Sans", Corbel, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000000;
+  line-height: 135%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+main {
+  width: 780px;
+  margin: 0 auto;
+  padding: 40px 0px; }
+
+iframe {
+  border: 0;
+  padding: 15px;
+  background-color: #ffffff; }
+
+h1, h2, h3, h4, h5 {
+  margin: 0;
+  -webkit-margin-before: 0px;
+  -webkit-margin-after: 0px;
+  padding: 0;
+  font-family: "ProximaNova-Bold";
+  color: inherit;
+  font-weight: normal;
+  text-transform: uppercase;
+  line-height: 75%; }
+
+h2 {
+  font-size: 40px;
+  text-align: center; }
+
+h3 {
+  font-size: 20px; }
+
+p {
+  margin-left: 0px;
+  margin-right: 0px; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+  ul li {
+    list-style-type: none; }
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: middle; }
+
+strong, b {
+  font-family: "ProximaNova-Bold";
+  font-weight: normal; }
+
+em, i {
+  font-family: "ProximaNova-Light-Italic";
+  font-style: normal; }
+
+strong em, em strong, b em, em b, b i, i b, i strong, strong i {
+  font-family: "ProximaNova-Bold-Italic"; }
+
+a, a:hover, a:active, a:visited {
+  border: 0;
+  outline: 0; }
+
+a {
+  color: #9a9b9c;
+  text-decoration: underline;
+  -webkit-transition: color ease-out 0.5s;
+  -moz-transition: color ease-out 0.5s;
+  -o-transition: color ease-out 0.5s;
+  transition: color ease-out 0.5s; }
+  a:active {
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+    transition: none; }
+
+sup {
+  font-size: 0.6em;
+  vertical-align: text-top;
+  line-height: normal; }
+
+.clearfix {
+  width: 0px;
+  height: 0px;
+  clear: both; }
+
+.header-main-wrapper, footer {
+  background: url(../images/bloomingdales-microsite-test-bg-dark-grey.png) repeat-x;
+  background-size: auto 100%; }
+
+.nav-wrapper {
+  background-color: #f3d900;
+  z-index: 10000; }
+  .nav-wrapper main {
+    padding: 0; }
+    .nav-wrapper main nav {
+      float: left;
+      margin-left: -3px;
+      padding-top: 15px;
+      font-family: "ProximaNova-Bold";
+      font-size: 20px;
+      text-transform: uppercase; }
+      .nav-wrapper main nav li {
+        display: inline-block;
+        padding-right: 45px; }
+        .nav-wrapper main nav li:last-of-type {
+          padding-right: 0px; }
+        .nav-wrapper main nav li a {
+          display: inline-block;
+          padding: 0px 3px 12px 3px;
+          box-sizing: border-box;
+          color: #000000;
+          text-decoration: none; }
+          .nav-wrapper main nav li a:hover {
+            padding-bottom: 6px;
+            border-bottom: 6px solid #000000; }
+        .nav-wrapper main nav li .active {
+          padding-bottom: 6px;
+          border-bottom: 6px solid #000000; }
+    .nav-wrapper main .social {
+      float: right;
+      padding-top: 12px; }
+      .nav-wrapper main .social li {
+        display: inline-block; }
+        .nav-wrapper main .social li:first-of-type {
+          padding-right: 20px; }
+
+.section-1-wrapper, .section-3-wrapper, .section-4-wrapper {
+  background: url(../images/bloomingdales-microsite-test-bg-light-grey.png) repeat-x;
+  background-size: auto 100%; }
+  .section-1-wrapper main, .section-3-wrapper main, .section-4-wrapper main {
+    min-height: 310px; }
+
+.section-2-wrapper .left-column {
+  max-width: 335px;
+  float: left; }
+.section-2-wrapper .slideshow {
+  width: 426px;
+  min-height: 309px;
+  float: right;
+  overflow: hidden; }
+  .section-2-wrapper .slideshow ul li {
+    float: left;
+    list-style: none; }
+    .section-2-wrapper .slideshow ul li img {
+      float: left; }
+    .section-2-wrapper .slideshow ul li .caption {
+      width: 100%;
+      height: 0px;
+      overflow: visible;
+      color: #b0bbc8;
+      text-shadow: 1px 1px 0px #3c3c3c; }
+      .section-2-wrapper .slideshow ul li .caption h3 {
+        margin: 0px 10px;
+        text-align: center; }
+  .section-2-wrapper .slideshow .dots {
+    width: 100%;
+    padding: 0px;
+    position: relative;
+    top: -60px;
+    text-align: center;
+    list-style-type: none; }
+    .section-2-wrapper .slideshow .dots li {
+      width: 20px;
+      height: 20px;
+      margin-left: 12px;
+      display: inline-block;
+      background-color: #e5e6e6;
+      font-size: 0px;
+      color: transparent;
+      line-height: 0px;
+      cursor: pointer;
+      -webkit-border-radius: 8px;
+      -moz-border-radius: 8px;
+      border-radius: 8px; }
+      .section-2-wrapper .slideshow .dots li:first-child {
+        margin-left: 0px; }
+    .section-2-wrapper .slideshow .dots .active {
+      background-color: #f3d900; }
+
+.section-4-wrapper {
+  background-image: none; }
+
+@media screen and (max-width: 800px), only screen and (max-width: 800px) and (-webkit-min-device-pixel-ratio: 2) {
+  body {
+    min-width: 0; }
+
+  main {
+    width: auto;
+    padding-left: 10px;
+    padding-right: 10px; }
+
+  .sticky-wrapper {
+    height: auto !important; }
+
+  .nav-wrapper main {
+    padding-left: 10px;
+    padding-right: 10px; }
+    .nav-wrapper main nav {
+      width: 100%;
+      float: none;
+      margin: 0 auto;
+      text-align: center; }
+      .nav-wrapper main nav li {
+        width: 20%;
+        padding-right: 3.5%; }
+    .nav-wrapper main .social {
+      float: none;
+      text-align: center;
+      padding-bottom: 15px; }
+
+  .section-2-wrapper .left-column, .section-2-wrapper .slideshow {
+    width: 100%;
+    max-width: none;
+    float: none; }
+  .section-2-wrapper .left-column {
+    padding-bottom: 20px; }
+  .section-2-wrapper .slideshow {
+    max-width: 426px;
+    margin: 0 auto; }
+    .section-2-wrapper .slideshow img {
+      width: 100%; } }
+@media screen and (max-width: 460px), only screen and (max-width: 460px) and (-webkit-min-device-pixel-ratio: 2) {
+  .nav-wrapper main nav {
+    width: 100%;
+    float: none;
+    margin: 0 auto;
+    text-align: center; }
+    .nav-wrapper main nav li {
+      width: 100%;
+      padding-right: 0px; } }

@@ -1,0 +1,1155 @@
+<html>
+	<head>
+		<style>
+			* { -webkit-font-smoothing: antialiased !important;}
+			
+			strong { font-weight: bold !important; }
+			
+			em { font-style: italic !important; }
+			
+			.sup, .sub { -webkit-text-size-adjust: none; }
+			
+			a[href^=tel] {
+				color: inherit;
+				text-decoration: none;
+			}
+			
+			.ExternalClass { width: 100%; } 
+			
+			.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div { line-height: 120% !important; }
+			
+			.show-inline, .show-block {
+				width: 0px !important;
+				height: 0px !important;
+				max-height: 0px !important;
+				display: none !important;
+				float: left !important;
+				visibility: 0 !important;
+				overflow: hidden !important;
+				line-height: 0px !important;
+			}
+			
+			@media screen and (max-width: 680px), only screen and (max-width: 680px) and (-webkit-min-device-pixel-ratio: 2) {
+				
+				body {
+					width: 100% !important;
+					margin: 0 auto !important;
+					overflow-x: hidden !important;
+				}
+				
+				img[src] {
+					/* width: auto !important; */
+					height: auto !important;
+					display: block !important;
+				}
+				
+				*[class~=full], img[class~=full] {
+					width: 100% !important;
+					float: none !important;
+				}
+				
+				*[class~=full2] { width: 100% !important; }
+				
+				*[class~=auto] { width: auto !important; }
+				
+				*[class~=padmain] {
+					padding-left: 10px !important;
+					padding-right: 10px !important;
+				}
+				
+				*[class~=pad2] {
+					padding-left: 12px !important;
+					padding-right: 12px !important;
+				}
+				
+				*[class~=pad3] { padding-top: 10px !important; }
+				
+				*[class~=pad4] {
+					padding-top: 25px !important;
+					padding-bottom: 25px !important;
+				}
+				
+				*[class~=pad5] { padding-right: 30px !important; }
+				
+				*[class~=pad6] { padding-top: 40px !important; }
+				
+				*[class~=pad7] { padding-top: 20px !important; }
+				
+				*[class~=pad8] { padding: 15px !important; }
+				
+				*[class~=pad9] { padding-right: 15px !important; }
+				
+				*[class~=pad10] { padding-top: 15px !important; }
+				
+				*[class~=pad11] { 
+					padding-top: 15px !important;
+					padding-bottom: 15px !important;
+				}
+				
+				*[class~=nopadlr] { padding-left: 0px !important; padding-right: 0px !important; }
+				
+				*[class~=nobg] { background: none !important; }
+				
+				*[class~=border1] { 
+					border-top: 10px solid #81c342 !important;
+					border-bottom: 2px solid #e7e7e7 !important;
+				}
+				
+				*[class~=border2] { 
+					border-top: 10px solid #61cbea !important;
+					border-bottom: 2px solid #e7e7e7 !important;
+				}
+								
+				*[class=hide] {
+					display: none !important;
+					width: 0px !important;
+					height: 0px !important;
+					overflow: hidden !important;
+					visibility: hidden !important;
+				}
+				
+				*[class~=show-inline] {
+					display: inline !important;
+					visibility: visible !important;
+					width: auto !important;
+					height: auto !important;
+					max-height: none !important;
+					float: none !important;
+					line-height: normal !important;
+				}
+				
+				*[class~=show-block] {
+					display: block !important;
+					visibility: visible !important;
+					width: auto !important;
+					height: auto !important;
+					max-height: none !important;
+					float: none !important;
+					line-height: normal !important;
+				}
+				
+				table[class~=show-block] { display: table !important; }
+				
+				tr[class~=show-block] { display: table-row !important; }
+				
+				td[class~=show-block] { display: table-cell !important; }
+				
+				*[class~=left] { text-align: left !important; }
+				
+				*[class~=left2] { float: left !important; }
+				
+				*[class~=center] { text-align: center !important; }
+				
+				*[class~=center2] { margin: 0 auto !important; float: none !important; }
+				
+				*[class~=fontresize1] { font-size: 5vw !important; }
+				
+				*[class~=fontresize2] { font-size: 16px !important; }
+				
+				*[class~=nowrap] { white-space: nowrap !important; }
+				
+				*[class~=button1] {
+					padding: 10px 16px !important;
+					border: 1px solid #b7b7b7 !important;
+					border-radius: 8px !important;
+					-webkit-border-radius: 8px !important;
+					-moz-border-radius: 8px !important;
+					font-size: 16px !important;
+				}
+				
+				*[class~=bgwhite] { background-color: #ffffff !important; }
+				
+				*[class~=bgblue] { background-color: #009ddc !important; }
+				
+				*[class~=textwhite] { color: #ffffff !important; }
+				
+			}
+			
+			@media screen and (max-width: 420px), only screen and (max-width: 420px) and (-webkit-min-device-pixel-ratio: 2) {
+				
+				*[class=hide420] {
+					display: none !important;
+					width: 0px !important;
+					height: 0px !important;
+					overflow: hidden !important;
+					visibility: hidden !important;
+				}
+				
+				*[class~=show-block420] {
+					display: block !important;
+					visibility: visible !important;
+					width: auto !important;
+					height: auto !important;
+					max-height: none !important;
+					float: none !important;
+					line-height: normal !important;
+				}
+				
+				table[class~=show-block420] { display: table !important; }
+				
+				tr[class~=show-block420] { display: table-row !important; }
+				
+				td[class~=show-block420] { display: table-cell !important; }
+				
+				*[class~=fontresize1] { font-size: 6vw !important; }
+				
+			}
+		</style>
+		<!--[if mso | ie]>
+			<style>
+				.sup, .sub {
+					vertical-align: 1px !important; 
+					font-size: 100% !important;
+				}
+			</style>
+		<![endif]-->
+		<!--[if ie]>
+			<style>
+				.sup, .sub {
+					vertical-align: 6px !important; 
+					font-size: 80% !important;
+				}
+			</style>
+		<![endif]-->
+	</head>
+	<body bgcolor="#ffffff" style="width: 100% !important; margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px; background: #ffffff;">
+		<table width="100%" border="0" cellpadding="0" cellspacing="0">
+			<tr>
+				<td align="center" bgcolor="#ffffff" style="vertical-align: top; padding: 20px 0px 30px 0px; background-color: #ffffff;">
+					<table class="full" width="680" align="center" border="0" cellpadding="0" cellspacing="0" style="max-width: 680px !important;">
+						<tr>
+							<td class="padmain" align="left" style="vertical-align: top; padding: 0px 22px 10px 22px;">
+								<table width="100%" border="0" cellpadding="0" cellspacing="0">
+									<tr>
+										<td class="nowrap" align="left" style="vertical-align: top; padding: 0px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #000000;">
+											Lorem ipsum dolor ipsum dolor<br />
+											<a href="#" style="color: #009ddc; text-decoration: underline;">ipsum enum conrarinum es</a>.<br /><br />
+											<a href="#" style="color: #009ddc; text-decoration: underline;">View in Browser</a>
+										</td>
+										<td align="right" style="vertical-align: middle; padding: 0px 0px 0px 15px; line-height: 0px;">
+											<img class="full" src="http://images.bfi0.com/creative/2015/novo/10/AR3-AR01/images/novo-nordisk-novolog-newsletter-cornerstones-logo-header.gif" width="265" height="40" alt="Cornerstones4Care(R) - Your diabetes, your way." style="border: 0; display: block; max-width: 265px !important;" />
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td align="left" bgcolor="#00bdf4" style="vertical-align: top; padding: 0px 0px 0px 22px;">
+								<table width="100%" border="0" cellpadding="0" cellspacing="0">
+									<tr>
+										<td class="fontresize1 nowrap" align="left" style="vertical-align: middle; padding: 0px 0px 0px 0px; font-family: Tahoma, Geneva, sans-serif; font-size: 36px; color: #fafafa; font-weight: bold;">
+											LOREM IPSUM DOLOR<br />
+											ENUM DEN SIT AMET
+										</td>
+										<td align="right" style="vertical-align: top; padding: 0px 0px 0px 0px; line-height: 0px;">
+											<img class="full" src="http://images.bfi0.com/creative/2015/novo/10/AR3-AR01/images/novo-nordisk-novolog-newsletter-header-photo.jpg" width="201" height="162" style="border: 0; display: block; max-width: 201px !important;" />
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td class="padmain" align="left" style="vertical-align: top; padding: 22px 22px 0px 22px;">
+								<table width="100%" border="0" cellpadding="0" cellspacing="0">
+									<tr>
+										<td align="left" style="vertical-align: top; padding: 0px 0px 0px 0px; font-family: Tahoma, Geneva, sans-serif; font-size: 12px; color: #003a8b;">
+											<span style="font-family: Arial, Helvetica, sans-serif; font-size: 26px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span><br /><br />
+											By Certified Diabetes Educator Joy Pape, MSN, RN, FNP-C, CDE, WOCN, CFCN, FAADE
+										</td>
+									</tr>
+									<tr>
+										<td align="left" style="vertical-align: top; padding: 18px 0px 0px 0px;">
+											<table class="full" width="385" align="left" border="0" cellpadding="0" cellspacing="0">
+												<tr>
+													<td align="left" style="vertical-align: top; padding: 0px 0px 0px 0px; font-family: Tahoma, Geneva, sans-serif; font-size: 14px; color: #000000; line-height: 20px;">
+														Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tortor lacus, pretium non massa nec, fermentum sodales leo. Sed non lacus maximus, aliquam turpis ac, aliquam odio. Proin eu erat a velit viverra tincidunt in a mi. Sed aliquet est ligula, non porta augue pretium eget. <a href="#" style="color: #009ddc; text-decoration: underline;">Cras risus mi</a>, euismod id efficitur et, vestibulum at metus. Sed eget neque ultricies, consectetur ipsum sed, euismod quam.
+													</td>
+												</tr>
+												<tr>
+													<td align="left" style="vertical-align: top; padding: 12px 0px 0px 0px; font-family: Tahoma, Geneva, sans-serif; font-size: 14px; color: #000000; line-height: 20px;">
+														Curabitur viverra luctus nulla quis ultrices. Integer dignissim enim elementum, pharetra lorem id, eleifend augue. <a href="#" style="color: #009ddc; text-decoration: underline;">Sed velit neque</a>, mollis ac tellus non, hendrerit ornare libero. Cras dictum dolor a leo aliquet, sit amet dictum metus vestibulum. Nulla facilisi. Suspendisse condimentum nisi nec neque ornare imperdiet. Vivamus sit amet aliquet elit. Nulla facilisi. Curabitur varius lacinia nisi eu pellentesque. 
+													</td>
+												</tr>
+											</table>
+											<table class="full" align="right" border="0" cellpadding="0" cellspacing="0">
+												<tr>
+													<td class="pad10" align="left" style="vertical-align: top; padding: 0px 0px 0px 0px; line-height: 0px;">
+														<img class="full" src="http://images.bfi0.com/creative/2015/novo/10/AR3-AR01/images/novo-nordisk-novolog-newsletter-gordona.jpg" width="220" height="243" alt="Gordona, type 2 diabetes" style="border: 0; display: block; max-width: 220px !important;" />
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									<tr>
+										<td align="left" style="vertical-align: top; padding: 15px 0px 0px 0px; font-family: Tahoma, Geneva, sans-serif; font-size: 16px; color: #003a8b; line-height: 20px;">
+											Aliquam tortor lacus, "pretium non massa nec"
+										</td>
+									</tr>
+									<tr>
+										<td align="left" style="vertical-align: top; padding: 12px 0px 0px 0px; font-family: Tahoma, Geneva, sans-serif; font-size: 14px; color: #000000; line-height: 20px;">
+											Fermentum sodales leo. Sed non lacus maximus, aliquam turpis ac, aliquam odio. Proin eu erat a velit viverra tincidunt in a mi. Sed aliquet est ligula, non porta augue pretium eget. <a href="#" style="color: #009ddc; text-decoration: underline;">Cras risus mi</a>, euismod id efficitur et, vestibulum at metus. Sed eget neque ultricies, consectetur ipsum sed, euismod quam. 
+										</td>
+									</tr>
+									<tr>
+										<td align="left" style="vertical-align: top; padding: 12px 0px 0px 0px; font-family: Tahoma, Geneva, sans-serif; font-size: 14px; color: #000000; line-height: 20px;">
+											Curabitur viverra luctus nulla quis ultrices. Integer dignissim enim elementum, pharetra lorem id, eleifend augue. <a href="#" style="color: #009ddc; text-decoration: underline;">Sed velit neque</a>, mollis ac tellus non, hendrerit ornare libero. Cras dictum dolor a leo aliquet, sit amet dictum metus vestibulum. Nulla facilisi. Suspendisse condimentum nisi nec neque ornare imperdiet. Vivamus sit amet aliquet elit. Nulla facilisi. Curabitur varius lacinia nisi eu pellentesque.<br /><br />
+											Sincerly,<br />
+											Joy
+										</td>
+									</tr>
+									<tr>
+										<td align="left" style="vertical-align: top; padding: 38px 0px 0px 0px;">
+											<table width="100%" border="0" cellpadding="0" cellspacing="0">
+												<tr>
+													<td align="left" bgcolor="#f8f8f8" style="vertical-align: top; padding: 0px 0px 0px 0px;">
+														<table width="100%" border="0" cellpadding="0" cellspacing="0">
+															<tr>
+																<td align="left" style="vertical-align: top; padding: 0px 0px 0px 0px;">
+																	<table width="100%" border="0" cellpadding="0" cellspacing="0">
+																		<tr>
+																			<td align="left" width="9" style="vertical-align: top; padding: 0px 0px 0px 0px; line-height: 0px;">
+																				<img src="http://images.bfi0.com/creative/2015/novo/10/AR3-AR01/images/novo-nordisk-novolog-newsletter-round-corners-1-top-left.png" width="9" height="9" style="border: 0; display: block;" />
+																			</td>
+																			<td align="left" width="100%" style="vertical-align: top; padding: 0px 0px 0px 0px; line-height: 0px; border-top: 1px solid #efefef;"></td>
+																			<td align="right" width="9" style="vertical-align: top; padding: 0px 0px 0px 0px; line-height: 0px;">
+																				<img src="http://images.bfi0.com/creative/2015/novo/10/AR3-AR01/images/novo-nordisk-novolog-newsletter-round-corners-1-top-right.png" width="9" height="9" style="border: 0; display: block;" />
+																			</td>
+																		</tr>
+																	</table>
+																</td>
+															</tr>
+															<tr>
+																<td class="padmain" align="left" style="vertical-align: top; padding: 15px 20px 15px 20px; border-left: 1px solid #efefef; border-right: 1px solid #efefef;">
+																	<table width="100%" border="0" cellpadding="0" cellspacing="0">
+																		<tr>
+																			<td align="left" style="vertical-align: top; padding: 0px 0px 0px 0px; font-family: Tahoma, Geneva, sans-serif; font-size: 14px; color: #000000; line-height: 20px;">
+																				<strong style="font-size: 16px; color: #004990;">Sed Velit Neque Mollis Ac Tellus</strong><br />
+																				Curabitur viverra luctus nulla quis ultrices. Integer dignissim enim elementum, pharetra lorem id, eleifend augue. Vivamus sit amet aliquet elit. 
+																			</td>
+																		</tr>
+																		<tr>
+																			<td align="left" style="vertical-align: top; padding: 10px 0px 0px 0px;">
+																				<table class="full" align="left" width="230" border="0" bgcolor="#009ddc" cellpadding="0" cellspacing="0" style="background-color: #009ddc; max-width: 260px !important;">
+																					<tr>
+																						<td align="left" width="7" style="vertical-align: top; padding: 0px 0px 0px 0px; max-width: 7px !important; line-height: 0px;">
+																							<img src="http://images.bfi0.com/creative/2015/novo/10/AR3-AR01/images/novo-nordisk-novolog-newsletter-cta-btn-top-left.png" width="7" height="7" style="border: 0; display: block;" />
+																						</td>
+																						<td align="left" width="216" style="vertical-align: top; padding: 0px 0px 0px 0px; line-height: 0px;"></td>
+																						<td align="right" width="7" style="vertical-align: top; padding: 0px 0px 0px 0px; max-width: 7px !important; line-height: 0px;">
+																							<img src="http://images.bfi0.com/creative/2015/novo/10/AR3-AR01/images/novo-nordisk-novolog-newsletter-cta-btn-top-right.png" width="7" height="7" style="border: 0; display: block;" />
+																						</td>
+																					</tr>
+																					<tr>
+																						<td align="left" colspan="3" style="vertical-align: top; padding: 4px 16px 4px 16px;">
+																							<table width="100%" border="0" cellpadding="0" cellspacing="0">
+																								<tr>
+																									<td align="left" width="18" style="vertical-align: middle; padding: 0px 0px 0px 0px; line-height: 0px;">
+																										<a href="#"><img src="http://images.bfi0.com/creative/2015/novo/10/AR3-AR01/images/novo-nordisk-novolog-newsletter-arrow-white.png" width="16" height="13" style="border: 0; display: block;" /></a>
+																									</td>
+																									<td class="fontresize2" align="left" style="vertical-align: middle; padding: 0px 0px 0px 15px; font-family: Tahoma, Geneva, sans-serif; font-size: 13px; color: #ffffff; font-weight: bold;">
+																										<a href="#" style="color: #ffffff; text-decoration: none;">Lorem Ipsum Dolor Sit</a>
+																									</td>
+																								</tr>
+																							</table>
+																						</td>
+																					</tr>
+																					<tr>
+																						<td align="left" width="7" style="vertical-align: bottom; padding: 0px 0px 0px 0px; max-width: 7px !important; line-height: 0px;">
+																							<img src="http://images.bfi0.com/creative/2015/novo/10/AR3-AR01/images/novo-nordisk-novolog-newsletter-cta-btn-bottom-left.png" width="7" height="7" style="border: 0; display: block;" />
+																						</td>
+																						<td align="left" width="216" style="vertical-align: top; padding: 0px 0px 0px 0px; line-height: 0px;"></td>
+																						<td align="right" width="7" style="vertical-align: bottom; padding: 0px 0px 0px 0px; max-width: 7px !important; line-height: 0px;">
+																							<img src="http://images.bfi0.com/creative/2015/novo/10/AR3-AR01/images/novo-nordisk-novolog-newsletter-cta-btn-bottom-right.png" width="7" height="7" style="border: 0; display: block;" />
+																						</td>
+																					</tr>
+																				</table>
+																			</td>
+																		</tr>
+																		<tr>
+																			<td align="left" style="vertical-align: top; padding: 28px 0px 0px 0px; font-family: Tahoma, Geneva, sans-serif; font-size: 14px; color: #000000; line-height: 20px;">
+																				<strong style="font-size: 16px; color: #004990;">Vivamus Sit Amet Elit Nulla</strong><br />
+																				Sed non lacus maximus, aliquam turpis ac, aliquam odio. Proin eu erat a velit viverra tincidunt in a mi. Curabitur viverra luctus nulla. 
+																			</td>
+																		</tr>
+																		<tr>
+																			<td align="left" style="vertical-align: top; padding: 10px 0px 0px 0px;">
+																				<table class="full" align="left" width="230" border="0" bgcolor="#009ddc" cellpadding="0" cellspacing="0" style="background-color: #009ddc; max-width: 260px !important;">
+																					<tr>
+																						<td align="left" width="7" style="vertical-align: top; padding: 0px 0px 0px 0px; max-width: 7px !important; line-height: 0px;">
+																							<img src="http://images.bfi0.com/creative/2015/novo/10/AR3-AR01/images/novo-nordisk-novolog-newsletter-cta-btn-top-left.png" width="7" height="7" style="border: 0; display: block;" />
+																						</td>
+																						<td align="left" width="216" style="vertical-align: top; padding: 0px 0px 0px 0px; line-height: 0px;"></td>
+																						<td align="right" width="7" style="vertical-align: top; padding: 0px 0px 0px 0px; max-width: 7px !important; line-height: 0px;">
+																							<img src="http://images.bfi0.com/creative/2015/novo/10/AR3-AR01/images/novo-nordisk-novolog-newsletter-cta-btn-top-right.png" width="7" height="7" style="border: 0; display: block;" />
+																						</td>
+																					</tr>
+																					<tr>
+																						<td align="left" colspan="3" style="vertical-align: top; padding: 4px 16px 4px 16px;">
+																							<table width="100%" border="0" cellpadding="0" cellspacing="0">
+																								<tr>
+																									<td align="left" width="18" style="vertical-align: middle; padding: 0px 0px 0px 0px; line-height: 0px;">
+																										<a href="#"><img src="http://images.bfi0.com/creative/2015/novo/10/AR3-AR01/images/novo-nordisk-novolog-newsletter-arrow-white.png" width="16" height="13" style="border: 0; display: block;" /></a>
+																									</td>
+																									<td class="fontresize2" align="left" style="vertical-align: middle; padding: 0px 0px 0px 15px; font-family: Tahoma, Geneva, sans-serif; font-size: 13px; color: #ffffff; font-weight: bold;">
+																										<a href="#" style="color: #ffffff; text-decoration: none;">Vivamus Sit Amet</a>
+																									</td>
+																								</tr>
+																							</table>
+																						</td>
+																					</tr>
+																					<tr>
+																						<td align="left" width="7" style="vertical-align: bottom; padding: 0px 0px 0px 0px; max-width: 7px !important; line-height: 0px;">
+																							<img src="http://images.bfi0.com/creative/2015/novo/10/AR3-AR01/images/novo-nordisk-novolog-newsletter-cta-btn-bottom-left.png" width="7" height="7" style="border: 0; display: block;" />
+																						</td>
+																						<td align="left" width="216" style="vertical-align: top; padding: 0px 0px 0px 0px; line-height: 0px;"></td>
+																						<td align="right" width="7" style="vertical-align: bottom; padding: 0px 0px 0px 0px; max-width: 7px !important; line-height: 0px;">
+																							<img src="http://images.bfi0.com/creative/2015/novo/10/AR3-AR01/images/novo-nordisk-novolog-newsletter-cta-btn-bottom-right.png" width="7" height="7" style="border: 0; display: block;" />
+																						</td>
+																					</tr>
+																				</table>
+																			</td>
+																		</tr>
+																		<tr>
+																			<td align="left" style="vertical-align: top; padding: 28px 0px 0px 0px; font-family: Tahoma, Geneva, sans-serif; font-size: 14px; color: #000000; line-height: 20px;">
+																				<strong style="font-size: 16px; color: #004990;">Elementum Pharetra Lorem Id</strong><br />
+																				Cras dictum dolor a leo aliquet, sit amet dictum metus vestibulum. Nulla facilisi. Suspendisse condimentum nisi nec neque ornare imperdiet.
+																			</td>
+																		</tr>
+																		<tr>
+																			<td align="left" style="vertical-align: top; padding: 10px 0px 0px 0px;">
+																				<table class="full" align="left" width="230" border="0" bgcolor="#009ddc" cellpadding="0" cellspacing="0" style="background-color: #009ddc; max-width: 260px !important;">
+																					<tr>
+																						<td align="left" width="7" style="vertical-align: top; padding: 0px 0px 0px 0px; max-width: 7px !important; line-height: 0px;">
+																							<img src="http://images.bfi0.com/creative/2015/novo/10/AR3-AR01/images/novo-nordisk-novolog-newsletter-cta-btn-top-left.png" width="7" height="7" style="border: 0; display: block;" />
+																						</td>
+																						<td align="left" width="216" style="vertical-align: top; padding: 0px 0px 0px 0px; line-height: 0px;"></td>
+																						<td align="right" width="7" style="vertical-align: top; padding: 0px 0px 0px 0px; max-width: 7px !important; line-height: 0px;">
+																							<img src="http://images.bfi0.com/creative/2015/novo/10/AR3-AR01/images/novo-nordisk-novolog-newsletter-cta-btn-top-right.png" width="7" height="7" style="border: 0; display: block;" />
+																						</td>
+																					</tr>
+																					<tr>
+																						<td align="left" colspan="3" style="vertical-align: top; padding: 4px 16px 4px 16px;">
+																							<table width="100%" border="0" cellpadding="0" cellspacing="0">
+																								<tr>
+																									<td align="left" width="18" style="vertical-align: middle; padding: 0px 0px 0px 0px; line-height: 0px;">
+																										<a href="#"><img src="http://images.bfi0.com/creative/2015/novo/10/AR3-AR01/images/novo-nordisk-novolog-newsletter-arrow-white.png" width="16" height="13" style="border: 0; display: block;" /></a>
+																									</td>
+																									<td class="fontresize2" align="left" style="vertical-align: middle; padding: 0px 0px 0px 15px; font-family: Tahoma, Geneva, sans-serif; font-size: 13px; color: #ffffff; font-weight: bold;">
+																										<a href="#" style="color: #ffffff; text-decoration: none;">Fermentum Sodales Um</a>
+																									</td>
+																								</tr>
+																							</table>
+																						</td>
+																					</tr>
+																					<tr>
+																						<td align="left" width="7" style="vertical-align: bottom; padding: 0px 0px 0px 0px; max-width: 7px !important; line-height: 0px;">
+																							<img src="http://images.bfi0.com/creative/2015/novo/10/AR3-AR01/images/novo-nordisk-novolog-newsletter-cta-btn-bottom-left.png" width="7" height="7" style="border: 0; display: block;" />
+																						</td>
+																						<td align="left" width="216" style="vertical-align: top; padding: 0px 0px 0px 0px; line-height: 0px;"></td>
+																						<td align="right" width="7" style="vertical-align: bottom; padding: 0px 0px 0px 0px; max-width: 7px !important; line-height: 0px;">
+																							<img src="http://images.bfi0.com/creative/2015/novo/10/AR3-AR01/images/novo-nordisk-novolog-newsletter-cta-btn-bottom-right.png" width="7" height="7" style="border: 0; display: block;" />
+																						</td>
+																					</tr>
+																				</table>
+																			</td>
+																		</tr>
+																	</table>
+																</td>
+															</tr>
+															<tr>
+																<td align="left" style="vertical-align: top; padding: 0px 0px 0px 0px;">
+																	<table width="100%" border="0" cellpadding="0" cellspacing="0">
+																		<tr>
+																			<td align="left" width="9" style="vertical-align: bottom; padding: 0px 0px 0px 0px; line-height: 0px;">
+																				<img src="http://images.bfi0.com/creative/2015/novo/10/AR3-AR01/images/novo-nordisk-novolog-newsletter-round-corners-1-bottom-left.png" width="9" height="9" style="border: 0; display: block;" />
+																			</td>
+																			<td align="left" width="100%" style="vertical-align: bottom; padding: 0px 0px 0px 0px; line-height: 0px; border-bottom: 1px solid #efefef;"></td>
+																			<td align="right" width="9" style="vertical-align: bottom; padding: 0px 0px 0px 0px; line-height: 0px;">
+																				<img src="http://images.bfi0.com/creative/2015/novo/10/AR3-AR01/images/novo-nordisk-novolog-newsletter-round-corners-1-bottom-right.png" width="9" height="9" style="border: 0; display: block;" />
+																			</td>
+																		</tr>
+																	</table>
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									<tr>
+										<td align="center" style="vertical-align: top; padding: 15px 0px 0px 0px;">
+											<table class="full" width="636" align="center" border="0" cellpadding="0" cellspacing="0">
+												<tr>
+													<td align="left" style="vertical-align: top; padding: 0px 0px 0px 0px; border: 1px solid #b7b7b7;">
+														<table width="100%" border="0" cellpadding="0" cellspacing="0">
+															<tr>
+																<td class="hide" align="left" style="vertical-align: top; padding: 0px 0px 0px 0px; line-height: 0px;">
+																	<img class="hide" src="http://images.bfi0.com/creative/2015/novo/10/AR3-AR01/images/novo-nordisk-novolog-newsletter-flexpen.jpg" width="257" alt="NovoLog(R) FlexPen - insulin aspart (rDNA origin) injection" style="border: 0; display: block;" />
+																</td>
+																<td align="left" style="vertical-align: top; padding: 0px 0px 0px 0px;">
+																	<!--[if !mso]><!-->
+																	<span class="show-block" style="width: 0px; height: 0px; overflow: hidden; display: none; visibility: hidden; float: left; line-height: 0px; max-height: 0px;">
+																		<table width="100%" border="0" bgcolor="#ffffff" cellpadding="0" cellspacing="0" style="background-color: #ffffff;">
+																			<tr>
+																				<td align="left" style="vertical-align: top; padding: 0px 0px 0px 0px; background: #ffffff;
+background: -moz-linear-gradient(top, #ffffff 0%, #efeeee 50%, #dddddc 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(50%,#efeeee), color-stop(100%,#dddddc)); background: -webkit-linear-gradient(top, #ffffff 0%,#efeeee 50%,#dddddc 100%); background: -o-linear-gradient(top, #ffffff 0%,#efeeee 50%,#dddddc 100%); background: -ms-linear-gradient(top, #ffffff 0%,#efeeee 50%,#dddddc 100%); background: linear-gradient(to bottom, #ffffff 0%,#efeeee 50%,#dddddc 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dddddc',GradientType=0 );">
+																					<img class="full" src="http://images.bfi0.com/creative/2015/novo/10/AR3-AR01/images/novo-nordisk-novolog-newsletter-flexpen-mobile.png" width="287" height="214" alt="NovoLog(R) FlexPen - insulin aspart (rDNA origin) injection" style="border: 0; display: block; max-width: 287px !important;" />
+																				</td>
+																			</tr>
+																		</table>
+																	</span>
+																	<!--<![endif]-->
+																	<table width="100%" border="0" cellpadding="0" cellspacing="0">
+																		<tr>
+																			<td align="left" bgcolor="#fc8c00" style="vertical-align: top; padding: 15px 15px 15px 15px; font-family: Tahoma, Geneva, sans-serif; font-size: 21px; color: #ffffff; font-weight: bold;">
+																				What Makes NovoLog FlexPen<sup class="sup" style="vertical-align: text-top .6em; line-height: .6em; font-size: 60%;">&reg;</sup> Different?
+																			</td>
+																		</tr>
+																		<tr>
+																			<td align="left" style="vertical-align: top; padding: 12px 15px 0px 15px; font-family: Tahoma, Geneva, sans-serif; font-size: 13px; color: #3c3b3b;">
+																				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tortor lacus, pretium non massa nec, fermentum sodales leo. Sed non lacus maximus, aliquam turpis ac, aliquam odio. Aliquam tortor lacus, pretium non massa nec lorem.
+																			</td>
+																		</tr>
+																		<tr>
+																			<td class="pad11" align="left" style="vertical-align: top; padding: 12px 15px 0px 15px;">
+																				<table class="button1" align="left" border="0" cellpadding="0" cellspacing="0">
+																					<tr>
+																						<td align="left" width="20" style="vertical-align: middle; padding: 0px 0px 0px 0px;">
+																							<a href="#"><img src="http://images.bfi0.com/creative/2015/novo/10/AR3-AR01/images/novo-nordisk-novolog-newsletter-arrow-orange.png" width="20" height="17" style="border: 0; display: block;" /></a>
+																						</td>
+																						<td class="fontresize2" align="left" style="vertical-align: middle; padding: 0px 0px 0px 18px; font-family: Tahoma, Geneva, sans-serif; font-size: 13px; color: #fc8c00; font-weight: bold;">
+																							<a href="#" style="color: #fc8c00; text-decoration: none;">Lorem Ipsum Dolor</a>
+																						</td>
+																					</tr>
+																				</table>
+																			</td>
+																		</tr>
+																	</table>
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									<tr>
+										<td align="center" style="vertical-align: top; padding: 15px 0px 0px 0px;">
+											<table class="full" width="636" align="center" border="0" cellpadding="0" cellspacing="0">
+												<tr>
+													<td align="left" style="vertical-align: top; padding: 0px 0px 0px 0px; border: 1px solid #b7b7b7;">
+														<table width="100%" border="0" cellpadding="0" cellspacing="0">
+															<tr>
+																<td class="hide" align="left" style="vertical-align: top; padding: 0px 0px 0px 0px; line-height: 0px;">
+																	<img class="hide" src="http://images.bfi0.com/creative/2015/novo/10/AR3-AR01/images/novo-nordisk-novolog-newsletter-flexpen-2.jpg" width="227" height="109" alt="NovoLog(R) FlexPen - insulin aspart (rDNA origin) injection" style="border: 0; display: block;" />
+																</td>
+																<td align="left" style="vertical-align: top; padding: 0px 0px 0px 0px;">
+																	<!--[if !mso]><!-->
+																	<span class="show-block" style="width: 0px; height: 0px; overflow: hidden; display: none; visibility: hidden; float: left; line-height: 0px; max-height: 0px;">
+																		<table width="100%" border="0" bgcolor="#ffffff" cellpadding="0" cellspacing="0" style="background-color: #ffffff;">
+																			<tr>
+																				<td align="left" style="vertical-align: top; padding: 0px 0px 0px 0px; background: #ffffff;
+background: -moz-linear-gradient(top, #ffffff 0%, #efeeee 50%, #dddddc 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(50%,#efeeee), color-stop(100%,#dddddc)); background: -webkit-linear-gradient(top, #ffffff 0%,#efeeee 50%,#dddddc 100%); background: -o-linear-gradient(top, #ffffff 0%,#efeeee 50%,#dddddc 100%); background: -ms-linear-gradient(top, #ffffff 0%,#efeeee 50%,#dddddc 100%); background: linear-gradient(to bottom, #ffffff 0%,#efeeee 50%,#dddddc 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dddddc',GradientType=0 );">
+																					<img class="full" src="http://images.bfi0.com/creative/2015/novo/10/AR3-AR01/images/novo-nordisk-novolog-newsletter-flexpen-2-mobile.png" width="227" height="109" alt="NovoLog(R) FlexPen - insulin aspart (rDNA origin) injection" style="border: 0; display: block; max-width: 227px !important;" />
+																				</td>
+																			</tr>
+																		</table>
+																	</span>
+																	<!--<![endif]-->
+																	<table width="100%" border="0" cellpadding="0" cellspacing="0">
+																		<tr>
+																			<td align="left" bgcolor="#fc8c00" style="vertical-align: top; padding: 5px 15px 5px 15px; font-family: Tahoma, Geneva, sans-serif; font-size: 26px; color: #ffffff; font-weight: bold;">
+																				Lorem ispum dolor enum?
+																			</td>
+																		</tr>
+																		<tr>
+																			<td class="pad8" align="left" style="vertical-align: top; padding: 4px 15px 0px 15px; font-family: Tahoma, Geneva, sans-serif; font-size: 16px; color: #3c3b3b;">
+																				Learn more about if you need mealtime insulin to help control blood sugar when you eat.
+																			</td>
+																		</tr>
+																	</table>
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									<tr>
+										<td align="center" style="vertical-align: top; padding: 15px 0px 0px 0px;">
+											<table class="full" width="636" align="center" border="0" cellpadding="0" cellspacing="0">
+												<tr>
+													<td align="left" style="vertical-align: top; padding: 0px 0px 0px 0px; border: 1px solid #b7b7b7;">
+														<table width="100%" border="0" cellpadding="0" cellspacing="0">
+															<tr>
+																<td class="hide" align="left" style="vertical-align: top; padding: 0px 0px 0px 0px; line-height: 0px; border-right: 1px solid #b7b7b7;">
+																	<img class="hide" src="http://images.bfi0.com/creative/2015/novo/10/AR3-AR01/images/novo-nordisk-novolog-newsletter-cornerstones-graphic.gif" width="253" alt="Cornerstones4Care(R) - Your diabetes, your way." style="border: 0; display: block;" />
+																</td>
+																<td align="left" bgcolor="#f8f8f8" style="vertical-align: top; padding: 0px 0px 0px 0px;">
+																	<!--[if !mso]><!-->
+																	<span class="show-block" style="width: 0px; height: 0px; overflow: hidden; display: none; visibility: hidden; float: left; line-height: 0px; max-height: 0px;">
+																		<table width="100%" border="0" bgcolor="#ffffff" cellpadding="0" cellspacing="0" style="background-color: #ffffff;">
+																			<tr>
+																				<td align="center" bgcolor="#f6fbff" style="vertical-align: top; padding: 0px 0px 0px 0px;">
+																					<img class="full" src="http://images.bfi0.com/creative/2015/novo/10/AR3-AR01/images/novo-nordisk-novolog-newsletter-cornerstones-graphic.gif" width="253" height="203" alt="Cornerstones4Care(R) - Your diabetes, your way." style="border: 0; display: block; max-width: 254px !important;" />
+																				</td>
+																			</tr>
+																		</table>
+																	</span>
+																	<!--<![endif]-->
+																	<table width="100%" border="0" cellpadding="0" cellspacing="0">
+																		<tr>
+																			<td class="pad8 bgblue textwhite" align="left" style="vertical-align: top; padding: 8px 15px 0px 15px; font-family: Tahoma, Geneva, sans-serif; font-size: 20px; color: #004990; font-weight: bold;">
+																				Why <span class="textwhite" style="color: #009ddc;">Cornerstones</span>4<span class="textwhite" style="color: #009ddc;">Care</span> Diabetes Support Makes a Difference?
+																			</td>
+																		</tr>
+																		<tr>
+																			<td align="left" style="vertical-align: top; padding: 12px 15px 0px 15px; font-family: Tahoma, Geneva, sans-serif; font-size: 13px; color: #3c3b3b;">
+																				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tortor lacus, pretium non massa nec, fermentum sodales leo. Sed non lacus maximus, aliquam turpis ac, aliquam odio. Sed aliquet est ligula, non porta augue pretium eget. Cras risus mi, euismod id efficitur et.
+																			</td>
+																		</tr>
+																		<tr>
+																			<td class="pad11" align="left" style="vertical-align: top; padding: 12px 15px 0px 15px;">
+																				<table class="button1 bgwhite" align="left" border="0" cellpadding="0" cellspacing="0">
+																					<tr>
+																						<td align="left" width="20" style="vertical-align: middle; padding: 0px 0px 0px 0px;">
+																							<a href="#"><img src="http://images.bfi0.com/creative/2015/novo/10/AR3-AR01/images/novo-nordisk-novolog-newsletter-arrow-blue.png" width="20" height="17" style="border: 0; display: block;" /></a>
+																						</td>
+																						<td class="fontresize2" align="left" style="vertical-align: middle; padding: 0px 0px 0px 18px; font-family: Tahoma, Geneva, sans-serif; font-size: 14px; color: #009ddc; font-weight: bold;">
+																							<a href="#" style="color: #009ddc; text-decoration: none;">Lorem Ipsum Dolor</a>
+																						</td>
+																					</tr>
+																				</table>
+																			</td>
+																		</tr>
+																	</table>
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									<tr>
+										<td align="center" style="vertical-align: top; padding: 15px 0px 0px 0px;">
+											<table class="full" width="636" align="center" border="0" cellpadding="0" cellspacing="0">
+												<tr>
+													<td align="left" style="vertical-align: top; padding: 0px 0px 0px 0px; border: 1px solid #b7b7b7;">
+														<table width="100%" border="0" cellpadding="0" cellspacing="0">
+															<tr>
+																<td class="hide" align="left" width="230" style="vertical-align: top; padding: 0px 0px 0px 0px; line-height: 0px;">
+																	<img class="hide" src="http://images.bfi0.com/creative/2015/novo/10/AR3-AR01/images/novo-nordisk-novolog-newsletter-your-diabetes-your-way.jpg" width="230" height="107" alt="Your diabetes, your way." style="border: 0; display: block;" />
+																</td>
+																<td align="left" bgcolor="#f8f8f8" style="vertical-align: top; padding: 0px 0px 0px 0px;">
+																	<!--[if !mso]><!-->
+																	<span class="show-block" style="width: 0px; height: 0px; overflow: hidden; display: none; visibility: hidden; float: left; line-height: 0px; max-height: 0px;">
+																		<table width="100%" border="0" bgcolor="#ffffff" cellpadding="0" cellspacing="0" style="background-color: #ffffff;">
+																			<tr>
+																				<td align="center" style="vertical-align: top; padding: 0px 0px 0px 0px;">
+																					<img class="full" src="http://images.bfi0.com/creative/2015/novo/10/AR3-AR01/images/novo-nordisk-novolog-newsletter-your-diabetes-your-way.jpg" width="230" height="107" alt="Your diabetes, your way." style="border: 0; display: block; max-width: 230px !important;" />
+																				</td>
+																			</tr>
+																		</table>
+																	</span>
+																	<!--<![endif]-->
+																	<table width="100%" border="0" cellpadding="0" cellspacing="0">
+																		<tr>
+																			<td class="pad8 bgblue textwhite" align="left" style="vertical-align: top; padding: 5px 15px 0px 15px; font-family: Tahoma, Geneva, sans-serif; font-size: 26px; color: #004990; font-weight: bold;">
+																				Your diabetes, your way.
+																			</td>
+																		</tr>
+																		<tr>
+																			<td align="center" style="vertical-align: top; padding: 12px 15px 0px 15px;">
+																				<table class="button1 bgwhite left2" align="center" border="0" cellpadding="0" cellspacing="0">
+																					<tr>
+																						<td align="left" width="20" style="vertical-align: middle; padding: 0px 0px 0px 0px;">
+																							<a href="#"><img src="http://images.bfi0.com/creative/2015/novo/10/AR3-AR01/images/novo-nordisk-novolog-newsletter-arrow-blue.png" width="20" height="17" style="border: 0; display: block;" /></a>
+																						</td>
+																						<td class="fontresize2" align="left" style="vertical-align: middle; padding: 0px 0px 0px 18px; font-family: Tahoma, Geneva, sans-serif; font-size: 14px; color: #009ddc; font-weight: bold;">
+																							<a href="#" style="color: #009ddc; text-decoration: none;">Get Personalized Support Now</a>
+																						</td>
+																					</tr>
+																				</table>
+																			</td>
+																		</tr>
+																		<tr>
+																			<td class="pad11 left" align="center" style="vertical-align: top; padding: 4px 15px 0px 15px; font-family: Tahoma, Geneva, sans-serif; font-size: 17px; color: #009ddc; font-weight: bold;">
+																				Cornerstones<span style="color: #004990;">4</span>Care<sup class="sup" style="vertical-align: text-top .6em; line-height: .6em; font-size: 60%;">&reg;</sup>
+																			</td>
+																		</tr>
+																	</table>
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									<tr>
+										<td align="center" style="vertical-align: top; padding: 15px 0px 0px 0px;">
+											<table class="full" width="636" align="center" border="0" cellpadding="0" cellspacing="0">
+												<tr>
+													<td align="left" style="vertical-align: top; padding: 0px 0px 0px 0px; border: 1px solid #b7b7b7;">
+														<table width="100%" border="0" cellpadding="0" cellspacing="0">
+															<tr>
+																<td class="hide" align="left" style="vertical-align: top; padding: 0px 0px 0px 0px; line-height: 0px;">
+																	<img class="hide" src="http://images.bfi0.com/creative/2015/novo/10/AR3-AR01/images/novo-nordisk-novolog-newsletter-basal-bolus-therapy.jpg" width="258" alt="What is Basal-Bolus Therapy?" style="border: 0; display: block;" />
+																</td>
+																<td align="left" style="vertical-align: top; padding: 0px 0px 0px 0px;">
+																	<!--[if !mso]><!-->
+																	<span class="show-block" style="width: 0px; height: 0px; overflow: hidden; display: none; visibility: hidden; float: left; line-height: 0px; max-height: 0px;">
+																		<table width="100%" border="0" bgcolor="#ffffff" cellpadding="0" cellspacing="0" style="background-color: #ffffff;">
+																			<tr>
+																				<td align="center" style="vertical-align: top; padding: 0px 0px 0px 0px;">
+																					<img class="full" src="http://images.bfi0.com/creative/2015/novo/10/AR3-AR01/images/novo-nordisk-novolog-newsletter-basal-bolus-therapy.jpg" width="258" height="222" alt="What is Basal-Bolus Therapy?" style="border: 0; display: block; max-width: 258px !important;" />
+																				</td>
+																			</tr>
+																		</table>
+																	</span>
+																	<!--<![endif]-->
+																	<table width="100%" border="0" cellpadding="0" cellspacing="0">
+																		<tr>
+																			<td align="left" bgcolor="#009ddc" style="vertical-align: top; padding: 15px 15px 15px 15px; font-family: Tahoma, Geneva, sans-serif; font-size: 21px; color: #ffffff; font-weight: bold;">
+																				What is Basal-Bolus Therapy?
+																			</td>
+																		</tr>
+																		<tr>
+																			<td align="left" style="vertical-align: top; padding: 15px 15px 0px 15px; font-family: Tahoma, Geneva, sans-serif; font-size: 13px; color: #3c3b3b;">
+																				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tortor lacus, pretium non massa nec, fermentum sodales leo. Sed non lacus maximus, aliquam turpis ac, aliquam odio. Aliquam tortor lacus, pretium non massa nec lorem.
+																			</td>
+																		</tr>
+																		<tr>
+																			<td class="pad11" align="left" style="vertical-align: top; padding: 15px 15px 0px 15px;">
+																				<table class="button1" align="left" border="0" cellpadding="0" cellspacing="0">
+																					<tr>
+																						<td align="left" width="20" style="vertical-align: middle; padding: 0px 0px 0px 0px;">
+																							<a href="#"><img src="http://images.bfi0.com/creative/2015/novo/10/AR3-AR01/images/novo-nordisk-novolog-newsletter-arrow-blue.png" width="20" height="17" style="border: 0; display: block;" /></a>
+																						</td>
+																						<td class="fontresize2" align="left" style="vertical-align: middle; padding: 0px 0px 0px 18px; font-family: Tahoma, Geneva, sans-serif; font-size: 13px; color: #009ddc; font-weight: bold;">
+																							<a href="#" style="color: #009ddc; text-decoration: none;">Lorem Ipsum Dolor</a>
+																						</td>
+																					</tr>
+																				</table>
+																			</td>
+																		</tr>
+																	</table>
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									<tr>
+										<td align="center" style="vertical-align: top; padding: 15px 0px 0px 0px;">
+											<table class="full" width="636" align="center" border="0" cellpadding="0" cellspacing="0">
+												<tr>
+													<td align="left" style="vertical-align: top; padding: 0px 0px 0px 0px; border: 1px solid #b7b7b7;">
+														<table width="100%" border="0" cellpadding="0" cellspacing="0">
+															<tr>
+																<td class="hide" align="left" style="vertical-align: top; padding: 0px 0px 0px 0px; line-height: 0px;">
+																	<img class="hide" src="http://images.bfi0.com/creative/2015/novo/10/AR3-AR01/images/novo-nordisk-novolog-newsletter-mealtime-insulin.jpg" width="230" alt="Why Add Mealtime Insulin?" style="border: 0; display: block;" />
+																</td>
+																<td align="left" style="vertical-align: top; padding: 0px 0px 0px 0px;">
+																	<!--[if !mso]><!-->
+																	<span class="show-block" style="width: 0px; height: 0px; overflow: hidden; display: none; visibility: hidden; float: left; line-height: 0px; max-height: 0px;">
+																		<table width="100%" border="0" bgcolor="#ffffff" cellpadding="0" cellspacing="0" style="background-color: #ffffff;">
+																			<tr>
+																				<td align="center" style="vertical-align: top; padding: 0px 0px 0px 0px;">
+																					<img class="full" src="http://images.bfi0.com/creative/2015/novo/10/AR3-AR01/images/novo-nordisk-novolog-newsletter-mealtime-insulin.jpg" width="230" height="109" alt="Why Add Mealtime Insulin?" style="border: 0; display: block; max-width: 258px !important;" />
+																				</td>
+																			</tr>
+																		</table>
+																	</span>
+																	<!--<![endif]-->
+																	<table width="100%" border="0" cellpadding="0" cellspacing="0">
+																		<tr>
+																			<td align="left" bgcolor="#009ddc" style="vertical-align: top; padding: 5px 15px 5px 15px; font-family: Tahoma, Geneva, sans-serif; font-size: 26px; color: #ffffff; font-weight: bold;">
+																				Why Add Mealtime Insulin?
+																			</td>
+																		</tr>
+																		<tr>
+																			<td align="left" style="vertical-align: top; padding: 4px 15px 0px 15px; font-family: Tahoma, Geneva, sans-serif; font-size: 16px; color: #3c3b3b;">
+																				Learn more about if you need mealtime insulin to help control blood sugar when you eat.
+																			</td>
+																		</tr>
+																		<tr>
+																			<td class="pad11" align="left" style="vertical-align: top; padding: 4px 15px 0px 15px;">
+																				<table class="button1" align="left" border="0" cellpadding="0" cellspacing="0">
+																					<tr>
+																						<td align="left" width="20" style="vertical-align: middle; padding: 0px 0px 0px 0px;">
+																							<a href="#"><img src="http://images.bfi0.com/creative/2015/novo/10/AR3-AR01/images/novo-nordisk-novolog-newsletter-arrow-blue.png" width="20" height="17" style="border: 0; display: block;" /></a>
+																						</td>
+																						<td class="fontresize2" align="left" style="vertical-align: middle; padding: 0px 0px 0px 18px; font-family: Tahoma, Geneva, sans-serif; font-size: 13px; color: #009ddc; font-weight: bold;">
+																							<a href="#" style="color: #009ddc; text-decoration: none;">Lorem Ipsum Dolor</a>
+																						</td>
+																					</tr>
+																				</table>
+																			</td>
+																		</tr>
+																	</table>
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td class="padmain" align="left" style="vertical-align: top; padding: 45px 30px 0px 30px;">
+								<table width="100%" border="0" cellpadding="0" cellspacing="0">
+									<tr>
+										<td align="left" style="vertical-align: top; padding: 0px 0px 0px 0px; font-family: Tahoma, Geneva, sans-serif; font-size: 13px; color: #000000; font-weight: bold; line-height: 13px;">
+											<span style="color: #f59b1e;">Indications and Usage</span><br /><br />
+											What is NovoLog<sup class="sup" style="vertical-align: text-top .6em; line-height: .6em; font-size: 60%;">&reg;</sup> (insulin aspart [rDNA origin] injection)?
+										</td>
+									</tr>
+									<tr>
+										<td align="left" style="vertical-align: top; padding: 6px 0px 0px 0px;">
+											<table width="100%" border="0" cellpadding="0" cellspacing="0">
+												<tr>
+													<td align="left" width="14" style="vertical-align: top; padding: 0px 0px 0px 0px; font-family: Tahoma, Geneva, sans-serif; font-size: 13px; color: #f89728;">
+														&bull;
+													</td>
+													<td align="left" style="vertical-align: top; padding: 0px 0px 0px 0px; font-family: Tahoma, Geneva, sans-serif; font-size: 13px; color: #000000;">
+														NovoLog<sup class="sup" style="vertical-align: text-top .6em; line-height: .6em; font-size: 60%;">&reg;</sup> is a man-made insulin used to control high blood sugar in adults and children with diabetes mellitus.
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									<tr>
+										<td align="left" style="vertical-align: top; padding: 12px 0px 0px 0px; font-family: Tahoma, Geneva, sans-serif; font-size: 13px; color: #000000; line-height: 13px;">
+											<strong style="color: #f59b1e;">Important Safety Information</strong><br /><br />
+											Click here for Prescribing Information.<br /><br />
+											<strong>Who should not take NovoLog<sup class="sup" style="vertical-align: text-top .6em; line-height: .6em; font-size: 60%;">&reg;</sup>?</strong><br /><br />
+											<strong>Do not take NovoLog<sup class="sup" style="vertical-align: text-top .6em; line-height: .6em; font-size: 60%;">&reg;</sup> if:</strong>
+										</td>
+									</tr>
+									<tr>
+										<td align="left" style="vertical-align: top; padding: 6px 0px 0px 0px;">
+											<table width="100%" border="0" cellpadding="0" cellspacing="0">
+												<tr>
+													<td align="left" width="14" style="vertical-align: top; padding: 0px 0px 0px 0px; font-family: Tahoma, Geneva, sans-serif; font-size: 13px; color: #f89728;">
+														&bull;
+													</td>
+													<td align="left" style="vertical-align: top; padding: 0px 0px 0px 0px; font-family: Tahoma, Geneva, sans-serif; font-size: 13px; color: #000000;">
+														your blood sugar is too low (hypoglycemia) or you are allergic to any of its ingredients.
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									<tr>
+										<td align="left" style="vertical-align: top; padding: 12px 0px 0px 0px; font-family: Tahoma, Geneva, sans-serif; font-size: 13px; color: #000000; font-weight: bold; line-height: 13px;">
+											Before taking NovoLog<sup class="sup" style="vertical-align: text-top .6em; line-height: .6em; font-size: 60%;">&reg;</sup>, tell your health care provider about all your medical conditions including, if you are:
+										</td>
+									</tr>
+									<tr>
+										<td align="left" style="vertical-align: top; padding: 6px 0px 0px 0px;">
+											<table width="100%" border="0" cellpadding="0" cellspacing="0">
+												<tr>
+													<td align="left" width="14" style="vertical-align: top; padding: 0px 0px 0px 0px; font-family: Tahoma, Geneva, sans-serif; font-size: 13px; color: #f89728;">
+														&bull;
+													</td>
+													<td align="left" style="vertical-align: top; padding: 0px 0px 0px 0px; font-family: Tahoma, Geneva, sans-serif; font-size: 13px; color: #000000;">
+														pregnant, plan to become pregnant, or are breastfeeding.
+													</td>
+												</tr>
+												<tr>
+													<td align="left" width="14" style="vertical-align: top; padding: 4px 0px 0px 0px; font-family: Tahoma, Geneva, sans-serif; font-size: 13px; color: #f89728;">
+														&bull;
+													</td>
+													<td align="left" style="vertical-align: top; padding: 4px 0px 0px 0px; font-family: Tahoma, Geneva, sans-serif; font-size: 13px; color: #000000;">
+														taking new prescription or over-the-counter medicines, including supplements.
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									<tr>
+										<td align="left" style="vertical-align: top; padding: 12px 0px 0px 0px; font-family: Tahoma, Geneva, sans-serif; font-size: 13px; color: #000000; font-weight: bold; line-height: 13px;">
+											Talk to your health care provider about how to manage low blood sugar.<br /><br />
+											How should I take NovoLog<sup class="sup" style="vertical-align: text-top .6em; line-height: .6em; font-size: 60%;">&reg;</sup>?
+										</td>
+									</tr>
+									<tr>
+										<td align="left" style="vertical-align: top; padding: 6px 0px 0px 0px;">
+											<table width="100%" border="0" cellpadding="0" cellspacing="0">
+												<tr>
+													<td align="left" width="14" style="vertical-align: top; padding: 0px 0px 0px 0px; font-family: Tahoma, Geneva, sans-serif; font-size: 13px; color: #f89728;">
+														&bull;
+													</td>
+													<td align="left" style="vertical-align: top; padding: 0px 0px 0px 0px; font-family: Tahoma, Geneva, sans-serif; font-size: 13px; color: #000000;">
+														<strong>Read the Instructions for Use</strong> and take exactly as directed.
+													</td>
+												</tr>
+												<tr>
+													<td align="left" width="14" style="vertical-align: top; padding: 4px 0px 0px 0px; font-family: Tahoma, Geneva, sans-serif; font-size: 13px; color: #f89728;">
+														&bull;
+													</td>
+													<td align="left" style="vertical-align: top; padding: 4px 0px 0px 0px; font-family: Tahoma, Geneva, sans-serif; font-size: 13px; color: #000000;">
+														<strong>NovoLog<sup class="sup" style="vertical-align: text-top .6em; line-height: .6em; font-size: 60%;">&reg;</sup> is fast-acting.</strong> Eat a meal within 5 to 10 minutes after taking it.
+													</td>
+												</tr>
+												<tr>
+													<td align="left" width="14" style="vertical-align: top; padding: 4px 0px 0px 0px; font-family: Tahoma, Geneva, sans-serif; font-size: 13px; color: #f89728;">
+														&bull;
+													</td>
+													<td align="left" style="vertical-align: top; padding: 4px 0px 0px 0px; font-family: Tahoma, Geneva, sans-serif; font-size: 13px; color: #000000;">
+														Know the type and strength of your insulin. Do not change your insulin type unless your health care provider tells you to.
+													</td>
+												</tr>
+												<tr>
+													<td align="left" width="14" style="vertical-align: top; padding: 4px 0px 0px 0px; font-family: Tahoma, Geneva, sans-serif; font-size: 13px; color: #f89728;">
+														&bull;
+													</td>
+													<td align="left" style="vertical-align: top; padding: 4px 0px 0px 0px; font-family: Tahoma, Geneva, sans-serif; font-size: 13px; color: #000000;">
+														<strong>Check your blood sugar levels.</strong> Ask your health care provider what your blood sugar levels should be and when you should check them.
+													</td>
+												</tr>
+												<tr>
+													<td align="left" width="14" style="vertical-align: top; padding: 4px 0px 0px 0px; font-family: Tahoma, Geneva, sans-serif; font-size: 13px; color: #f89728;">
+														&bull;
+													</td>
+													<td align="left" style="vertical-align: top; padding: 4px 0px 0px 0px; font-family: Tahoma, Geneva, sans-serif; font-size: 13px; color: #000000;">
+														<strong>Do not share needles, insulin pens, or syringes.</strong> You may give or get an infection from another person.
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									<tr>
+										<td align="left" style="vertical-align: top; padding: 12px 0px 0px 0px; font-family: Tahoma, Geneva, sans-serif; font-size: 13px; color: #000000; font-weight: bold; line-height: 13px;">
+											What should I avoid while taking NovoLog<sup class="sup" style="vertical-align: text-top .6em; line-height: .6em; font-size: 60%;">&reg;</sup>?
+										</td>
+									</tr>
+									<tr>
+										<td align="left" style="vertical-align: top; padding: 6px 0px 0px 0px;">
+											<table width="100%" border="0" cellpadding="0" cellspacing="0">
+												<tr>
+													<td align="left" width="14" style="vertical-align: top; padding: 0px 0px 0px 0px; font-family: Tahoma, Geneva, sans-serif; font-size: 13px; color: #f89728;">
+														&bull;
+													</td>
+													<td align="left" style="vertical-align: top; padding: 0px 0px 0px 0px; font-family: Tahoma, Geneva, sans-serif; font-size: 13px; color: #000000;">
+														Do not drive or operate heavy machinery, until you know how it affects you.
+													</td>
+												</tr>
+												<tr>
+													<td align="left" width="14" style="vertical-align: top; padding: 4px 0px 0px 0px; font-family: Tahoma, Geneva, sans-serif; font-size: 13px; color: #f89728;">
+														&bull;
+													</td>
+													<td align="left" style="vertical-align: top; padding: 4px 0px 0px 0px; font-family: Tahoma, Geneva, sans-serif; font-size: 13px; color: #000000;">
+														Do not drink alcohol or use medicines that contain alcohol.
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									<tr>
+										<td align="left" style="vertical-align: top; padding: 12px 0px 0px 0px; font-family: Tahoma, Geneva, sans-serif; font-size: 13px; color: #000000; line-height: 13px;">
+											<strong>What are the possible side effects of NovoLog<sup class="sup" style="vertical-align: text-top .6em; line-height: .6em; font-size: 60%;">&reg;</sup>?<br /><br />
+											Serious side effects can lead to death, including:<br /><br />
+											Low blood sugar.</strong> Some signs and symptoms include:
+										</td>
+									</tr>
+									<tr>
+										<td align="left" style="vertical-align: top; padding: 6px 0px 0px 0px;">
+											<table width="100%" border="0" cellpadding="0" cellspacing="0">
+												<tr>
+													<td align="left" width="14" style="vertical-align: top; padding: 0px 0px 0px 0px; font-family: Tahoma, Geneva, sans-serif; font-size: 13px; color: #f89728;">
+														&bull;
+													</td>
+													<td align="left" style="vertical-align: top; padding: 0px 0px 0px 0px; font-family: Tahoma, Geneva, sans-serif; font-size: 13px; color: #000000;">
+														anxiety, irritability, mood changes, dizziness, sweating, confusion, and headache.
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									<tr>
+										<td align="left" style="vertical-align: top; padding: 12px 0px 0px 0px; font-family: Tahoma, Geneva, sans-serif; font-size: 13px; color: #000000; font-weight: bold; line-height: 13px;">
+											Your insulin dose may need to change because of:
+										</td>
+									</tr>
+									<tr>
+										<td align="left" style="vertical-align: top; padding: 6px 0px 0px 0px;">
+											<table width="100%" border="0" cellpadding="0" cellspacing="0">
+												<tr>
+													<td align="left" width="14" style="vertical-align: top; padding: 0px 0px 0px 0px; font-family: Tahoma, Geneva, sans-serif; font-size: 13px; color: #f89728;">
+														&bull;
+													</td>
+													<td align="left" style="vertical-align: top; padding: 0px 0px 0px 0px; font-family: Tahoma, Geneva, sans-serif; font-size: 13px; color: #000000;">
+														change in level of physical activity, weight gain or loss, increased stress, illness, or change in diet.
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									<tr>
+										<td align="left" style="vertical-align: top; padding: 12px 0px 0px 0px; font-family: Tahoma, Geneva, sans-serif; font-size: 13px; color: #000000; font-weight: bold; line-height: 13px;">
+											Other common side effects may include:
+										</td>
+									</tr>
+									<tr>
+										<td align="left" style="vertical-align: top; padding: 6px 0px 0px 0px;">
+											<table width="100%" border="0" cellpadding="0" cellspacing="0">
+												<tr>
+													<td align="left" width="14" style="vertical-align: top; padding: 0px 0px 0px 0px; font-family: Tahoma, Geneva, sans-serif; font-size: 13px; color: #f89728;">
+														&bull;
+													</td>
+													<td align="left" style="vertical-align: top; padding: 0px 0px 0px 0px; font-family: Tahoma, Geneva, sans-serif; font-size: 13px; color: #000000;">
+														low potassium in your blood, injection site reactions, itching, rash, serious whole body allergic reactions, skin thickening or pits at the injection site, weight gain, and swelling of your hands and feet and if taken with thiazolidinediones (TZDs) possible heart failure.
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									<tr>
+										<td align="left" style="vertical-align: top; padding: 12px 0px 0px 0px; font-family: Tahoma, Geneva, sans-serif; font-size: 13px; color: #000000; font-weight: bold; line-height: 13px;">
+											Get emergency medical help if you have:
+										</td>
+									</tr>
+									<tr>
+										<td align="left" style="vertical-align: top; padding: 6px 0px 0px 0px;">
+											<table width="100%" border="0" cellpadding="0" cellspacing="0">
+												<tr>
+													<td align="left" width="14" style="vertical-align: top; padding: 0px 0px 0px 0px; font-family: Tahoma, Geneva, sans-serif; font-size: 13px; color: #f89728;">
+														&bull;
+													</td>
+													<td align="left" style="vertical-align: top; padding: 0px 0px 0px 0px; font-family: Tahoma, Geneva, sans-serif; font-size: 13px; color: #000000;">
+														trouble breathing, shortness of breath, fast heartbeat, swelling of your face, tongue, or throat, sweating, extreme drowsiness, dizziness, or confusion.
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									<tr>
+										<td align="left" style="vertical-align: top; padding: 12px 0px 0px 0px; font-family: Tahoma, Geneva, sans-serif; font-size: 13px; color: #000000; line-height: 13px;">
+											<a href="#" style="color: #009ddc; font-weight: bold; text-decoration: underline;">Please click here to see Novolog<sup class="sup" style="vertical-align: text-top .6em; line-height: .6em; font-size: 60%;">&reg;</sup> Prescribing Information.</a><br /><br /><br />
+											<strong>Wishing you good health,</strong><br /><br />
+											Your <strong style="color: #009ddc;">Cornerstones<span style="color: #000000;">4</span>Care<sup class="sup" style="vertical-align: text-top .6em; line-height: .6em; font-size: 60%;">&reg;</sup></strong> Team<br /><br /><br /><br />
+											NovoLog<sup class="sup" style="vertical-align: text-top .6em; line-height: .6em; font-size: 60%;">&reg;</sup> is a prescription medicine.<br /><br />
+											Talk to your health care provider about the importance of diet and exercise in your treatment plan.<br /><br />
+											You are encouraged to report negative side effects of prescription drugs to the FDA.<br />
+											Visit www.fda.gov/medwatch, or call <a href="tel:1-800-FDA-1088" style="color: #000001; text-decoration: none;"><span>1</span>-<span>800</span>-<span>FDA</span>-<span>1088</span></a>.
+										</td>
+									</tr>
+									<tr>
+										<td align="left" style="vertical-align: top; padding: 18px 0px 0px 0px;">
+											<table class="full" align="left" border="0" cellpadding="0" cellspacing="0">
+												<tr>
+													<td align="left" style="vertical-align: top; padding: 0px 0px 0px 0px; line-height: 0px;">
+														<img src="http://images.bfi0.com/creative/2015/novo/10/AR3-AR01/images/novo-nordisk-novolog-newsletter-ppa-logo.gif" width="161" height="51" alt="Partnership for Perscription Assistance" style="border: 0; display: block;" />
+													</td>
+												</tr>
+											</table>
+											<table class="full" align="right" width="440" border="0" cellpadding="0" cellspacing="0">
+												<tr>
+													<td align="left" style="vertical-align: top; padding: 12px 0px 0px 0px; font-family: Tahoma, Geneva, sans-serif; font-size: 13px; color: #000000; line-height: 13px;">
+														If you need assistance with prescription drug costs, help may be available. Visit <a href="#" style="color: #009ddc; text-decoration: underline;">pparx.org</a> or call <a href="tel:1-888-4PPA-NOW" style="color: #000001; text-decoration: none;"><span>1</span>-<span>888</span>-<span>4PPA</span>-<span>NOW</span></a>.
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td class="padmain" align="left" style="vertical-align: top; padding: 30px 22px 0px 22px;">
+								<table width="100%" border="0" cellpadding="0" cellspacing="0">
+									<tr>
+										<td align="left" bgcolor="#f59b1e" style="vertical-align: top; padding: 22px 22px 22px 22px;">
+											<table class="full" align="left" width="360" border="0" cellpadding="0" cellspacing="0">
+												<tr>
+													<td align="left" style="vertical-align: top; padding: 0px 0px 0px 0px;">
+														<table class="full" align="left" border="0" cellpadding="0" cellspacing="0">
+															<tr>
+																<td align="left" style="vertical-align: top; padding: 0px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #ffffff; font-weight: bold;">
+																	<a href="#" style="color: #ffffff; text-decoration: underline;">NovoLog.com</a>
+																</td>
+															</tr>
+															<tr>
+																<td align="left" style="vertical-align: top; padding: 15px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #ffffff; font-weight: bold;">
+																	<a href="#" style="color: #ffffff; text-decoration: underline;">Cornerstones4Care.com</a>
+																</td>
+															</tr>
+														</table>
+														<table class="full" align="right" border="0" cellpadding="0" cellspacing="0">
+															<tr>
+																<td class="pad10" align="left" style="vertical-align: top; padding: 0px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #ffffff; font-weight: bold;">
+																	<a href="#" style="color: #ffffff; text-decoration: underline;">Diabetes Health Coach</a>
+																</td>
+															</tr>
+															<tr>
+																<td align="left" style="vertical-align: top; padding: 15px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #ffffff; font-weight: bold;">
+																	<a href="#" style="color: #ffffff; text-decoration: underline;">Prescription Savings</a>
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+											</table>
+											<table class="full" align="right" border="0" cellpadding="0" cellspacing="0">
+												<tr>
+													<td class="pad10" align="left" style="vertical-align: top; padding: 0px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #ffffff; font-weight: bold;">
+														<a href="#" style="color: #ffffff; text-decoration: underline;">Lorem Ipsum Dolor</a>
+													</td>
+												</tr>
+												<tr>
+													<td align="left" style="vertical-align: top; padding: 15px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #ffffff; font-weight: bold;">
+														<a href="#" style="color: #ffffff; text-decoration: underline;">Enum Den Largond</a>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									<tr>
+										<td class="left" align="center" style="vertical-align: top; padding: 15px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000000;">
+											<a class="nowrap" href="#" style="color: #009ddc; text-decoration: none;">Novo Nordisk, Inc.</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&emsp;<a class="nowrap" href="#" style="color: #009ddc; text-decoration: none;">Terms & Conditions</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&emsp;<a href="#" style="color: #009ddc; text-decoration: none; white-space: nowrap !important;">Privacy Notice</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&emsp;<a href="#" style="color: #009ddc; text-decoration: none; white-space: nowrap !important;">Unsubscribe</a>
+										</td>
+									</tr>
+									<tr>
+										<td align="left" style="vertical-align: top; padding: 45px 0px 0px 0px; font-family: Tahoma, Geneva, sans-serif; font-size: 10px; color: #000000;">
+											PLEASE DO NOT RESPOND TO THIS E-MAIL. If you would like to contact us, please <a href="#" style="color: #009ddc; text-decoration: underline;">click here</a> or call <a href="tel:1-800-727-6500" style="color: #000001; text-decoration: none;"><span>1</span>-<span>800</span>-<span>727</span>-<span>6500</span></a>.<br /><br />
+											This e-mail was sent to you by Novo Nordisk. You will receive ongoing updates on Novo Nordisk products and services. To unsubscribe from receiving future e-mails, please <a href="#" style="color: #009ddc; text-decoration: underline;">click here</a>.<br /><br />
+											If you do not wish to receive any more materials from Novo Nordisk that may help you manage your diabetes, please send a brief note with your name and address to Novo Nordisk, P.O. Box 29303, Shawnee Mission, KS 66201 or call <a href="tel:1-877-744-2579" style="color: #000001; text-decoration: none;"><span>1</span>-<span>877</span>-<span>744</span>-<span>2579</span></a>.<br /><br />
+											Cornerstones4Care<sup class="sup" style="vertical-align: text-top .6em; line-height: .6em; font-size: 60%;">&reg;</sup>, FlexPen<sup class="sup" style="vertical-align: text-top .6em; line-height: .6em; font-size: 60%;">&reg;</sup>, and NovoLog<sup class="sup" style="vertical-align: text-top .6em; line-height: .6em; font-size: 60%;">&reg;</sup> are registered trademarks of Novo Nordisk A/S.<br /><br />
+											&copy; 2015 Novo Nordisk    All rights reserved.   0000-00000000-0    July 2015
+										</td>
+									</tr>
+									<tr>
+										<td align="left" style="vertical-align: top; padding: 35px 0px 0px 0px;">
+											<table width="100%" border="0" cellpadding="0" cellspacing="0">
+												<tr>
+													<td align="left" style="vertical-align: middle; padding: 0px 0px 0px 0px; line-height: 0px;">
+														<img class="full" src="http://images.bfi0.com/creative/2015/novo/10/AR3-AR01/images/novo-nordisk-novolog-newsletter-logo-footer.gif" width="99" height="71" alt="novo nordisk(R)" style="border: 0; display: block; max-width: 99px !important;" />
+													</td>
+													<td align="right" style="vertical-align: middle; padding: 0px 0px 0px 15px; line-height: 0px;">
+														<img class="full" src="http://images.bfi0.com/creative/2015/novo/10/AR3-AR01/images/novo-nordisk-novolog-newsletter-logo-footer-2.gif" width="158" height="43" alt="NovoLog(R) - insulin aspart (rDNA origin) injection" style="border: 0; display: block; max-width: 158px !important;" />
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

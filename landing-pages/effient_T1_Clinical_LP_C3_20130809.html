@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Effient Clinical Trial Landing Page</title>
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <link rel="stylesheet" type="text/css" href="http://images.bfi0.com/creative/2013/daiichi_sankyo/08/A019/landing_pages/css/jquery.mCustomScrollbar.css" />
+        <link rel="stylesheet" type="text/css" href="http://images.bfi0.com/creative/2013/daiichi_sankyo/08/A019/landing_pages/css/styles.css" />
+        <script>
+			var require = {
+				deps: ["js/css_browser_selector.js"],
+				callback: function(module1) {
+				}
+			};
+		</script>
+        <script data-main="js/require.js" src="http://images.bfi0.com/creative/2013/daiichi_sankyo/08/A019/landing_pages/js/require.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script type="text/javascript" src="http://www.effient.com/Scripts/jquery.easing.1.3.js"></script>
+        <script type="text/javascript" src="http://images.bfi0.com/creative/2013/daiichi_sankyo/08/A019/landing_pages/js/jquery.mCustomScrollbar.concat.min.js"></script>
+        <!-- [if lt IE 9] -->
+		<script>
+            document.createElement('header');
+			document.createElement('nav');
+			document.createElement('section');
+			document.createElement('article');
+			document.createElement('aside');
+			document.createElement('footer');
+			document.createElement('hgroup');
+        </script>
+        <!-- [endif] -->
+        <!--[if IE 8]> 
+        	<html class="ie8"> 
+        <![endif]-->
+        <!--[if lte IE 7]> 
+        	<html class="ie7"> 
+        <![endif]-->
+        <script>
+			(function($){
+				$(window).load(function(){
+					$(".isi_preheader_container").mCustomScrollbar({
+						scrollButtons:{
+							enable: true,
+						}
+					});
+				});
+			})(jQuery);
+		</script>
+        <script>
+			$(document).ready(function() {
+				function touchHandler(event)
+				{
+				 var touches = event.changedTouches,
+					first = touches[0],
+					type = "";
+				
+					 switch(event.type)
+				{
+					case "touchstart": type = "mousedown"; break;
+					case "touchmove":  type="mousemove"; break;        
+					case "touchend":   type="mouseup"; break;
+					default: return;
+				}
+				var simulatedEvent = document.createEvent("MouseEvent");
+				simulatedEvent.initMouseEvent(type, true, true, window, 1,
+										  first.screenX, first.screenY,
+										  first.clientX, first.clientY, false,
+										  false, false, false, 0/*left*/, null);
+				
+				first.target.dispatchEvent(simulatedEvent);
+				event.preventDefault();
+				}
+				function initadv()
+				{
+				   document.getElementById("adv-picker").addEventListener("touchstart", touchHandler, true);
+				   document.getElementById("adv-picker").addEventListener("touchmove", touchHandler, true);
+				   document.getElementById("adv-picker").addEventListener("touchend", touchHandler, true);
+				   document.getElementById("adv-picker").addEventListener("touchcancel", touchHandler, true);    
+				}
+			});
+        </script>
+        <script>
+			$(document).ready(function() {
+				$('.view_more').unbind('click');
+				$('.view_more').bind('click', function(e){
+					e.preventDefault();
+					var newDiv = '<div class="isi_preheader_clone"><a class="close_clone" href="javascript:void(0);">Collapse</a></div>';
+					var isiClone = $('.isi_preheader_container .isi_preheader_main').clone(true);
+					
+					$('.main_content_wrapper .preheader .preheader_top').append(newDiv);
+					$('.main_content_wrapper .preheader .preheader_top .isi_preheader_clone').append(isiClone);
+					var expandHeight = parseInt($('.isi_preheader_clone .isi_preheader_main').outerHeight());
+					$('.main_content_wrapper .preheader .preheader_top .isi_preheader_clone').animate({height: expandHeight + 'px'}, 500)
+				});
+				$(document).on('click', '.close_clone', function(e){
+					e.preventDefault();
+					$('.isi_preheader_clone').animate({height: '20px'}, 500, function(){
+						$(this).hide().remove();
+					});
+				});
+			});
+		</script>
+    </head>
+    <body class="lp_three">
+    	<div class="main_content_wrapper">
+            <header>
+                <div class="preheader">
+                    <div class="preheader_top">
+                    	<div class="preheader_top_left">
+                        	<a href="http://pi.lilly.com/us/effient.pdf">Prescribing Information</a><br />
+                            <a href="http://pi.lilly.com/us/effient-ppi.pdf">Medication Guide</a><br />
+                            <div id="logo_header">
+                                <a href="http://www.effienthcp.com/Pages/index.aspx"><img src="http://images.bfi0.com/creative/2013/daiichi_sankyo/08/A019/landing_pages/images/effient_logo.png" width="131" height="52" alt="Effient (prasugrel) tablets" /></a>
+                            </div>
+                        </div>
+                        <div class="isi_preheader_container">
+                        	<div class="isi_preheader_main">
+                            	<h2>Important Safety Information</h2>
+                                <a class="view_more" href="#">View more</a>
+                                <div class="clearfix"></div>
+                                <div class="bleeding_risk_preheader">
+                                	<h3>Warning: Bleeding Risk</h3><br />
+                                    <p>Effient<sup>&reg;</sup> (prasugrel) can cause significant, sometimes fatal, bleeding.</p>
+                                    <p>Do not use Effient in patients with active pathological bleeding or a history of transient ischemic attack or stroke.</p>
+                                    <p>In patients &ge;75 years of age, Effient is generally not recommended, because of the increased risk of fatal and intracranial bleeding and uncertain benefit, except in high-risk situations (patients with diabetes or a history of prior myocardial infarction [MI]) where its effect appears to be greater and its use may be considered.</p>
+                                    <p>Do not start Effient in patients likely to undergo urgent coronary artery bypass graft surgery (CABG). When possible, discontinue Effient at least 7 days prior to any surgery.</p>
+                                    <p class="addtl_risk">Additional risk factors for bleeding include:</p>
+                                    <ul>
+                                        <li>body weight &lt;60 kg</li>
+                                        <li>propensity to bleed</li>
+                                        <li>concomitant use of medications that increase the risk of bleeding (eg, warfarin, heparin, fibrinolytic therapy, chronic use of nonsteroidal anti-inflammatory drugs [NSAIDs])</li>
+                                    </ul>
+                                    <p>Suspect bleeding in any patient who is hypotensive and has recently undergone coronary angiography, percutaneous coronary intervention (PCI), CABG, or other surgical procedures in the setting of Effient.</p>
+                                    <p">If possible, manage bleeding without discontinuing Effient. Discontinuing Effient, particularly in the first few weeks after acute coronary syndrome, increases the risk of subsequent cardiovascular events.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <p>Effient<sup>&reg;</sup> (prasugrel) is indicated to reduce the rate of thrombotic cardiovascular (CV) events (including stent thrombosis) in patients with acute coronary syndrome (ACS) who are to be managed with percutaneous coronary intervention (PCI) as follows: [1] patients with unstable angina (UA) or non–ST-elevation myocardial infarction (NSTEMI); [2] patients with ST-elevation myocardial infarction (STEMI) when managed with primary or delayed PCI. The loading dose (LD) of Effient is 60 mg and the maintenance dose (MD) is 10 mg once daily. Effient is available in 5-mg and 10-mg tablets.</p>
+                </div>
+                <div class="header_banner">
+                    <img src="http://images.bfi0.com/creative/2013/daiichi_sankyo/08/A019/landing_pages/images/get_an_upclose_look_banner.jpg" width="480" height="125" alt="Get an Up-Close Look at Effient&reg; (Prasugrel). Then Order Samples for your Patients." usemap="#banner_map" />
+                    <map name="banner_map" id="banner_map">
+                    	<area shape="rect" coords="86,67,262,86" href="http://mail.dsicustomerservice.com/p/Daiichi_Sankyo/Effient_Registration" alt="Order Samples" />
+                    </map>
+                </div>
+            </header>
+            <section class="effient_kol_video_arena">
+                <div class="video_arena_label">
+                    <img src="http://images.bfi0.com/creative/2013/daiichi_sankyo/08/A019/landing_pages/images/video_arean_label_text.png" width="25" height="159" alt="Effient KOL Video arena" />
+                </div>
+                <div class="video_arena_main_wrapper">
+                    <div class="video_arena_main">
+                        <h2>Dr. Richard Gilmore gives a play-by-play look at the significance of Effient for STEMI patients.</h2>
+                        <h4 id="video_heading_1">Learn about the TRITON-TIMI 38 trial</h4>
+                        <div class="video_container_1">
+                            <!-- Start of Brightcove Player -->
+                            <div style="display:none"></div>
+                            <!-- By use of this code snippet, I agree to the Brightcove Publisher T and C 
+                            found at https://accounts.brightcove.com/en/terms-and-conditions/. -->
+                            <script language="JavaScript" type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
+                            <object id="myExperience2607782594001" class="BrightcoveExperience">
+                                <param name="bgcolor" value="#FFFFFF" />
+                                <param name="width" value="345" />
+                                <param name="height" value="280" />
+                                <param name="playerID" value="2715860296001" />
+                                <param name="playerKey" value="AQ~~,AAAA8_MTmek~,KrGepHw1JOSnTAmojKs8uwOFMQd5WqJb" />
+                                <param name="isVid" value="true" />
+                                <param name="isUI" value="true" />
+                                <param name="dynamicStreaming" value="true" />
+                                <param name="@videoPlayer" value="2607782594001" />
+                            </object>
+                            <!-- This script tag will cause the Brightcove Players defined above it to be created as soon
+                            as the line is read by the browser. If you wish to have the player instantiated only after
+                            the rest of the HTML is processed and the page load is complete, remove the line. -->
+                            <script type="text/javascript">brightcove.createExperiences();</script>
+                            <!-- End of Brightcove Player -->
+                        </div>
+                        <h4 id="video_heading_2">Hear about a real STEMI patient with planned PCI</h4>
+                        <div class="video_container_2">
+                            <!-- Start of Brightcove Player -->
+                            <div style="display:none"></div>
+                            <!-- By use of this code snippet, I agree to the Brightcove Publisher T and C 
+                            found at https://accounts.brightcove.com/en/terms-and-conditions/. -->
+                            <script language="JavaScript" type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
+                            <object id="myExperience2607790365001" class="BrightcoveExperience">
+                                <param name="bgcolor" value="#FFFFFF" />
+                                <param name="width" value="345" />
+                                <param name="height" value="280" />
+                                <param name="playerID" value="2715860296001" />
+                                <param name="playerKey" value="AQ~~,AAAA8_MTmek~,KrGepHw1JOSnTAmojKs8uwOFMQd5WqJb" />
+                                <param name="isVid" value="true" />
+                                <param name="isUI" value="true" />
+                                <param name="dynamicStreaming" value="true" />
+                                <param name="@videoPlayer" value="2607790365001" />
+                            </object>
+                            <!-- This script tag will cause the Brightcove Players defined above it to be created as soon
+                            as the line is read by the browser. If you wish to have the player instantiated only after
+                            the rest of the HTML is processed and the page load is complete, remove the line. -->
+                            <script type="text/javascript">brightcove.createExperiences();</script>
+                            <!-- End of Brightcove Player -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="get_samples_wrapper">
+                <div class="get_samples_main">
+                    <h2>Start your patients with a free sample.</h2>
+                  	<div class="samples_cta">
+                        <p>Effient offers convenient, one-tablet, once-daily maintenance dosing.</p>
+                        <form action="http://mail.dsicustomerservice.com/p/Daiichi_Sankyo/Effient_Registration" method="get">
+                            <button class="button">
+                                <span class="button_text">Order now</span>
+                                <span class="button_right"><img src="http://images.bfi0.com/creative/2013/daiichi_sankyo/08/A019/landing_pages/images/cta_btn_triangle.png" width="8" height="19" /></span>
+                            </button>
+                        </form>
+                        <!--[if lte IE 8]>
+                        	<a href="http://mail.dsicustomerservice.com/p/Daiichi_Sankyo/Effient_Registration"><img src="http://images.bfi0.com/creative/2013/daiichi_sankyo/08/A019/landing_pages/images/order_now_btn_ie.png" width="157" height="42" /></a>
+                        <![endif]-->
+                    </div>
+                    <img id="samples_image" src="http://images.bfi0.com/creative/2013/daiichi_sankyo/08/A019/landing_pages/images/effient_pills.jpg" width="235" height="98" alt="Effient" />
+                    <div class="clearfix"></div>
+                </div>
+            </section>
+            <section class="sss_wrapper">
+                <div class="sss_main">
+                    <h3>We give your ACS-PCI patients support to help them start and stay on Effient<sup>&reg;</sup> <span>(prasugrel)</span> as prescribed.</h3>
+                    <div class="start_support">
+                        <div class="start">
+                            <h2>Start</h2>
+                            <p><strong>Free 30-day</strong><br /> prescription voucher for patients to start their Effient therapy.</p>
+                            <div class="sss_promo_container">
+                                <img src="http://images.bfi0.com/creative/2013/daiichi_sankyo/08/A019/landing_pages/images/free_30_day_trial_offer.png" width="126" height="74" alt="Free 30-Day Trial Offer" />
+                            </div>
+                            <p><strong>Stent care kit</strong><br />
+                            Helps educate your patients about their new stent and the role of Effient.</p>
+                        </div>
+                        <div class="support">
+                            <h2>Support</h2>
+                            <p>Es<strong>stent</strong>ial Habits<sup>&reg;</sup> for patients and their families for ongoing support.</p>
+                            <img src="http://images.bfi0.com/creative/2013/daiichi_sankyo/08/A019/landing_pages/images/essential_habits_logo.png" width="105" height="41" alt="Esstential Habits" />
+                            <img src="http://images.bfi0.com/creative/2013/daiichi_sankyo/08/A019/landing_pages/images/essential_materials.jpg" width="120" height="108" alt="Essential Support Materials" />
+                        </div>
+                    </div>
+                    <div class="stay">
+                        <h2>Stay</h2>
+                        <p><strong>Co-pay assistance</strong> to reduce out-of-pocket costs for your patients taking Effient.</p>
+                        <div class="sss_promo_container">
+                            <img src="http://images.bfi0.com/creative/2013/daiichi_sankyo/08/A019/landing_pages/images/copay_card.png" width="126" height="74" alt="Co-Pay Card" />
+                        </div>
+                        <p><strong>Effient.com</strong><br />
+                        Helps patients stay informed about ACS and provides heart-healthy lifestyle tips.</p>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </section>
+            <div class="pat_res_btn_wrapper">
+                <form class="pat_res_btn" action="http://mail.dsicustomerservice.com/p/Daiichi_Sankyo/Effient_Registration" method="get">
+                    <button class="button">
+                        <span class="button_text">Get patient resources</span>
+                        <span class="button_right"><img src="http://images.bfi0.com/creative/2013/daiichi_sankyo/08/A019/landing_pages/images/cta_btn_triangle.png" width="8" height="19" /></span>
+                    </button>
+                </form>
+                <!--[if lte IE 8]>
+                    <div class="pat_res_btn_matte_ie">
+                        <a href="http://mail.dsicustomerservice.com/p/Daiichi_Sankyo/Effient_Registration"><img src="http://images.bfi0.com/creative/2013/daiichi_sankyo/08/A019/landing_pages/images/get_pat_res_btn_ie.png" width="240" height="42" /></a>
+                    </div>
+                <![endif]-->
+            </div>
+            <section class="important_safety_info">
+                <h2 class="isi_heading">IMPORTANT SAFETY INFORMATION</h2>
+                <div class="bleeding_risk_wrapper">
+                    <div class="bleeding_risk_main">
+                        <h2>WARNING: BLEEDING RISK</h2>
+                        <p>Effient<sup>&reg;</sup> (prasugrel) can cause significant, sometimes fatal, bleeding.</p>
+                        <p>Do not use Effient in patients with active pathological bleeding or a history of transient ischemic attack or stroke.</p>
+                        <p>In patients &ge;75 years of age, Effient is generally not recommended, because of the increased risk of fatal and intracranial bleeding and uncertain benefit, except in high-risk situations (patients with diabetes or a history of prior myocardial infarction [MI]) where its effect appears to be greater and its use may be considered.</p>
+                        <p>Do not start Effient in patients likely to undergo urgent coronary artery bypass graft surgery (CABG). When possible, discontinue Effient at least 7 days prior to any surgery.</p>
+                        <p class="addtl_risk">Additional risk factors for bleeding include:</p>
+                        <ul>
+                            <li>body weight &lt;60 kg</li>
+                            <li>propensity to bleed</li>
+                            <li>concomitant use of medications that increase the risk of bleeding (eg, warfarin, heparin, fibrinolytic therapy, chronic use of nonsteroidal anti-inflammatory drugs [NSAIDs])</li>
+                        </ul>
+                        <p>Suspect bleeding in any patient who is hypotensive and has recently undergone coronary angiography, percutaneous coronary intervention (PCI), CABG, or other surgical procedures in the setting of Effient.</p>
+                        <p>If possible, manage bleeding without discontinuing Effient. Discontinuing Effient, particularly in the first few weeks after acute coronary syndrome, increases the risk of subsequent cardiovascular events.</p>
+                    </div>
+                </div>
+                <h2>CONTRAINDICATIONS</h2>
+                <ul>
+                    <li>Effient is contraindicated in patients with active pathological bleeding, such as from a peptic ulcer or intracranial hemorrhage (ICH), or a history of transient ischemic attack (TIA) or stroke, and in patients with hypersensitivity to prasugrel or any component of the product</li>
+                </ul>
+                <h2>WARNINGS AND PRECAUTIONS</h2>
+                <ul>
+                    <li>Patients who experience a stroke or TIA while on Effient generally should have therapy discontinued. Effient should also be discontinued for active bleeding and elective surgery</li>
+                    <li>Premature discontinuation of Effient increases risk of stent thrombosis, MI, and death</li>
+                    <li>Thrombotic thrombocytopenic purpura (TTP), a rare but serious condition that can be fatal, has been reported with Effient, sometimes after a brief exposure (&lt;2 weeks), and requires urgent treatment, including plasmapheresis</li>
+                    <li>Hypersensitivity, including angioedema, has been reported in patients receiving Effient, including patients with a history of hypersensitivity reaction to other thienopyridines</li>
+                </ul>
+                <h2>ADVERSE REACTIONS</h2>
+                <ul>
+                    <li>Bleeding, including life-threatening and fatal bleeding, is the most commonly reported adverse reaction</li>
+                </ul>
+                <p><strong>For more information about Effient, please see the <a href="http://pi.lilly.com/us/effient.pdf">Full Prescribing Information</a>, including Boxed Warning regarding bleeding risk, and <a href="http://pi.lilly.com/us/effient-ppi.pdf">Medication Guide</a>.</strong></p>
+            </section>
+        </div>
+        <footer>
+        	<div class="footer_main">
+                <ul class="footer_links">
+                    <li class="first"><a href="http://www.effienthcp.com/Pages/contactus.aspx">Contact Us</a></li>
+                    <li><a href="https://www.lillyhub.com/legal/hcp/daiichisankyo-lilly/privacy.html">Privacy Statement</a></li>
+                    <li><a href="https://www.lillyhub.com/legal/hcp/daiichisankyo-lilly/termsofuse.html">Terms of Use</a></li>
+                    <li><a href="https://www.lillyhub.com/legal/hcp/daiichisankyo-lilly/copyright.html">Copyright</a></li>
+                    <li class="last"><a href="http://www.effienthcp.com/Pages/about-partnership.aspx">About the Partnership</a></li>
+                </ul>
+                <p><sup>&reg;</sup>Effient, Es<strong>stent</strong>ial Habits, and the Effient logo are registered trademarks of Eli Lilly and Company. Other product and company names mentioned herein are the trademarks of their respective owners.</p>
+                <p>This site is intended for U.S. Healthcare Professionals Only.</p>
+                <p>Copyright © 2013 Daiichi Sankyo, Inc. and Lilly USA, LLC.<br />
+                All rights reserved.  PG85619.   PGHCPISI03October2011.  June 2013.</p>
+                <img src="http://images.bfi0.com/creative/2013/daiichi_sankyo/08/A019/landing_pages/images/ds_lilly_logos.png" width="73" height="32" alt="Daiichi Sankyo | Lilly" />
+            </div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,611 @@
+/* FONTS */
+
+@font-face {
+}
+
+/* END */
+
+/* GENERAL */
+
+body {
+	width: 1200px;
+	min-width: 1200px;
+	margin: 0 auto;
+	background-color: #ffffff;
+	font-family: arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #525252;
+}
+
+header, hgroup, nav, section, article, footer {
+	display: block;
+}
+
+section {
+	width: 900px;
+	margin: 0 auto;
+}
+
+h1, h2, h3, h4 {
+	margin: 0;
+	font-weight: bold;
+}
+
+h1 {
+}
+
+h2 {
+	font-size: 48px;
+	color: #2f2f2f;
+}
+
+h2 span, h3 span {
+	font-weight: normal;
+}
+
+h2 sup, h3 sup {
+	font-size: 12px;
+}
+
+h3 {
+	font-size: 26px;
+	color: #2f2f2f;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+h4 {
+	font-size: 16px;
+	color: #2f2f2f;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+h4 sup {
+	font-size: 8px;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+p {
+	margin: 0px;
+	-webkit-margin-before: 9px;
+	-webkit-margin-after: 9px;
+	text-align: left;
+	line-height: 25px;
+}
+
+p sup {
+	font-size: 10px;
+}
+
+p.small {
+	font-size: 14px;
+	line-height: 18px;
+}
+
+p.small sup {
+	font-size: 6px;
+	vertical-align: text-top;
+}
+
+sup {
+	line-height: normal;
+	vertical-align: text-top;
+}
+
+ul {
+	margin: 0;
+	padding: 0px 0px 0px 13px;
+}
+
+ul li.en_dash {
+	list-style-type: none;
+	list-style-image: none;
+	margin-left: 38px;
+    text-indent: -12px;
+}
+
+ul li.en_dash: before {
+	content: "\2013 ";
+    display: block;
+    float: left;
+    width: 12px;
+	color: #faa635;
+}
+
+a {
+	color: inherit;
+	text-decoration: inherit;
+}
+
+img {
+	border: 0;
+}
+
+form {
+	display: inline;
+}
+
+.clearfix {
+	clear: both;
+}
+
+.border {
+	width: 90px;
+	height: 1px;
+	margin: 0 auto;
+	border-bottom: 1px solid #dcdcdc;
+}
+
+.full {
+	width: 100%;
+}
+
+.two-column-container .left-column {
+	width: 51.6667%;
+	float: left;
+}
+
+.two-column-container .right-column {
+	width: 47.3333%;
+	float: right;
+}
+
+/* END */
+
+/* INPUT & BUTTONS */
+
+a.button {
+	display: inline-block;
+	margin: 0px;
+	padding: 15px 30px 13px 30px;
+	background-color: #dcdbdb;
+	border: 2px solid #838182;
+	font-size: 18px;
+	color: #2f2f2f;
+	font-weight: bold;
+	text-decoration: none;
+	-webkit-text-size-adjust: none;
+	border-radius: 8px;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+}
+
+a.button: hover {
+	color: #ecf6e4;
+	border-color: #70a542;
+	box-shadow: inset 0px 0px 16px rgba(255,255,255,0.75);
+	-moz-box-shadow: inset 0px 0px 16px rgba(255,255,255,0.75);
+	-webkit-box-shadow: inset 0px 0px 16px rgba(255,255,255,0.75);
+}
+
+a.button: hover span.button_right {
+	border-color: #b49322;
+	box-shadow: inset 0px 0px 16px rgba(255,255,255,0.75);
+	-moz-box-shadow: inset 0px 0px 16px rgba(255,255,255,0.75);
+	-webkit-box-shadow: inset 0px 0px 16px rgba(255,255,255,0.75);
+}
+
+a.button: focus {
+	outline: none;
+}
+
+/* END */
+
+/* HEADER */
+
+.header-logos-wrapper {
+	background-color: #2f2f2f;
+}
+
+.header-logos {
+	width: auto;
+	padding: 34px 50px 28px 50px;
+}
+
+.header-logos img:first-child {
+	padding-right: 16px;
+}
+
+.hero-image {
+	width: 1200px;
+	min-height: 492px;
+	background: url(http://images.bfi0.com/creative/2014/barclaycard/10-14/3977/images/hero-image-aerial-view.jpg) no-repeat;
+}
+
+.hero-image #card-art {
+	float: right;
+	position: relative;
+	top: 170px;
+	right: 112px;
+}
+
+.hero-text {
+	position: relative;
+	top: -35px;
+	text-align: center;
+}
+
+.hero-text h2 {
+	margin-bottom: 35px;
+}
+
+.hero-text p:first-of-type {
+	margin-top: 35px;
+	text-align: left;
+}
+
+.hero-text a.button {
+	margin-top: 30px;
+}
+
+/* END */
+
+/* MAIN */
+
+.upgrade-terms-wrapper, .reward-rules-wrapper, .faq-wrapper {
+	padding: 65px 0px;
+}
+
+.upgrade-terms-wrapper {
+	background-color: #2f2f2f;
+}
+
+.upgrade-terms {
+	color: #d4d4d4;
+}
+
+.upgrade-terms h3 {
+	color: #ffffff;
+}
+
+.upgrade-terms .two-column-container {
+	margin-top: 40px;
+}
+
+.upgrade-terms .left-column h4, .upgrade-terms .left-column p {
+	padding-right: 30px;
+}
+
+.upgrade-terms .left-column h4 {
+	margin-bottom: 21px;
+	font-size: 16px;
+	color: #ebebeb;
+	text-decoration: underline;
+	text-transform: none;
+}
+
+.revised-fee {
+	width: 285px;
+	margin: 30px 0px 0px 20px;
+	overflow: hidden;
+	background-color: #ffffff;
+	border: 5px solid #838182;
+	border-radius: 15px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+}
+
+.rf-top {
+	padding: 22px 10px;
+	border-bottom: 1px solid #d0d0d0;
+	text-align: center;
+}
+
+.rf-top h4 {
+	text-transform: none;
+}
+
+.rf-bottom {
+	background: url(http://images.bfi0.com/creative/2014/barclaycard/10-14/3977/images/diagonal-stripes-bg.png) repeat;
+	color: #525252;
+	font-weight: bold;
+}
+
+.rfb-left, .rfb-right {
+	padding: 16px 0px;
+	text-align: center;
+}
+
+.rfb-left {
+	width: 55%;
+	float: left;
+	border-right: 1px solid #d0d0d0;
+}
+
+.rfb-right {
+	width: 44%;
+	float: right;
+}
+
+.reward-rules {
+	padding-bottom: 40px;
+	border-bottom: 1px solid #b0b0b0;
+}
+
+.reward-rules p {
+	margin: 24px 0px;
+}
+
+.reward-rules ul li {
+	font-size: 14px;
+	line-height: 18px;
+}
+
+.reward-rules .two-column-container {
+	padding: 15px 0px;
+}
+
+.reward-rules .two-column-container li {
+	padding-top: 30px;
+}
+
+.reward-rules .two-column-container li:first-child {
+	padding-top: 0px;
+}
+
+.reward-rules .left-column ul {
+	padding: 0px 80px 0px 90px;
+}
+
+.reward-rules .right-column ul {
+	padding-right: 135px;
+}
+
+.faq-wrapper {
+	padding-top: 0px;
+}
+
+.faq h2 {
+	margin-bottom: 34px;
+	font-size: 60px;
+	text-align: center;
+}
+
+.faq-benefits {
+	width: 800px;
+	margin-top: 40px;
+}
+
+.faq-table-container {
+	overflow: hidden;
+	margin: 40px 0px 70px 0px;
+	border: 1px solid #d6d6d6;
+	border-radius: 15px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+}
+
+.faq-table-container table {
+	font-size: 12px;
+	color: #525252;
+}
+
+.faq-table-container table tr {
+}
+
+.faq-table-container table tr:last-of-type, .faq-table-container table tr.last {
+	border-bottom: 0;
+}
+
+.faq-table-container table td {
+	padding: 15px;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.faq-table-container table tr td:nth-of-type(2), .faq-table-container table .middle {
+	width: 200px;
+	border-left: 1px solid #d6d6d6;
+	border-right: 1px solid #d6d6d6;
+}
+
+.faq-table-container table tr td:first-of-type, .faq-table-container table tr .first {
+	width: 290px;
+	padding-left: 28px;
+	padding-right: 28px;
+	text-align: left;
+}
+
+.faq-table-container .table-head {
+	border-bottom: 1px solid #d6d6d6;
+}
+
+.faq-table-container .table-head td, .faq-table-container .table-head td:first-of-type {
+	padding: 25px 0px;
+	text-align: center;
+}
+
+.faq-table-container .table-head h4 {
+	font-size: 12px;
+}
+
+.faq .border.full {
+	margin: 55px 0px;
+}
+	
+/* END */
+
+/* FOOTER */
+
+.footer-top-wrapper {
+	padding-bottom: 45px;
+}
+
+.footer-top {
+	text-align: right;
+}
+
+.footer-main-wrapper {
+	padding: 45px 0px;
+	background-color: #434343;
+}
+
+.footer-main {
+	font-size: 11px;
+	color: #b8b8b8;
+	line-height: normal;
+}
+
+.footer-main h4 {
+	font-size: 12px;
+	color: #e7e7e7;
+	text-transform: none;
+}
+
+.footer-main p {
+	margin: 18px 0px;
+	line-height: 18px;
+}
+
+/* END */
+
+/* IE STYLES (TOP TO BOTTOM HIERARCHY) */
+
+.ie8 .hero-text p {
+	margin-top: 35px;
+}
+
+.ie8 a.button, .ie7 a.button {
+	width: 190px;
+	height: 49px;
+	padding: 0px;
+	overflow: visible;
+	line-height: 0px;
+}
+
+.ie8 a.button img.left, .ie7 a.button img.left {
+	float: left;
+	margin: -2px 0px 0px -2px;
+}
+
+.ie8 a.button span, .ie7 a.button span {
+	padding: 0px 30px;
+	position: relative;
+	top: 50%;
+}
+
+.ie8 a.button img.right, .ie7 a.button img.right {
+	float: right;
+	margin: -2px -2px 0px 0px;
+}
+
+.ie8 .revised-fee, .ie7 .revised-fee {
+	overflow: visible;
+}
+
+	/* IE RF-SECTION ROUNDED CORNERS */
+
+.ie8 .revised-fee .ie-top img.left, .ie8 .revised-fee .ie-bottom img.left, .ie7 .revised-fee .ie-top img.left, .ie7 .revised-fee .ie-bottom img.left {
+	float: left;
+}
+
+.ie8 .revised-fee .ie-top img.right, .ie8 .revised-fee .ie-bottom img.right, .ie7 .revised-fee .ie-top img.right, .ie7 .revised-fee .ie-bottom img.right {
+	float: right;
+}
+
+.ie8 .revised-fee .ie-top img.left, .ie7 .revised-fee .ie-top img.left {
+	margin: -5px 0px 0px -5px;
+}
+
+.ie8 .revised-fee .ie-top img.right, .ie7 .revised-fee .ie-top img.right {
+	margin: -5px -5px 0px 0px;
+}
+
+.ie8 .revised-fee .rf-bottom .rfb-left, .ie8 .revised-fee .rf-bottom .rfb-right, .ie7 .revised-fee .rf-bottom .rfb-left, .ie7 .revised-fee .rf-bottom .rfb-right {
+	margin-bottom: -10px;
+}
+
+.ie8 .revised-fee .ie-bottom img.left, .ie7 .revised-fee .ie-bottom img.left {
+	margin: 0px 0px -5px -5px;
+}
+
+.ie8 .revised-fee .ie-bottom img.right, .ie7 .revised-fee .ie-bottom img.right {
+	margin: 0px -5px -5px 0px;
+}
+
+	/* END */
+
+.ie8 .faq-table-container, .ie7 .faq-table-container {
+	overflow: visible;
+}
+
+.ie8 .faq-table-container table td.middle, .ie7 .faq-table-container table td.middle {
+	width: 200px;
+	border-left: 1px solid #d6d6d6;
+	border-right: 1px solid #d6d6d6;
+}
+
+	/* IE TABLE ROUNDED CORNERS TOP */
+
+.ie8 .faq-table-container .ie-top, .ie8 .faq-table-container .ie-bottom, .ie7 .faq-table-container .ie-top, .ie7 .faq-table-container .ie-bottom {
+	width: 100%;
+}
+
+.ie8 .faq-table-container .ie-top tr td, .ie8 .faq-table-container .ie-bottom tr td, .ie7 .faq-table-container .ie-top tr td, .ie7 .faq-table-container .ie-bottom tr td {
+	padding: 0px;
+	line-height: 0px;
+}
+
+.ie8 .faq-table-container .ie-top tr td.left, .ie8 .faq-table-container .ie-bottom tr td.left, .ie7 .faq-table-container .ie-top tr td.left, .ie7 .faq-table-container .ie-bottom tr td.left {
+	width: 346px;
+	text-align: left;
+}
+
+.ie8 .faq-table-container .ie-top td.left img, .ie7 .faq-table-container .ie-top td.left img {
+	margin: -1px 0px 0px -1px;
+}
+
+.ie8 .faq-table-container .ie-top tr td.middle, .ie8 .faq-table-container .ie-bottom tr td.middle, .ie7 .faq-table-container .ie-top tr td.middle, .ie7 .faq-table-container .ie-bottom tr td.middle {
+	width: 230px;
+	text-align: left;
+}
+
+.ie8 .faq-table-container .ie-top tr td.right, .ie8 .faq-table-container .ie-bottom tr td.right, .ie7 .faq-table-container .ie-top tr td.right, .ie7 .faq-table-container .ie-bottom tr td.right {
+	text-align: right;
+}
+
+.ie8 .faq-table-container .ie-top td.right img, .ie7 .faq-table-container .ie-top td.right img {
+	margin: -1px -1px 0px 0px;
+}
+
+	/* END */
+
+.ie8 .faq-table-container .main tr .first, .ie7 .faq-table-container .main tr .first {
+	width: 290px;
+	padding-left: 28px;
+	padding-right: 28px;
+	text-align: left;
+}
+
+.ie8 .faq-table-container .main .table-head td, .ie7 .faq-table-container .main .table-head td {
+	padding: 10px 0px 25px 0px;
+	text-align: center;
+}
+
+.ie8 .faq-table-container .main tr.last td, .ie7 .faq-table-container .main tr.last td {
+	padding-bottom: 0px;
+}
+
+	/* IE TABLE ROUNDED CORNERS BOTTOM */
+
+.ie8 .faq-table-container .ie-bottom tr, .ie7 .faq-table-container .ie-bottom tr {
+	padding: 0px;
+	background-color: #ececec;
+}
+
+.ie8 .faq-table-container .ie-bottom tr .left img, .ie7 .faq-table-container .ie-bottom tr .left img {
+	margin: 0px 0px -1px -1px;
+}
+
+.ie8 .faq-table-container .ie-bottom tr .right img, .ie7 .faq-table-container .ie-bottom tr .right img {
+	margin: 0px -1px -1px 0px;
+}
+
+	/* END */
+
+/* END */

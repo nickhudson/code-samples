@@ -1,0 +1,515 @@
+<html>
+	<head>
+		<style>
+			* { -webkit-font-smoothing: antialiased !important;}
+			
+			strong { font-weight: bold !important; }
+			
+			em { font-style: italic !important; }
+			
+			.sup, .sub { -webkit-text-size-adjust: none; }
+			
+			a[href^=tel] {
+				color: inherit;
+				text-decoration: none;
+			}
+			
+			.ExternalClass { width: 100%; } 
+			
+			.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div { line-height: 120% !important; }
+			
+			span.whiteLinkText a:link { color: #fffffe !important; }
+
+			span.whiteLinkText a:hover { color: #fffffe !important; }
+			
+			span.whiteLinkText a:active { color: #fffffe !important; }
+			
+			span.whiteLinkText a:visited { color: #fffffe !important; }
+			
+			.show-inline, .show-block {
+				width: 0px !important;
+				height: 0px !important;
+				max-height: 0px !important;
+				display: none !important;
+				float: left !important;
+				visibility: 0 !important;
+				overflow: hidden !important;
+				line-height: 0px !important;
+			}
+			
+			@media screen and (max-width: 600px), only screen and (max-width: 600px) and (-webkit-min-device-pixel-ratio: 2) {
+				
+				body {
+					width: 100% !important;
+					margin: 0 auto !important;
+					overflow-x: hidden !important;
+				}
+				
+				img[src] {
+					/* width: auto !important; */
+					height: auto !important;
+					display: block !important;
+				}
+				
+				*[class~=full], img[class~=full] {
+					width: 100% !important;
+					float: none !important;
+				}
+				
+				*[class~=full2] { width: 100% !important; }
+				
+				*[class~=auto] { width: auto !important; }
+				
+				*[class~=padmain] {
+					padding-left: 10px !important;
+					padding-right: 10px !important;
+				}
+				
+				*[class~=pad2] {
+					padding-left: 12px !important;
+					padding-right: 12px !important;
+				}
+				
+				*[class~=pad3] { padding-top: 10px !important; }
+				
+				*[class~=pad4] {
+					padding-top: 25px !important;
+					padding-bottom: 25px !important;
+				}
+				
+				*[class~=pad5] { padding-right: 30px !important; }
+				
+				*[class~=pad6] { padding-top: 40px !important; }
+				
+				*[class~=pad7] { padding-top: 20px !important; }
+				
+				*[class~=pad8] { padding: 15px !important; }
+				
+				*[class~=pad9] { padding-right: 15px !important; }
+				
+				*[class~=no-lr-padding] { padding-left: 0px !important; padding-right: 0px !important; }
+				
+				*[class~=nobg] { background: none !important; }
+				
+				*[class~=border1] { 
+					border-top: 10px solid #81c342 !important;
+					border-bottom: 2px solid #e7e7e7 !important;
+				}
+				
+				*[class~=border2] { 
+					border-top: 10px solid #61cbea !important;
+					border-bottom: 2px solid #e7e7e7 !important;
+				}
+								
+				*[class=hide] {
+					display: none !important;
+					width: 0px !important;
+					height: 0px !important;
+					overflow: hidden !important;
+					visibility: hidden !important;
+				}
+				
+				*[class~=show-inline] {
+					display: inline !important;
+					visibility: visible !important;
+					width: auto !important;
+					height: auto !important;
+					max-height: none !important;
+					float: none !important;
+					line-height: normal !important;
+				}
+				
+				*[class~=show-block] {
+					display: block !important;
+					visibility: visible !important;
+					width: auto !important;
+					height: auto !important;
+					max-height: none !important;
+					float: none !important;
+					line-height: normal !important;
+				}
+				
+				table[class~=show-block] { display: table !important; }
+				
+				tr[class~=show-block] { display: table-row !important; }
+				
+				td[class~=show-block] { display: table-cell !important; }
+				
+				*[class~=left] { text-align: left !important; }
+				
+				*[class~=center] { text-align: center !important; }
+				
+				*[class~=center-margin] { margin: 0 auto !important; float: none !important; }
+				
+				*[class~=magenta] { color: #cc007a !important; }
+				
+			}
+			
+			@media screen and (max-width: 420px), only screen and (max-width: 420px) and (-webkit-min-device-pixel-ratio: 2) {
+				
+				*[class=hide-420] {
+					display: none !important;
+					width: 0px !important;
+					height: 0px !important;
+					overflow: hidden !important;
+					visibility: hidden !important;
+				}
+				
+				*[class~=show-block-420] {
+					display: block !important;
+					visibility: visible !important;
+					width: auto !important;
+					height: auto !important;
+					max-height: none !important;
+					float: none !important;
+					line-height: normal !important;
+				}
+				
+				table[class~=show-block-420] { display: table !important; }
+				
+				tr[class~=show-block-420] { display: table-row !important; }
+				
+				td[class~=show-block-420] { display: table-cell !important; }
+				
+			}
+		</style>
+		<!--[if mso | ie]>
+			<style>
+				.sup, .sub {
+					vertical-align: 1px !important; 
+					font-size: 100% !important;
+				}
+			</style>
+		<![endif]-->
+		<!--[if ie]>
+			<style>
+				.sup, .sub {
+					vertical-align: 6px !important; 
+					font-size: 80% !important;
+				}
+			</style>
+		<![endif]-->
+	</head>
+	<body bgcolor="#e6edf3" style="width: 100% !important; margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px; background: #e6edf3;">
+		<table width="100%" border="0" cellpadding="0" cellspacing="0">
+			<tr>
+				<td align="center" bgcolor="#e6edf3" style="vertical-align: top; padding: 0px 5px 0px 5px; background-color: #e6edf3;">
+					<table class="full" width="618" align="center" border="0" cellpadding="0" cellspacing="0">
+						<td align="left" width="1" bgcolor="#e1e8ee" style="vertical-align: top; padding: 0px 0px 0px 0px; min-width: 1px !important;"></td>
+						<td align="left" width="1" bgcolor="#d8dfe5" style="vertical-align: top; padding: 0px 0px 0px 0px; min-width: 1px !important;"></td>
+						<td align="left" width="1" bgcolor="#ccd2d7" style="vertical-align: top; padding: 0px 0px 0px 0px; min-width: 1px !important;"></td>
+						<td align="left" width="1" bgcolor="#bbc0c5" style="vertical-align: top; padding: 0px 0px 0px 0px; min-width: 1px !important;"></td>
+						<td align="left" bgcolor="#ffffff" style="vertical-align: top; padding: 0px 0px 0px 0px;">
+							<table width="100%" border="0" cellpadding="0" cellspacing="0">
+								<tr>
+									<td class="padmain" align="left" style="vertical-align: top; padding: 10px 35px 0px 15px;">
+										<table width="100%" border="0" cellpadding="0" cellspacing="0">
+											<tr>
+												<td align="left" style="vertical-align: top; padding: 0px 0px 0px 0px;">
+													<table width="100%" border="0" cellpadding="0" cellspacing="0">
+														<tr>
+															<td align="left" style="vertical-align: top; padding: 12px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: #ff7000; font-weight: bold;">
+																Talk with a Duopa patient<br class="hide" />
+																or their carer
+															</td>
+														</tr>
+														<tr>
+															<td align="left" style="vertical-align: top; padding: 15px 0px 0px 0px;">
+																<table width="100%" border="0" cellpadding="0" cellspacing="0">
+																	<tr>
+																		<td align="left" style="vertical-align: bottom; padding: 0px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #005195;">
+																			<a href="https://sites.mypreferences.com/Abbvie/global/opt_out/abbvie?Email=&CID=CE3E9F51-7CA9-460D-968C-20386C4BE47B" target="_blank" style="color: #005195; text-decoration: none; white-space: nowrap !important;">Unsubscribe</a><span class="hide">&nbsp;&nbsp;|&nbsp;&nbsp;</span><span class="show-inline" style="width: 0px; height: 0px; overflow: hidden; display: none; visibility: hidden; float: left; line-height: 0px; max-height: 0px;"><br /></span><a href="#" target="_blank" style="color: #005195; text-decoration: none; white-space: nowrap !important;">Important Safety Information</a><span class="hide">&nbsp;&nbsp;|&nbsp;&nbsp;</span><span class="show-inline" style="width: 0px; height: 0px; overflow: hidden; display: none; visibility: hidden; float: left; line-height: 0px; max-height: 0px;"><br /></span><a href="http://www.rxabbvie.com/pdf/duopa_pi.pdf" target="_blank" style="color: #005195; text-decoration: none; white-space: nowrap !important;">Prescribing Information</a><br />
+																			<a href="#" target="_blank" style="color: #005195; text-decoration: none; white-space: nowrap !important;">View in your browser</a>
+																		</td>
+																		<!--[if !mso]><!-->
+																		<span class="show-block" style="width: 0px; height: 0px; overflow: hidden; display: none; visibility: hidden; float: left; line-height: 0px; max-height: 0px;">
+																			<td class="show-block" align="right" style="vertical-align: bottom; padding: 0px 0px 0px 10px; width: 0px; height: 0px; overflow: hidden; display: none; visibility: hidden; float: left; line-height: 0px; max-height: 0px;">
+																				<a href="http://www.duopa.com?cid=eml_duo_cprt_bprt_gr2_logo_0002" target="_blank"><img class="show-block full" src="http://images.bfi0.com/creative/2015/abbvie/10-15/W57-0011/images/abbvie-duopa-branded-prospect-logo-header.gif" width="131" height="93" alt="Duopa - carbidopa/levodopa enteral suspension (4.63mg/20mg per mL)" style="border: 0; width: 0px; height: 0px; overflow: hidden; display: none; visibility: hidden; float: left; line-height: 0px; max-height: 0px; max-width: 131px !important; min-width: 90px !important;" /></a>
+																			</td>
+																		</span>
+																		<!--<![endif]-->
+																	</tr>
+																</table>
+															</td>
+														</tr>
+													</table>
+												</td>
+												<td class="hide" align="right" style="vertical-align: top; padding: 0px 0px 0px 0px;">
+													<a href="http://www.duopa.com?cid=eml_duo_cprt_bprt_gr2_logo_0002" target="_blank"><img src="http://images.bfi0.com/creative/2015/abbvie/10-15/W57-0011/images/abbvie-duopa-branded-prospect-logo-header.gif" width="131" height="93" alt="Duopa - carbidopa/levodopa enteral suspension (4.63mg/20mg per mL)" style="border: 0; display: block;" /></a>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td align="left" style="vertical-align: top; padding: 0px 0px 0px 0px;">
+										<img class="hide-420" src="http://images.bfi0.com/creative/2015/abbvie/10-15/W57-0011/images/abbvie-duopa-branded-prospect-header-image.jpg" width="610" height="246" alt="The Peer Mentor Program - If you're considering Duopa, you or your carer might find it helpful to talk with a Peer Mentor. A Peer Mentor is someone who is either on Duopa or caring for someone who is." style="border: 0; display: block; width: 100%" />
+										<!--[if !mso]><!-->
+										<span class="show-block-420" style="width: 0px; height: 0px; overflow: hidden; display: none; visibility: hidden; float: left; line-height: 0px; max-height: 0px;">
+											<table width="100%" border="0" cellpadding="0" cellspacing="0">
+												<tr>
+													<td align="center" style="vertical-align: top; padding: 0px 0px 0px 0px;">
+														<img class="full" src="http://images.bfi0.com/creative/2015/abbvie/10-15/W57-0011/images/abbvie-duopa-branded-prospect-header-image-mobile.jpg" width="312" height="295" alt="The Peer Mentor Program - If you're considering Duopa, you or your carer might find it helpful to talk with a Peer Mentor. A Peer Mentor is someone who is either on Duopa or caring for someone who is." style="border: 0; display: block; max-width: 420px !important;" />
+													</td>
+												</tr>
+											</table>
+										</span>
+										<!--<![endif]-->
+									</td>
+								</tr>
+								<tr>
+									<td class="padmain" align="left" style="vertical-align: top; padding: 15px 10px 0px 32px;">
+										<table class="full" width="355" align="left" border="0" cellpadding="0" cellspacing="0">
+											<tr>
+												<td align="left" style="vertical-align: top; padding: 0px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #000000;">
+													Peer Mentors are available to talk to you about their daily routine and share with you their personal experiences with Duopa. 
+												</td>
+											</tr>
+											<tr>
+												<td align="left" style="vertical-align: top; padding: 12px 0px 0px 0px;">
+													<table class="full" align="left" border="0" cellpadding="0" cellspacing="0">
+														<tr>
+															<td align="left" style="vertical-align: top; padding: 0px 0px 0px 0px;">
+																<img src="http://images.bfi0.com/creative/2015/abbvie/10-15/W57-0011/images/abbvie-duopa-branded-prospect-pmp-logo.gif" width="138" height="67" alt="Peer Mentor Program - FOR PATIENTS AND CARERS" style="border: 0; display: block;" />
+															</td>
+														</tr>
+													</table>
+													<table class="full" width="205" align="right" border="0" cellpadding="0" cellspacing="0">
+														<tr>
+															<td class="pad7" align="left" style="vertical-align: top; padding: 0px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #000000;">
+																To connect with a Peer Mentor, call <strong style="color: #004886;"><a href="tel:1-855-776-8966" style="color: #004886; text-decoration: none;"><span>1</span>-<span>855</span>-<span>776</span>-<span>8966</span></a></strong>. They're available from <strong style="color: #004886;">8:30 a.m. to 7:30 p.m. ET (Monday-Friday),</strong> ready to listen to your concerns and share their knowledge.
+																<!--[if !mso]><!-->
+																<span class="show-inline" style="width: 0px; height: 0px; overflow: hidden; display: none; visibility: hidden; float: left; line-height: 0px; max-height: 0px;">
+																	<br /><br /><strong style="font-style: italic;">NOTE: Peer Mentors do not give medical advice. You should discuss any medical questions with your doctor.</strong>
+																</span>
+																<!--<![endif]-->
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table>
+										<table class="full" align="right" border="0" cellpadding="0" cellspacing="0">
+											<tr>
+												<td class="pad7" align="center" style="vertical-align: top; padding: 0px 0px 0px 0px;">
+													<a href="https://www.duopa.com/discussion_guide" target="_blank"><img class="hide" src="http://images.bfi0.com/creative/2015/abbvie/10-15/W57-0011/images/abbvie-duopa-branded-prospect-discussion-guide.gif" width="196" height="168" alt="Only you and your doctor can decide if Duopa is right for you. Click here to download a discussion guide." style="border: 0; display: block;" /></a>
+													<!--[if !mso]><!-->
+													<span class="show-block" style="width: 0px; height: 0px; overflow: hidden; display: none; visibility: hidden; float: left; line-height: 0px; max-height: 0px;">
+														<table width="100%" border="0" cellpadding="0" cellspacing="0">
+															<tr>
+																<td align="center" style="vertical-align: top; padding: 0px 0px 0px 0px;">
+																	<a href="https://www.duopa.com/discussion_guide" target="_blank"><img class="full" src="http://images.bfi0.com/creative/2015/abbvie/10-15/W57-0011/images/abbvie-duopa-branded-prospect-discussion-guide-mobile.gif" width="300" height="108" alt="Only you and your doctor can decide if Duopa is right for you. Click here to download a discussion guide." style="border: 0; display: block; max-width: 300px !important;" /></a>
+																</td>
+															</tr>
+														</table>
+													</span>
+													<!--<![endif]-->
+ 												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td class="padmain" align="left" style="vertical-align: top; padding: 15px 22px 40px 32px;">
+										<table width="100%" border="0" cellpadding="0" cellspacing="0">
+											<tr>
+												<td align="left" style="vertical-align: top; padding: 0px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #000000;">
+													<span class="hide"><strong style="font-style: italic;">NOTE: Peer Mentors do not give medical advice. You should discuss any medical questions with your doctor.</strong><br /><br /></span>
+													<strong style="font-size: 16px; color: #004886;">Use</strong><br />
+													DUOPA (carbidopa and levodopa) enteral suspension is a prescription medicine used for treatment of advanced Parkinson's disease. DUOPA contains two medicines: carbidopa and levodopa.<br /><br />
+													<strong style="font-size: 16px; color: #004886;">Important Safety Information</strong><br />
+													<strong>What is the most important safety information I should know about DUOPA?</strong> 
+												</td>
+											</tr>
+											<tr>
+												<td align="left" style="vertical-align: top; padding: 12px 0px 0px 0px;">
+													<table width="100%" border="0" cellpadding="0" cellspacing="0">
+														<tr>
+															<td align="right" width="12" style="vertical-align: top; padding: 0px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #000000; font-weight: bold;">
+																&bull;
+															</td>
+															<td align="left" style="vertical-align: top; padding: 0px 0px 0px 5px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #000000;">
+																 <strong>Stomach and intestine (gastrointestinal) problems and problems from the procedure you will need to have to receive DUOPA (gastrointestinal procedure-related problems)</strong> may occur. Some of these problems may require surgery and may lead to death.
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+											<tr>
+												<td align="left" style="vertical-align: top; padding: 12px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #000000;">
+													Your healthcare provider will talk to you about the stoma procedure.<strong> Before the stoma procedure</strong>, tell your healthcare provider if you ever had a surgery or problems with your stomach.<br /><br />
+													<strong>Talk to your healthcare provider about what you need to do to care for your stoma.</strong> After the procedure, you and your healthcare provider will need to regularly check the stoma for any signs of infection. 
+												</td>
+											</tr>
+											<tr>
+												<td align="left" style="vertical-align: top; padding: 12px 0px 0px 0px;">
+													<table width="100%" border="0" cellpadding="0" cellspacing="0">
+														<tr>
+															<td align="right" width="12" style="vertical-align: top; padding: 0px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #000000; font-weight: bold;">
+																&bull;
+															</td>
+															<td align="left" style="vertical-align: top; padding: 0px 0px 0px 5px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #000000;">
+																 <strong>Symptoms of infection</strong> may include: drainage, redness, swelling, pain, or feeling of warmth around the small hole in your stomach wall (stoma). 
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+											<tr>
+												<td align="left" style="vertical-align: top; padding: 12px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #000000;">
+													<strong>Tell your healthcare provider right away if you have any of the following symptoms of stomach and intestine problems and gastrointestinal procedure-related problems:</strong> stomach (abdominal) pain; constipation that does not go away; nausea or vomiting; fever; blood in your stool; or a dark tarry stool.<br /><br />
+													<strong>Do not take DUOPA if you</strong> currently take or have recently taken (within 2 weeks) a medication for depression called a non-selective monoamine oxidase (MAO) inhibitor. Ask your healthcare provider or pharmacist if you are not sure if you take an MAO inhibitor.<br /><br />
+													<strong>Tell your healthcare provider about all the medicines you take, including prescription and over-the-counter medicines, vitamins, and herbal supplements.</strong> Using DUOPA with certain other medicines, including medications for high blood pressure, MAO inhibitors, antipsychotics, metoclopramide, isoniazid, and iron or vitamin supplements, may cause serious side effects. High-protein foods may affect how DUOPA works. Tell your healthcare provider if you change your diet.<br /><br />
+													<strong>DUOPA may cause serious side effects. Talk to your doctor before starting DUOPA and while on DUOPA if you have had or have any of these:</strong> 
+												</td>
+											</tr>
+											<tr>
+												<td align="left" style="vertical-align: top; padding: 12px 0px 0px 0px;">
+													<table width="100%" border="0" cellpadding="0" cellspacing="0">
+														<tr>
+															<td align="right" width="12" style="vertical-align: top; padding: 0px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #000000; font-weight: bold;">
+																&bull;
+															</td>
+															<td align="left" style="vertical-align: top; padding: 0px 0px 0px 5px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #000000;">
+																<strong> Falling asleep during normal daily activities without warning.</strong> DUOPA may cause you to fall asleep while you are doing daily activities such as driving, which may result in an accident. This can happen as late as one year after starting DUOPA. Do not drive or operate machinery until you know how DUOPA affects you. Tell your healthcare provider if you take medicines that can make you sleepy, such as sleep medicines, antidepressants, or antipsychotics. death.
+															</td>
+														</tr>
+														<tr>
+															<td align="right" width="12" style="vertical-align: top; padding: 12px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #000000; font-weight: bold;">
+																&bull;
+															</td>
+															<td align="left" style="vertical-align: top; padding: 12px 0px 0px 5px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #000000;">
+																 <strong>Low blood pressure when you stand or sit up quickly.</strong> After you have been sitting or lying down, stand up slowly to help reduce dizziness, nausea, sweating, or fainting until you know how DUOPA affects you.
+															</td>
+														</tr>
+														<tr>
+															<td align="right" width="12" style="vertical-align: top; padding: 12px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #000000; font-weight: bold;">
+																&bull;
+															</td>
+															<td align="left" style="vertical-align: top; padding: 12px 0px 0px 5px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #000000;">
+																 <strong>Seeing, hearing, or feeling things that are not real</strong> (hallucinations).
+															</td>
+														</tr>
+														<tr>
+															<td align="right" width="12" style="vertical-align: top; padding: 12px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #000000; font-weight: bold;">
+																&bull;
+															</td>
+															<td align="left" style="vertical-align: top; padding: 12px 0px 0px 5px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #000000;">
+																 <strong>Unusual urges.</strong> Some people taking medicines for Parkinson's disease, including DUOPA, have reported urges such as excessive gambling, compulsive eating, compulsive shopping, and increased sex drive. 
+															</td>
+														</tr>
+														<tr>
+															<td align="right" width="12" style="vertical-align: top; padding: 12px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #000000; font-weight: bold;">
+																&bull;
+															</td>
+															<td align="left" style="vertical-align: top; padding: 12px 0px 0px 5px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #000000;">
+																 <strong>Depression and suicide.</strong> DUOPA can cause or worsen depression. Pay close attention to changes in your mood, behavior, thoughts, or feelings. Call your healthcare provider right away if you feel depressed or have thoughts of suicide. 
+															</td>
+														</tr>
+														<tr>
+															<td align="right" width="12" style="vertical-align: top; padding: 12px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #000000; font-weight: bold;">
+																&bull;
+															</td>
+															<td align="left" style="vertical-align: top; padding: 12px 0px 0px 5px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #000000;">
+																<strong> Uncontrolled sudden movements</strong> (dyskinesia). If you have new dyskinesia or your dyskinesia gets worse, tell your healthcare provider. This may be a sign that your dose of DUOPA or other Parkinson's medicines may need to be adjusted. 
+															</td>
+														</tr>
+														<tr>
+															<td align="right" width="12" style="vertical-align: top; padding: 12px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #000000; font-weight: bold;">
+																&bull;
+															</td>
+															<td align="left" style="vertical-align: top; padding: 12px 0px 0px 5px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #000000;">
+																 <strong>Progressive weakness or numbness or loss of sensation in the fingers or feet</strong> (neuropathy).
+															</td>
+														</tr>
+														<tr>
+															<td align="right" width="12" style="vertical-align: top; padding: 12px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #000000; font-weight: bold;">
+																&bull;
+															</td>
+															<td align="left" style="vertical-align: top; padding: 12px 0px 0px 5px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #000000;">
+																 <strong>Heart attack or other heart problems.</strong> Tell your healthcare provider if you have experienced increased blood pressure, a fast or irregular heartbeat, or chest pain.
+															</td>
+														</tr>
+														<tr>
+															<td align="right" width="12" style="vertical-align: top; padding: 12px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #000000; font-weight: bold;">
+																&bull;
+															</td>
+															<td align="left" style="vertical-align: top; padding: 12px 0px 0px 5px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #000000;">
+																 Parkinson's disease patients are at an increased risk of developing melanoma, a form of <strong>skin cancer</strong>. See your healthcare provider for regular skin examinations when taking DUOPA.
+															</td>
+														</tr>
+														<tr>
+															<td align="right" width="12" style="vertical-align: top; padding: 12px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #000000; font-weight: bold;">
+																&bull;
+															</td>
+															<td align="left" style="vertical-align: top; padding: 12px 0px 0px 5px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #000000;">
+																 <strong>Abnormal blood tests.</strong> DUOPA may cause changes in certain blood tests, especially certain hormone and kidney blood tests.
+															</td>
+														</tr>
+														<tr>
+															<td align="right" width="12" style="vertical-align: top; padding: 12px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #000000; font-weight: bold;">
+																&bull;
+															</td>
+															<td align="left" style="vertical-align: top; padding: 12px 0px 0px 5px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #000000;">
+																 Worsening of the <strong>increased pressure in your eyes</strong> (glaucoma). The pressure in your eyes should be checked after starting DUOPA.
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+											<tr>
+												<td align="left" style="vertical-align: top; padding: 12px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #000000;">
+													<strong>Do not stop using DUOPA or change your dose unless you are told to do so by your healthcare provider. Tell your healthcare provider if you develop withdrawal symptoms such as fever, confusion, or severe muscle stiffness.</strong><br /><br />
+													<strong>The most common side effects of DUOPA include:</strong> complications of tubing placement procedure, swelling of legs and feet, nausea, high blood pressure (hypertension), depression, and mouth and throat pain.<br /><br />
+													<strong>Please see the full Prescribing Information including Medication Guide for additional information about DUOPA. Talk to your healthcare provider if you have questions.</strong><br /><br />
+													You are encouraged to report negative side effects of prescription drugs to the FDA.<br />
+													Visit <a href="http://www.fda.gov/Safety/MedWatch/default.htm" target="_blank" style="color: #005195; text-decoration: underline;">www.fda.gov/medwatch</a> or call 1-800-FDA-1088.<br /><br />
+													If you cannot afford your medication, contact <a href="http://www.pparx.org" target="_blank" style="color: #005195; text-decoration: underline;">www.pparx.org</a> for assistance.
+												</td>
+											</tr>
+											<tr>
+												<td align="left" style="vertical-align: top; padding: 36px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000000; line-height: 14px;">
+													Mail correspondence to:<br />
+													AbbVie Customer Service<br />
+													Department 36M<br />
+													1 N Waukegan Road<br />
+													North Chicago, IL 60064-6163<br /><br />
+													Please know that we cannot receive any response you make to this email because it is auto-generated. This email has been sent to you because you signed up to receive information about Duopa. Click <a href="https://sites.mypreferences.com/Abbvie/global/opt_out/abbvie?Email=&CID=CE3E9F51-7CA9-460D-968C-20386C4BE47B" target="_blank" style="color: #005195; text-decoration: underline;">here</a> to unsubscribe.<br /><br />
+													We respect your privacy. For more information, please view our <a href="http://www.abbvie.com/privacy.html" target="_blank" style="color: #005195; text-decoration: underline;">privacy policy</a>.<br /><br />
+													Please DO NOT REPLY TO THIS MESSAGE.<br />
+													<a href="https://www.abbvie.com/contactus.html?BUID=107600&CUID=1730369" target="_blank" style="color: #005195; text-decoration: underline;">Contact us</a> with questions or comments.
+												</td>
+											</tr>
+											<tr>
+												<td align="left" style="vertical-align: top; padding: 12px 0px 0px 0px;">
+													<table class="full" align="left" border="0" cellpadding="0" cellspacing="0">
+														<tr>
+															<td align="left" style="vertical-align: top; padding: 0px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000000;">
+																&copy;2015 AbbVie Inc.&nbsp;&nbsp;&nbsp;North Chicago, IL&nbsp;&nbsp;&nbsp;855-1730369&nbsp;&nbsp;&nbsp;September 2015
+															</td>
+														</tr>
+													</table>
+													<table class="full" align="right" border="0" cellpadding="0" cellspacing="0">
+														<tr>
+															<td class="pad7" align="left" style="vertical-align: top; padding: 0px 0px 0px 0px;">
+																<img src="http://images.bfi0.com/creative/2015/abbvie/10-15/W57-0011/images/abbvie-duopa-branded-prospect-abbvie-logo-footer.gif" width="101" height="18" alt="Abbvie" style="border: 0; display: block;" />
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</td>
+						<td align="left" width="1" bgcolor="#bbc0c5" style="vertical-align: top; padding: 0px 0px 0px 0px; min-width: 1px !important;"></td>
+						<td align="left" width="1" bgcolor="#ccd2d7" style="vertical-align: top; padding: 0px 0px 0px 0px; min-width: 1px !important;"></td>
+						<td align="left" width="1" bgcolor="#d8dfe5" style="vertical-align: top; padding: 0px 0px 0px 0px; min-width: 1px !important;"></td>
+						<td align="left" width="1" bgcolor="#e1e8ee" style="vertical-align: top; padding: 0px 0px 0px 0px; min-width: 1px !important;"></td>
+					</table>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

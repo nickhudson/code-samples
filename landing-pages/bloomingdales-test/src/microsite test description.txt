@@ -1,0 +1,15 @@
+✓ Create a single html page microsite that contains four subpages.
+
+✓ The navigation bar have 4 navigation buttons (section1, section2, …) 
+
+✓ User will be able to click on each navigation button, and the page will automatic scroll to the corresponding pages below, with the navigation button underlined.
+
+✓ User can also scroll up and down to navigate the site. the navigation buttons underline should change accordingly.
+
+✓ The nav will be a sticky nav, as shown in attached image.
+
+✓ On Page 2 there should be a simple slideshow of 4 picture of your choice.
+
+The Pinterest and Twitter icon will direct user to a share screen with any share copy of your choice.
+
+✓ The microsite should be able to deep link into each section, if user type www.testsite.com/#section3   , the site will go automatically to section3.

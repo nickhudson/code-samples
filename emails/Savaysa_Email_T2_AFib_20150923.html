@@ -1,0 +1,716 @@
+<html>
+	<head>
+		<style>
+			* { -webkit-font-smoothing: antialiased !important;}
+			
+			strong { font-weight: bold !important; }
+			
+			em { font-style: italic !important; }
+			
+			.sup, .sub { -webkit-text-size-adjust: none; }
+			
+			a[href^=tel] {
+				color: inherit;
+				text-decoration: none;
+			}
+			
+			.ExternalClass { width: 100%; } 
+			
+			.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div { line-height: 120% !important; }
+			
+			span.whiteLinkText a:link { color: #fffffe !important; }
+
+			span.whiteLinkText a:hover { color: #fffffe !important; }
+			
+			span.whiteLinkText a:active { color: #fffffe !important; }
+			
+			span.whiteLinkText a:visited { color: #fffffe !important; }
+			
+			.show-inline, .show-block {
+				width: 0px !important;
+				height: 0px !important;
+				max-height: 0px !important;
+				display: none !important;
+				float: left !important;
+				visibility: 0 !important;
+				overflow: hidden !important;
+				line-height: 0px !important;
+			}
+			
+			@media screen and (max-width: 600px), only screen and (max-width: 600px) and (-webkit-min-device-pixel-ratio: 2) {
+				
+				body {
+					width: 100% !important;
+					margin: 0 auto !important;
+					overflow-x: hidden !important;
+				}
+				
+				img[src] {
+					/* width: auto !important; */
+					height: auto !important;
+					display: block !important;
+				}
+				
+				*[class~=full], img[class~=full] {
+					width: 100% !important;
+					float: none !important;
+				}
+				
+				*[class~=full2] { width: 100% !important; }
+				
+				*[class~=auto] { width: auto !important; }
+				
+				*[class~=padding-main] {
+					padding-left: 15px !important;
+					padding-right: 15px !important;
+				}
+				
+				*[class~=pad2] {
+					padding-left: 12px !important;
+					padding-right: 12px !important;
+				}
+				
+				*[class~=pad3] { padding-top: 10px !important; }
+				
+				*[class~=pad4] {
+					padding-top: 25px !important;
+					padding-bottom: 25px !important;
+				}
+				
+				*[class~=pad5] { padding-right: 30px !important; }
+				
+				*[class~=pad6] { padding-top: 40px !important; }
+				
+				*[class~=pad7] { padding-top: 20px !important; }
+				
+				*[class~=pad8] { padding: 15px !important; }
+				
+				*[class~=pad9] { padding-right: 15px !important; }
+				
+				*[class~=no-lr-padding] { padding-left: 0px !important; padding-right: 0px !important; }
+				
+				*[class~=nobg] { background: none !important; }
+				
+				*[class~=border1] { 
+					border-top: 10px solid #81c342 !important;
+					border-bottom: 2px solid #e7e7e7 !important;
+				}
+				
+				*[class~=border2] { 
+					border-top: 10px solid #61cbea !important;
+					border-bottom: 2px solid #e7e7e7 !important;
+				}
+								
+				*[class=hide] {
+					display: none !important;
+					width: 0px !important;
+					height: 0px !important;
+					overflow: hidden !important;
+					visibility: hidden !important;
+				}
+				
+				*[class~=show-inline] {
+					display: inline !important;
+					visibility: visible !important;
+					width: auto !important;
+					height: auto !important;
+					max-height: none !important;
+					float: none !important;
+					line-height: normal !important;
+				}
+				
+				*[class~=show-block] {
+					display: block !important;
+					visibility: visible !important;
+					width: auto !important;
+					height: auto !important;
+					max-height: none !important;
+					float: none !important;
+					line-height: normal !important;
+				}
+				
+				table[class~=show-block] { display: table !important; }
+				
+				tr[class~=show-block] { display: table-row !important; }
+				
+				td[class~=show-block] { display: table-cell !important; }
+				
+				*[class~=left] { text-align: left !important; }
+				
+				*[class~=center] { text-align: center !important; }
+				
+				*[class~=center-margin] { margin: 0 auto !important; float: none !important; }
+				
+				*[class~=magenta] { color: #cc007a !important; }
+				
+			}
+			
+			@media screen and (max-width: 420px), only screen and (max-width: 420px) and (-webkit-min-device-pixel-ratio: 2) {
+				
+				*[class=hide-420] {
+					display: none !important;
+					width: 0px !important;
+					height: 0px !important;
+					overflow: hidden !important;
+					visibility: hidden !important;
+				}
+				
+				*[class~=show-block-420] {
+					display: block !important;
+					visibility: visible !important;
+					width: auto !important;
+					height: auto !important;
+					max-height: none !important;
+					float: none !important;
+					line-height: normal !important;
+				}
+				
+				table[class~=show-block-420] { display: table !important; }
+				
+				tr[class~=show-block-420] { display: table-row !important; }
+				
+				td[class~=show-block-420] { display: table-cell !important; }
+				
+			}
+		</style>
+		<!--[if mso | ie]>
+			<style>
+				.sup, .sub {
+					vertical-align: 1px !important; 
+					font-size: 100% !important;
+				}
+			</style>
+		<![endif]-->
+		<!--[if ie]>
+			<style>
+				.sup, .sub {
+					vertical-align: 6px !important; 
+					font-size: 80% !important;
+				}
+			</style>
+		<![endif]-->
+	</head>
+	<body bgcolor="#ffffff" style="width: 100% !important; margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px; background: #ffffff;">
+		<table width="100%" border="0" cellpadding="0" cellspacing="0">
+			<tr>
+				<td align="center" bgcolor="#ffffff" style="vertical-align: top; padding: 5px 0px 0px 0px; background-color: #ffffff;">
+					<table class="full" width="600" align="center" border="0" cellpadding="0" cellspacing="0">
+						<tr>
+							<td align="left" style="vertical-align: top; padding: 0px 10px 0px 10px;">
+								<table class="full" align="left" border="0" cellpadding="0" cellspacing="0">
+									<tr>
+										<td align="left" style="vertical-align: top; padding: 0px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 10px; color: #000000;">
+											See why <a href="http://www.savaysahcp.com/" style="color: #cc007a; text-decoration: underline;">SAVAYSA (edoxaban) may be right for your patients</a>.
+										</td>
+									</tr>
+								</table>
+								<table class="full" align="right" border="0" cellpadding="0" cellspacing="0">
+									<tr>
+										<td align="left" style="vertical-align: top; padding: 0px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 10px; color: #000000;">
+											View in <a href="#" style="color: #cc007a; text-decoration: underline;">Browser</a>.
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td align="left" style="vertical-align: top; padding: 5px 0px 0px 0px;">
+								<img class="hide-420" src="http://images.bfi0.com/creative/2015/daiichi-sankyo/10-15/P183/images/dsim-savaysa-email-header-image-major-bleeding.jpg" width="600" height="283" alt="For stroke risk reduction in NVAF patients with CrCls <=95 mL/min. She's taking SAVAYSA, the ONLY ONCE-DAILY NOAC that offers: Superiority with less major bleeding(1*); Superiority in its primary Safety Endpoints & Proven Efficacy vs. Well-Managed Warfarin" style="border: 0; display: block; width: 100%;" />
+								<!--[if !mso]><!-->
+								<span class="show-block-420" style="width: 0px; height: 0px; overflow: hidden; display: none; visibility: hidden; float: left; line-height: 0px; max-height: 0px;">
+									<table width="100%" border="0" cellpadding="0" cellspacing="0">
+										<tr>
+											<td align="center" style="vertical-align: top; padding: 0px 0px 0px 0px;">
+												<img class="full" src="http://images.bfi0.com/creative/2015/daiichi-sankyo/10-15/P183/images/dsim-savaysa-email-header-image-major-bleeding-mobile.jpg" width="320" height="310" alt="For stroke risk reduction in NVAF patients with CrCls <=95 mL/min. She's taking SAVAYSA, the ONLY ONCE-DAILY NOAC that offers: Superiority with less major bleeding(1*); Superiority in its primary Safety Endpoints & Proven Efficacy vs. Well-Managed Warfarin" style="border: 0; display: block; max-width: 420px !important;" />
+											</td>
+										</tr>
+									</table>
+								</span>
+								<!--<![endif]-->
+							</td>
+						</tr>
+						<tr>
+							<td align="left" class="nobg border1" bgcolor="#81c342" style="vertical-align: top; padding: 5px 15px 5px 15px;">
+								<table class="auto" align="left" width="100%" border="0" cellpadding="0" cellspacing="0">
+									<tr>
+										<td class="left" align="center" style="vertical-align: top; padding: 0px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #ffffff;">
+											<a class="magenta" href="http://www.savaysahcp.com/#isi" style="color: #ffffff; text-decoration: none;">Important Safety Information</a><span class="hide">&nbsp;&nbsp;|&nbsp;&nbsp;</span><span class="show-inline" style="width: 0px; height: 0px; overflow: hidden; display: none; visibility: hidden; float: left;"><br /><br /></span><a class="magenta" href="http://dsi.com/prescribing-information-portlet/getPIContent?productName=Savaysa&inline=true" style="color: #ffffff; text-decoration: none;">Prescribing Information</a><span class="hide">&nbsp;&nbsp;|&nbsp;&nbsp;</span><span class="show-inline" style="width: 0px; height: 0px; overflow: hidden; display: none; visibility: hidden; float: left;"><br /><br /></span><a class="magenta" href="http://dsi.com/prescribing-information-portlet/getPIContent?productName=Savaysa&inline=true" style="color: #ffffff; text-decoration: none;">Medication Guide</a>    
+										</td>
+									</tr>
+								</table>
+								<!--[if !mso]><!-->
+								<span class="show-block-420" style="width: 0px; height: 0px; overflow: hidden; display: none; visibility: hidden; float: left; line-height: 0px; max-height: 0px;">
+									<table align="right" border="0" cellpadding="0" cellspacing="0">
+										<tr>
+											<td align="left" style="vertical-align: top; padding: 0px 0px 0px 0px;">
+												<img class="full" src="http://images.bfi0.com/creative/2015/daiichi-sankyo/10-15/P183/images/dsim-savaysa-email-savaysa-logo-mobile.gif" width="80" height="57" alt="Savaysa(R) (edoxaban) tablets" style="border: 0; display: block; max-width: 80px !important;" />
+											</td>
+										</tr>
+									</table>
+								</span>
+								<!--<![endif]-->
+							</td>
+						</tr>
+						<tr>
+							<td align="left" style="vertical-align: top; padding: 15px 15px 20px 15px;">
+								<table width="100%" border="0" cellpadding="0" cellspacing="0">
+									<tr>
+										<td align="left" style="vertical-align: top; padding: 0px 0px 12px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000000;">
+											Dear Dr. [Last name],<br /><br />
+											The latest novel oral anticoagulant (NOAC) to come to market offers <a href="http://www.savaysahcp.com/nvaf/safety.html" style="color: #cc007a; text-decoration: underline;">clinical results</a> that may have you rethink treatment choices for some of your patients. As you know, warfarin has been a standard of care for patients with nonvalvular atrial fibrillation (NVAF). In a recent study, SAVAYSA was proven superior to warfarin.<br /><br />
+											<strong>When considering an OAC for patients with NVAF and CrCl &le;95 mL/min</strong>
+										</td>
+									</tr>
+									<tr>
+										<td align="left" bgcolor="#dddddd" style="vertical-align: top; padding: 20px 15px 20px 15px;">
+											<table width="100%" border="0" cellpadding="0" cellspacing="0">
+												<tr>
+													<td align="left" style="vertical-align: top; padding: 0px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #cc007a; font-weight: bold;">
+														SAVAYSA is the only once-daily NOAC that offers a combination of:
+													</td>
+												</tr>
+												<tr>
+													<td align="left" style="vertical-align: top; padding: 5px 0px 0px 0px;">
+														<table width="100%" border="0" cellpadding="0" cellspacing="0">
+															<tr>
+																<td align="left" width="10" style="vertical-align: top; padding: 0px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000000; font-weight: bold;">
+																	&bull;
+																</td>
+																<td align="left" style="vertical-align: top; padding: 0px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000000; font-weight: bold;">
+																	Superiority to warfarin with less major bleeding<sup class="sup" style="vertical-align: text-top .6em; line-height: .6em; font-size: 60%;">1</sup>
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+												<tr>
+													<td align="left" style="vertical-align: top; padding: 5px 0px 0px 20px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000000;">
+														<strong>16% RRR:</strong> 3.1%/year with SAVASYA vs 3.7%/year with warfarin (HR [95%CI]: 0.84 [0.73-0.97])
+													</td>
+												</tr>
+												<tr>
+													<td align="left" style="vertical-align: top; padding: 5px 0px 0px 0px;">
+														<img src="http://images.bfi0.com/creative/2015/daiichi-sankyo/10-15/P183/images/dsim-savaysa-email-ampersand.png" width="26" height="26" style="border: 0; display: block;" />
+													</td>
+												</tr>
+												<tr>
+													<td align="left" style="vertical-align: top; padding: 5px 0px 0px 0px;">
+														<table width="100%" border="0" cellpadding="0" cellspacing="0">
+															<tr>
+																<td align="left" width="10" style="vertical-align: top; padding: 0px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000000; font-weight: bold;">
+																	&bull;
+																</td>
+																<td align="left" style="vertical-align: top; padding: 0px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000000; font-weight: bold;">
+																	Efficacy&ndash;with a reduced risk of stroke/SE<sup class="sup" style="vertical-align: text-top .6em; line-height: .6em; font-size: 60%;">&dagger;</sup> vs well-managed warfarin (mean TTR: 65%) in a high-risk population (mean CHADS<sub class="sup" style="vertical-align: text-top .6em; line-height: .6em; font-size: 60%;">2</sub> score: 2.8)<sup class="sup" style="vertical-align: text-top .6em; line-height: .6em; font-size: 60%;">1,2</sup>
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+												<tr>
+													<td align="left" style="vertical-align: top; padding: 5px 0px 0px 20px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000000;">
+														<strong>32% RRR in stroke/SE:</strong> 1.2%/year with SAVAYSA vs 1.8%/year with warfarin (HR [95% CI]: 0.68 [0.55-0.84])
+													</td>
+												</tr>
+												<tr>
+													<td align="left" style="vertical-align: top; padding: 5px 0px 0px 20px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000000;">
+														<strong>18% RRR in CV death:</strong> 2.95%/year with SAVAYSA vs 3.59%/year with warfarin (HR [95% CI]: 0.82 [0.72-0.93])
+													</td>
+												</tr>
+												<tr>
+													<td align="left" style="vertical-align: top; padding: 5px 0px 0px 0px;">
+														<img src="http://images.bfi0.com/creative/2015/daiichi-sankyo/10-15/P183/images/dsim-savaysa-email-ampersand.png" width="26" height="26" style="border: 0; display: block;" />
+													</td>
+												</tr>
+												<tr>
+													<td align="left" style="vertical-align: top; padding: 5px 0px 0px 0px;">
+														<table width="100%" border="0" cellpadding="0" cellspacing="0">
+															<tr>
+																<td align="left" width="10" style="vertical-align: top; padding: 0px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000000; font-weight: bold;">
+																	&bull;
+																</td>
+																<td align="left" style="vertical-align: top; padding: 0px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000000; font-weight: bold;">
+																	Convenient once-daily dosing<sup class="sup" style="vertical-align: text-top .6em; line-height: .6em; font-size: 60%;">1</sup>
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+												<tr>
+													<td align="left" style="vertical-align: top; padding: 5px 0px 0px 20px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000000;">
+														Can be taken with or without food
+													</td>
+												</tr>
+												<tr>
+													<td align="left" style="vertical-align: top; padding: 20px 0px 0px 0px;">
+														<table align="left" border="0" bgcolor="#ca0083" cellpadding="0" cellspacing="0" style="background-color: #ca0083;">
+															<tr>
+																<td class="pad8" align="left" style="vertical-align: top; padding: 5px 40px 5px 24px; font-family: Arial, Helvetica, sans-serif; font-size: 15px; color: #ffffff; font-weight: bold;">
+																	<a href="http://www.savaysahcp.com/" style="color: #ffffff; text-decoration: none;"><span class="hide-420">SEE THE DATA AND </span>LEARN<br class="hide-420" />
+																	MORE ABOUT SAVAYSA</a>
+																</td>
+																<td class="pad9" align="left" style="vertical-align: middle; padding-right: 24px;">
+																	<a href="http://www.savaysahcp.com/"><img src="http://images.bfi0.com/creative/2015/daiichi-sankyo/10-15/P183/images/dsim-savaysa-email-cta-btn-arrow.png" width="10" height="16" style="border: 0; display: block;" /></a>
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+												<tr>
+													<td align="left" style="vertical-align: top; padding: 15px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 10px; color: #000000;">
+														NOAC=novel oral anticoagulant, RRR=relative risk reduction, TTR=time in therapeutic range.
+													</td>
+												</tr>
+												<tr>
+													<td align="left" style="vertical-align: top; padding: 5px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 10px; color: #000000;">
+														*Primary safety endpoint was major bleeding that occurred during or within 2 days of stopping study treatment. Major bleeding was defined as clinically overt bleeding that met 1 of the following criteria: fatal bleeding, symptomatic bleeding in critical area/organ, caused a fall in hemoglobin of at least 2.0 g/dL (or a fall in hematocrit of at least 6.0%), when adjusted for transfusions (1 unit of transfusion=1.0 g/dL drop in hemoglobin).<sup class="sup" style="vertical-align: text-top .6em; line-height: .6em; font-size: 60%;">1</sup>
+													</td>
+												</tr>
+												<tr>
+													<td align="left" style="vertical-align: top; padding: 5px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 10px; color: #000000;">
+														<sup class="sup" style="vertical-align: text-top .6em; line-height: .6em; font-size: 60%;">&dagger;</sup> During or within 2 days of stopping study treatment. A subject can be included in multiple subcategories if he/she had an event for those categories.<sup class="sup" style="vertical-align: text-top .6em; line-height: .6em; font-size: 60%;">1</sup>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									<tr>
+										<td align="left" style="vertical-align: top; padding: 20px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000000;">
+											<strong style="font-size: 14px; color: #cc007a;">The only once-daily NOAC superior to warfarin with less major bleeding and convenient once-daily dosing with or without food.<br /><br />
+											SAVAYSA offers once-daily dosing and comprehensive SAVAYSA Support+&trade;</strong><br /><br />
+											Your patients may be faced with other medications that have dosing concerns, food restrictions, and accessibility issues. SAVAYSA offers once-daily dosing and can be taken with or without food.<br /><br />
+											Connect your patients with support and potential savings. SAVAYSA Support+&trade; includes;
+										</td>
+									</tr>
+									<tr>
+										<td align="left" style="vertical-align: top; padding: 5px 0px 0px 0px;">
+											<table width="100%" border="0" cellpadding="0" cellspacing="0">
+												<tr>
+													<td align="right" width="25" style="vertical-align: top; padding: 0px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #ca0083; font-weight: bold;">
+														&bull;
+													</td>
+													<td align="left" style="vertical-align: top; padding: 0px 0px 0px 6px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000000;">
+														Helpful tips and information about NVAF
+													</td>
+												</tr>
+												<tr>
+													<td align="right" width="25" style="vertical-align: top; padding: 5px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #ca0083; font-weight: bold;">
+														&bull;
+													</td>
+													<td align="left" style="vertical-align: top; padding: 5px 0px 0px 6px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000000;">
+														Helpful tips and information about treatment with SAVAYSA
+													</td>
+												</tr>
+												<tr>
+													<td align="right" width="25" style="vertical-align: top; padding: 5px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #ca0083; font-weight: bold;">
+														&bull;
+													</td>
+													<td align="left" style="vertical-align: top; padding: 5px 0px 0px 6px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000000;">
+														The SAVAYSA Savings Card, allowing eligible patients to save on their SAVAYSA prescription<sup class="sup" style="vertical-align: text-top .6em; line-height: .6em; font-size: 60%;">&Dagger;</sup>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									<tr>
+										<td align="left" style="vertical-align: top; padding: 15px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 10px; color: #000000;">
+											<sup class="sup" style="vertical-align: text-top .6em; line-height: .6em; font-size: 60%;">&Dagger;</sup>Restrictions apply; see Eligibility Criteria and Terms & Conditions below. Card is valid for $4 for a 30-day prescription and $12 for a 90-day prescription. Patient responsible for applicable taxes, if any. <strong>Not valid if enrolled in state or federally funded prescription benefit program (eg, Medicare Part D/Medicaid) or if prohibited by law. Daiichi Sankyo, Inc., reserves the right to rescind, revoke, or amend this program, at any time, without notice.</strong>
+										</td>
+									</tr>
+									<tr>
+										<td align="left" style="vertical-align: top; padding: 5px 0px 25px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 10px; color: #000000; font-weight: bold;">
+											To learn more about how SAVAYSA compares to warfarin and to sign up to receive samples and patient resources, visit <a href="http://www.savaysahcp.com/" style="color: #cc007a; text-decoration: underline;">savaysahcp.com</a>.
+										</td>
+									</tr>
+									<tr>
+										<td align="left" style="vertical-align: top; padding: 12px 0px 18px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000000; border-top: 1px solid #ca0083;">
+											<strong style="font-size: 18px; color: #cc007a;">Indication</strong><br />
+											SAVAYSA<sup class="sup" style="vertical-align: text-top .6em; line-height: .6em; font-size: 60%;">&reg;</sup> (edoxaban) is indicated to reduce the risk of stroke and systemic embolism (SE) in patients with nonvalvular atrial fibrillation (NVAF). SAVAYSA should not be used in patients with creatinine clearance (CrCl) &gt;95 mL/min because of an increased risk of ischemic stroke compared to warfarin.<br /><br />
+											<strong style="font-size: 18px; color: #cc007a;">Important Safety Information for Savaysa</strong>
+										</td>
+									</tr>
+									<tr>
+										<td align="left" style="vertical-align: top; padding: 15px 15px 15px 15px; border: 1px solid #000000;">
+											<table width="100%" border="0" cellpadding="0" cellspacing="0">
+												<tr>
+													<td align="left" style="vertical-align: top; padding: 0px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #cc007a; font-weight: bold;">
+														Boxed Warnings
+													</td>
+												</tr>
+												<tr>
+													<td align="left" style="vertical-align: top; padding: 5px 0px 0px 0px;">
+														<table width="100%" border="0" cellpadding="0" cellspacing="0">
+															<tr>
+																<td align="left" width="10" style="vertical-align: top; padding: 0px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #cc007a; font-weight: bold;">
+																	&bull;
+																</td>
+																<td align="left" style="vertical-align: top; padding: 0px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000000; font-weight: bold;">
+																	REDUCED EFFICACY IN NVAF PATIENTS WITH CRCL &gt;95 ML/MIN
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+												<tr>
+													<td align="left" style="vertical-align: top; padding: 5px 0px 0px 10px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000000; font-weight: bold;">
+																	SAVAYSA should not be used in patients with CrCl &gt;95 mL/min. In the ENGAGE AF-TIMI 48 study, NVAF patients with CrCl &gt;95 mL/min had an increased rate of ischemic stroke with SAVAYSA 60 mg once daily compared to patients treated with warfarin. In these patients another anticoagulant should be used.
+													</td>
+												</tr>
+												<tr>
+													<td align="left" style="vertical-align: top; padding: 5px 0px 0px 0px;">
+														<table width="100%" border="0" cellpadding="0" cellspacing="0">
+															<tr>
+																<td align="left" width="10" style="vertical-align: top; padding: 0px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #cc007a; font-weight: bold;">
+																	&bull;
+																</td>
+																<td align="left" style="vertical-align: top; padding: 0px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000000; font-weight: bold;">
+																	PREMATURE DISCONTINUATION OF SAVAYSA INCREASES THE RISK<br />
+																	OF ISCHEMIC EVENTS 
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+												<tr>
+													<td align="left" style="vertical-align: top; padding: 5px 0px 0px 10px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000000; font-weight: bold;">
+																	Premature discontinuation of any oral anticoagulant in the absence of adequate alternative anticoagulation increases the risk of ischemic events. If SAVAYSA is discontinued for a reason other than pathological bleeding or completion of a course of therapy, consider coverage with another anticoagulant as described in the transition guidance in the Prescribing Information.
+													</td>
+												</tr>
+												<tr>
+													<td align="left" style="vertical-align: top; padding: 5px 0px 0px 0px;">
+														<table width="100%" border="0" cellpadding="0" cellspacing="0">
+															<tr>
+																<td align="left" width="10" style="vertical-align: top; padding: 0px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #cc007a; font-weight: bold;">
+																	&bull;
+																</td>
+																<td align="left" style="vertical-align: top; padding: 0px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000000; font-weight: bold;">
+																	SPINAL/EPIDURAL HEMATOMA 
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+												<tr>
+													<td align="left" style="vertical-align: top; padding: 5px 0px 0px 0px;">
+														<table width="100%" border="0" cellpadding="0" cellspacing="0">
+															<tr>
+																<td align="right" width="20" style="vertical-align: top; padding: 0px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #cc007a; font-weight: bold;">
+																	&ndash;
+																</td>
+																<td align="left" style="vertical-align: top; padding: 0px 0px 0px 5px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000000; font-weight: bold;">
+																	Epidural or spinal hematomas may occur in patients treated with SAVAYSA who are receiving neuraxial anesthesia or undergoing spinal puncture. These hematomas may result in long-term or permanent paralysis. Consider these risks when scheduling patients for spinal procedures 
+																</td>
+															</tr>
+															<tr>
+																<td align="right" width="20" style="vertical-align: top; padding: 5px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #cc007a; font-weight: bold;">
+																	&ndash;
+																</td>
+																<td align="left" style="vertical-align: top; padding: 5px 0px 0px 5px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000000; font-weight: bold;">
+																	Factors that can increase the risk of developing epidural or spinal hematomas in these patients include: use of indwelling epidural catheters; concomitant use of other drugs that affect hemostasis, such as nonsteroidal anti-inflammatory drugs (NSAIDs), platelet inhibitors, other anticoagulants; a history of traumatic or repeated epidural or spinal punctures; a history of spinal deformity or spinal surgery
+																</td>
+															</tr>
+															<tr>
+																<td align="right" width="20" style="vertical-align: top; padding: 5px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #cc007a; font-weight: bold;">
+																	&ndash;
+																</td>
+																<td align="left" style="vertical-align: top; padding: 5px 0px 0px 5px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000000; font-weight: bold;">
+																	Optimal timing between the administration of SAVAYSA and neuraxial procedures is not known 
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+												<tr>
+													<td align="left" style="vertical-align: top; padding: 5px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000000; font-weight: bold;">
+																	Monitor patients frequently for signs and symptoms of neurological impairment. If neurological compromise is noted, urgent treatment is necessary. Consider the benefits and risks before neuraxial intervention in patients anticoagulated or to be anticoagulated.
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									<tr>
+										<td align="left" style="vertical-align: top; padding: 20px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #cc007a; font-weight: bold;">
+											CONTRAINDICATIONS
+										</td>
+									</tr>
+									<tr>
+										<td align="left" style="vertical-align: top; padding: 5px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000000;">
+											SAVAYSA is contraindicated in patients with active pathological bleeding.
+										</td>
+									</tr>
+									<tr>
+										<td align="left" style="vertical-align: top; padding: 5px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #cc007a; font-weight: bold;">
+											WARNINGS AND PRECAUTIONS
+										</td>
+									</tr>
+									<tr>
+										<td align="left" style="vertical-align: top; padding: 5px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000000;">
+											<strong>Bleeding Risk:</strong> SAVAYSA increases the risk of bleeding and can cause serious and potentially fatal bleeding. Promptly evaluate any signs or symptoms of blood loss. Discontinue SAVAYSA in patients with active pathological bleeding. Concomitant use of drugs affecting hemostasis may increase the risk of bleeding. These include aspirin and other antiplatelet agents, other antithrombotic agents, fibrinolytic therapy, and chronic use of nonsteroidal antiinflammatory drugs. There is no established way to reverse the anticoagulant effects of SAVAYSA, which can be expected to persist for approximately 24 hours after the last dose. The anticoagulant effect of SAVAYSA cannot be reliably monitored with standard laboratory testing. A specific reversal agent for edoxaban is not available. Hemodialysis does not significantly contribute to edoxaban clearance. Protamine sulfate, vitamin K, and tranexamic acid are not expected to reverse its anticoagulant activity.
+										</td>
+									</tr>
+									<tr>
+										<td align="left" style="vertical-align: top; padding: 5px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000000;">
+											<strong>Mechanical Heart Valves or Moderate to Severe Mitral Stenosis:</strong> The safety and efficacy of SAVAYSA has not been studied in patients with mechanical heart valves or moderate to severe mitral stenosis. SAVAYSA is not recommended in these patients.
+										</td>
+									</tr>
+									<tr>
+										<td align="left" style="vertical-align: top; padding: 5px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #cc007a; font-weight: bold;">
+											ADVERSE REACTIONS
+										</td>
+									</tr>
+									<tr>
+										<td align="left" style="vertical-align: top; padding: 5px 0px 0px 0px;">
+											<table width="100%" border="0" cellpadding="0" cellspacing="0">
+												<tr>
+													<td align="left" width="10" style="vertical-align: top; padding: 0px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #cc007a; font-weight: bold;">
+														&bull;
+													</td>
+													<td align="left" style="vertical-align: top; padding: 0px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000000;">
+														The most common adverse reactions (&ge;5%) are bleeding and anemia 
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									<tr>
+										<td align="left" style="vertical-align: top; padding: 5px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #cc007a; font-weight: bold;">
+											DISCONTINUATION FOR SURGERY AND OTHER INTERVENTIONS
+										</td>
+									</tr>
+									<tr>
+										<td align="left" style="vertical-align: top; padding: 5px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000000;">
+											Discontinue SAVAYSA at least 24 hours before invasive or surgical procedures because of the risk of bleeding. SAVAYSA can be restarted after the surgical or other procedure as soon as adequate hemostasis has been established.
+										</td>
+									</tr>
+									<tr>
+										<td align="left" style="vertical-align: top; padding: 5px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #cc007a; font-weight: bold;">
+											DRUG INTERACTIONS
+										</td>
+									</tr>
+									<tr>
+										<td align="left" style="vertical-align: top; padding: 5px 0px 0px 0px;">
+											<table width="100%" border="0" cellpadding="0" cellspacing="0">
+												<tr>
+													<td align="left" width="10" style="vertical-align: top; padding: 0px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #cc007a; font-weight: bold;">
+														&bull;
+													</td>
+													<td align="left" style="vertical-align: top; padding: 0px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000000;">
+														<strong>Anticoagulants, Antiplatelets, and Thrombolytics:</strong> Coadministration of anticoagulants, antiplatelet drugs, and thrombolytics may increase the risk of bleeding
+													</td>
+												</tr>
+												<tr>
+													<td align="left" width="10" style="vertical-align: top; padding: 5px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #cc007a; font-weight: bold;">
+														&bull;
+													</td>
+													<td align="left" style="vertical-align: top; padding: 5px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000000;">
+														<strong>P-gp Inducers:</strong> Avoid concomitant use of SAVAYSA with rifampin
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									<tr>
+										<td align="left" style="vertical-align: top; padding: 5px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #cc007a; font-weight: bold;">
+											SPECIAL POPULATIONS
+										</td>
+									</tr>
+									<tr>
+										<td align="left" style="vertical-align: top; padding: 5px 0px 0px 0px;">
+											<table width="100%" border="0" cellpadding="0" cellspacing="0">
+												<tr>
+													<td align="left" width="10" style="vertical-align: top; padding: 0px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #cc007a; font-weight: bold;">
+														&bull;
+													</td>
+													<td align="left" style="vertical-align: top; padding: 0px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000000;">
+														<strong>Nursing mothers:</strong> Discontinue drug or discontinue nursing
+													</td>
+												</tr>
+												<tr>
+													<td align="left" width="10" style="vertical-align: top; padding: 5px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #cc007a; font-weight: bold;">
+														&bull;
+													</td>
+													<td align="left" style="vertical-align: top; padding: 5px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000000;">
+														<strong>Impaired renal function (CrCl 15 to 50 mL/min):</strong> Reduce SAVAYSA dose to 30 mg once daily
+													</td>
+												</tr>
+												<tr>
+													<td align="left" width="10" style="vertical-align: top; padding: 5px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #cc007a; font-weight: bold;">
+														&bull;
+													</td>
+													<td align="left" style="vertical-align: top; padding: 5px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000000;">
+														<strong>Moderate or severe hepatic impairment:</strong> Not recommended
+													</td>
+												</tr>
+												<tr>
+													<td align="left" width="10" style="vertical-align: top; padding: 5px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #cc007a; font-weight: bold;">
+														&bull;
+													</td>
+													<td align="left" style="vertical-align: top; padding: 5px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000000; font-weight: bold;">
+														Pregnancy Category C
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									<tr>
+										<td align="left" style="vertical-align: top; padding: 5px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000000; font-weight: bold;">
+											Please see full <a href="http://dsi.com/prescribing-information-portlet/getPIContent?productName=Savaysa&inline=true" style="color: #cc007a; text-decoration: underline;">Prescribing Information</a>, including Boxed WARNINGS and <a href="http://dsi.com/prescribing-information-portlet/getPIContent?productName=Savaysa&inline=true" style="color: #cc007a; text-decoration: underline;">Medication Guide</a>.
+										</td>
+									</tr>
+									<tr>
+										<td align="left" style="vertical-align: top; padding: 5px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 13px; color: #000000; font-weight: bold;">
+											References:
+										</td>
+									</tr>
+									<tr>
+										<td align="left" style="vertical-align: top; padding: 5px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 13px; color: #000000;">
+											<strong>1.</strong> SAVAYSA<sup class="sup" style="vertical-align: text-top .6em; line-height: .6em; font-size: 60%;">&reg;</sup> [package insert], Parsippany, NJ: Daiichi Sankyo, Inc; 2015.
+										</td>
+									</tr>
+									<tr>
+										<td align="left" style="vertical-align: top; padding: 5px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 13px; color: #000000;">
+											<strong>2.</strong> Giugliano RP, Ruff CT, Braunwald E, et al; for ENGAGE AF-TIMI 48 Investigators. Edoxaban versus warfarin in patients with atrial fibrillation. <em>N Engl J Med.</em> 2013;369(22):2093-2104.
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td align="left" bgcolor="#f1f2f2" style="vertical-align: top; padding: 18px 25px 30px 25px;">
+								<table width="100%" border="0" cellpadding="0" cellspacing="0">
+									<tr>
+										<td align="center" style="vertical-align: top; padding: 0px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #ca0083;">
+											<a href="http://dsi.com/contact-us1" style="color: #ca0083; text-decoration: underline;">Contact Us</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://dsi.com/terms-and-conditions" style="color: #ca0083; text-decoration: underline;">Terms & Conditions</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://dsi.com/privacy-notice" style="color: #ca0083; text-decoration: underline;">Privacy Notice</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="https://daiichi_sankyo.csharmony.epsilon.com/Optout/Optout?CustomerKey=${Profile.CustomerKey}" style="color: #ca0083; text-decoration: underline;">Unsubscribe</a>   
+										</td>
+									</tr>
+									<tr>
+										<td align="left" style="vertical-align: top; padding: 30px 0px 0px 0px;">
+											<table class="full" width="435" align="right" border="0" cellpadding="0" cellspacing="0">
+												<tr>
+													<td align="left" style="vertical-align: top; padding: 0px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #414042;">
+														Daiichi Sankyo, Inc.<br />
+														Two Hilton Court, Parsippany, NJ 07054<br />
+														SAVAYSA<sup class="sup" style="vertical-align: text-top .6em; line-height: .6em; font-size: 60%;">&reg;</sup> and the SAVAYSA logo are trademarks<br />
+														of Daiichi Sankyo, Inc.<br /><br /> 
+														&copy;2015 Daiichi Sankyo, Inc.&nbsp;&nbsp;&nbsp;DSSV15000667&nbsp;&nbsp;&nbsp;10/15
+													</td>
+												</tr>
+											</table>
+											<table class="full" align="left" border="0" cellpadding="0" cellspacing="0">
+												<tr>
+													<td class="pad7" align="left" style="vertical-align: top; padding: 0px 0px 0px 0px;">
+														<img src="http://images.bfi0.com/creative/2015/daiichi-sankyo/10-15/P183/images/dsim-savaysa-email-logo-footer.png" width="86" height="83" al style="border: 0; display: block;" />
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

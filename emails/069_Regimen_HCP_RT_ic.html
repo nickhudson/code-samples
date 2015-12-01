@@ -1,0 +1,646 @@
+
+<html>
+	<head>
+		<style>
+			* { -webkit-font-smoothing: antialiased !important;}
+			
+			strong { font-weight: bold !important; }
+			
+			em { font-style: italic !important; }
+			
+			.sup, .sub { -webkit-text-size-adjust: none; }
+			
+			a[href^=tel] {
+				color: inherit;
+				text-decoration: none;
+			}
+			
+			.ExternalClass { width: 100%; } 
+			
+			.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div { line-height: 120% !important; }
+			
+			span.whiteLinkText a:link { color: #fffffe !important; }
+
+			span.whiteLinkText a:hover { color: #fffffe !important; }
+			
+			span.whiteLinkText a:active { color: #fffffe !important; }
+			
+			span.whiteLinkText a:visited { color: #fffffe !important; }
+			
+			.show-inline, .show-block {
+				width: 0px !important;
+				height: 0px !important;
+				display: none !important;
+				float: left !important;
+				visibility: 0 !important;
+				overflow: hidden !important;
+			}
+			
+			@media screen and (max-width: 565px), only screen and (max-width: 565px) and (-webkit-min-device-pixel-ratio: 2) {
+				
+				body {
+					width: 100% !important;
+					margin: 0 auto !important;
+					overflow-x: hidden !important;
+				}
+				
+				img[src] {
+					/* width: auto !important; */
+					height: auto !important;
+					display: block !important;
+				}
+				
+				*[class~=full], img[class~=full] {
+					width: 100% !important;
+					float: none !important;
+				}
+				
+				*[class~=auto] { width: auto !important; }
+				
+				*[class~=padding-main] {
+					padding-left: 15px !important;
+					padding-right: 15px !important;
+				}
+				
+				*[class~=pad2] {
+					padding-left: 12px !important;
+					padding-right: 12px !important;
+				}
+				
+				*[class~=pad3] { padding-top: 10px !important; }
+				
+				*[class~=pad4] {
+					padding-top: 25px !important;
+					padding-bottom: 25px !important;
+				}
+				
+				*[class~=pad5] { padding-right: 30px !important; }
+				
+				*[class~=pad6] { padding-top: 40px !important; }
+				
+				*[class~=pad7] { padding-top: 20px !important; }
+				
+				*[class~=no-lr-padding] { padding-left: 0px !important; padding-right: 0px !important; }
+								
+				*[class~=hide] {
+					display: none !important;
+					width: 0px !important;
+					height: 0px !important;
+					float: left !important;
+					overflow: hidden !important;
+					visibility: hidden !important;
+				}
+				
+				*[class~=show-inline] {
+					display: inline !important;
+					visibility: visible !important;
+					width: auto !important;
+					height: auto !important;
+					float: none !important;
+				}
+				
+				*[class~=show-block] {
+					display: block !important;
+					visibility: visible !important;
+					width: auto !important;
+					height: auto !important;
+					float: none !important;
+				}
+				
+				table[class~=show-block] { display: table !important; }
+				
+				tr[class~=show-block] { display: table-row !important; }
+				
+				td[class~=show-block] { display: table-cell !important; }
+				
+				*[class~=center] { text-align: center !important; }
+				
+				*[class~=center-margin] { margin: 0 auto !important; float: none !important; }
+				
+				*[class~=linkpad] {
+	display: block !important;
+	float: none !important;
+	overflow: visible !important;
+	padding: 0px 0px 0px 0px !important;
+	position: relative;
+	width: auto !important;
+}
+
+*[class~=linkpad2] {
+	display: block !important;
+	float: none !important;
+	font-size: 18px;
+	margin-left: 0px;
+	margin-top: 0px;
+	overflow: visible !important;
+	padding: 3px 0px 0px 0px !important;
+	position: absolute;
+	width: auto !important;
+	color: #007d99;
+}
+
+div[class~=block] a[class~=more], div[class~=block] a[class~=less] {
+	color: #ffffff;
+	display: inline-block;
+	padding: 4px 8px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	font-style: italic;
+	margin-left: 0px;
+	margin-top: 0px;
+	max-width: 543px;
+	position: absolute;
+	text-decoration: none;
+	vertical-align: middle;
+	width: auto;
+}
+
+div[class~=block] a[class~=more] {
+	background-color: #217d99;
+}
+
+ div[class~=block] a[class~=less] {
+	 background-color: none !important;
+	 color: #000001;
+ }
+
+div[class=block] a[class=more] + a[class=less] { display: none; }
+
+div[class=block] div[class=section] { display: none; }
+
+div[class=block] a[class=more]:active { *display:none;
+}
+
+div[class=block] a[class=more]:active ~ div[class=section] { *display:inline;
+}
+
+div[class=block] a[class=more]:active + a[class=less] { *display:inline;
+}
+
+div[class=block] a[class=less]:active { *display:none;
+}
+
+div[class=block] a[class=more]:focus { display: none; }
+
+div[class=block] a[class=more]:focus ~ div[class=section] { display: inline; }
+
+div[class=block] a[class=more]:focus + a[class=less] { display: inline; }
+
+div[class=block] a[class=less]:focus { display: none; }
+
+div[class=block] div[class=section]:hover { display: inline; }
+				
+			}
+			
+			@media screen and (max-width: 414px), only screen and (max-width: 414px) and (-webkit-min-device-pixel-ratio: 2) {
+				
+				*[class~=hide-414] {
+					display: none !important;
+					width: 0px !important;
+					height: 0px !important;
+					float: left !important;
+					overflow: hidden !important;
+					visibility: hidden !important;
+				}
+				
+				*[class~=show-block-414] {
+					display: block !important;
+					visibility: visible !important;
+					width: auto !important;
+					height: auto !important;
+					float: none !important;
+				}
+				
+				*[class~=isi-heading] {
+					display: block !important;
+					max-width: 270px !important;
+				}
+				
+			}
+		</style>
+		<!--[if mso | ie]>
+			<style>
+				.sup, .sub {
+					vertical-align: 1px !important; 
+					font-size: 100% !important;
+				}
+			</style>
+		<![endif]-->
+		<!--[if ie]>
+			<style>
+				.sup, .sub {
+					vertical-align: 6px !important; 
+					font-size: 80% !important;
+				}
+			</style>
+		<![endif]-->
+	</head>
+	<body bgcolor="#ffffff" style="width: 100% !important; margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px; background: #ffffff;">
+		<table width="100%" border="0" cellpadding="0" cellspacing="0">
+			<tr>
+				<td align="center" bgcolor="#ffffff" style="vertical-align: top; padding: 0px 0px 0px 0px; background-color: #ffffff;">
+					<table class="full" width="565" align="center" border="0" cellpadding="0" cellspacing="0">
+						<tr>
+							<td align="left" height="24" style="vertical-align: middle; padding: 0px 0px 0px 20px; font-family: Arial, Helvetica, sans-serif; font-size: 10px; color: #000000; font-weight: bold;">
+								If you are unable to see the message below, <a href="#" style="color: #004165; text-decoration: underline;" target="_blank" >click here to view</a>. 
+							</td>
+							<td class="hide" align="right" style="vertical-align: bottom; padding: 0px 25px 0px 0px; line-height: 0px;">
+								<img class="hide" src="http://images.bfi0.com/creative/2015/bristol-myers_squibb/0915/BMSQ-1020/images/bmsq-regimen-hcp-rt-profile-pic-top.gif" width="98" height="3" style="border: 0; display: block;" />
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td align="center" bgcolor="#003b5c" background="http://images.bfi0.com/creative/2015/bristol-myers_squibb/0915/BMSQ-1020/images/bmsq-regimen-hcp-rt-header-gradient-bg.gif" style="vertical-align: top; padding: 0px 0px 0px 0px; background-color: #003b5c; background-repeat: repeat-x !important;">
+					<table class="full" width="545" align="center" bgcolor="#ebebeb" border="0" cellpadding="0" cellspacing="0" style="background-color: #ebebeb;">
+						<tr>
+							<td align="left" width="15" style="vertical-align: top; padding: 0px 0px 0px 0px; line-height: 0px;">
+								<img class="full" src="http://images.bfi0.com/creative/2015/bristol-myers_squibb/0915/BMSQ-1020/images/bmsq-regimen-hcp-rt-header-gradient-bg.gif" width="15" height="42" style="border: 0; display: block; min-height: 42px 	important; max-height: 42px !important; min-width: 5px !important;" />
+							</td>
+							<td align="left" background="http://images.bfi0.com/creative/2015/bristol-myers_squibb/0915/BMSQ-1020/images/bmsq-regimen-hcp-rt-header-gradient-bg.gif" style="vertical-align: middle; padding: 0px 0px 0px 0px; line-height: 0px; background-repeat: repeat-x !important;">
+								<img class="hide" src="http://images.bfi0.com/creative/2015/bristol-myers_squibb/0915/BMSQ-1020/images/bmsq-regimen-hcp-rt-metastatic-melanoma-header.gif" width="401" height="42" alt="First-line Therapy for Patients With Metastatic Melanoma" style="border: 0; display: block;" />
+								<!--[if !mso]><!--> 
+									<span class="show-block" style="width: 0px; height: 0px; overflow: hidden; display: none; visibility: hidden; float: left;">
+										<img class="full" src="http://images.bfi0.com/creative/2015/bristol-myers_squibb/0915/BMSQ-1020/images/bmsq-regimen-hcp-rt-metastatic-melanoma-header-mobile.png" width="226" height="32" alt="First-line Therapy for Patients With Metastatic Melanoma" style="border: 0; display: block; max-width: 226px !important;" />
+									</span> 
+								<!--<![endif]-->
+							</td>
+							<td class="auto" align="left" width="16" style="vertical-align: top; padding: 0px 0px 0px 0px; line-height: 0px;">
+								<img class="full" src="http://images.bfi0.com/creative/2015/bristol-myers_squibb/0915/BMSQ-1020/images/bmsq-regimen-hcp-rt-header-gradient-bg.gif" width="16" height="42" style="border: 0; display: block; height: 42px !important; min-width: 5px !important;" />
+							</td>
+							<td align="right" background="http://images.bfi0.com/creative/2015/bristol-myers_squibb/0915/BMSQ-1020/images/bmsq-regimen-hcp-rt-header-gradient-bg.gif" style="vertical-align: top; padding: 0px 0px 0px 0px; line-height: 0px; max-width: 98px !important; background-repeat: repeat-x !important;">
+								<img class="hide" src="http://images.bfi0.com/creative/2015/bristol-myers_squibb/0915/BMSQ-1020/images/bmsq-regimen-hcp-rt-profile-pic-middle.gif" width="98" height="42" style="border: 0; display: block;" />
+								<!--[if !mso]><!--> 
+									<span class="show-block" style="width: 0px; height: 0px; overflow: hidden; display: none; visibility: hidden; float: left;">
+										<img src="http://images.bfi0.com/creative/2015/bristol-myers_squibb/0915/BMSQ-1020/images/bmsq-regimen-hcp-rt-profile-pic-middle-mobile.gif" width="69" height="42" style="border: 0; display: block; padding-right: 10px;" />
+									</span> 
+								<!--<![endif]-->
+							</td>
+							<td align="left" width="15" style="vertical-align: top; padding: 0px 0px 0px 0px; line-height: 0px;">
+								<img class="full" src="http://images.bfi0.com/creative/2015/bristol-myers_squibb/0915/BMSQ-1020/images/bmsq-regimen-hcp-rt-header-gradient-bg.gif" width="15" height="42" style="border: 0; display: block; min-height: 42px 	important; max-height: 42px !important; min-width: 5px !important;" />
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td align="center" bgcolor="#003b5c" style="vertical-align: top; padding: 0px 10px 10px 10px; background-color: #003b5c;">
+					<table class="full" width="545" bgcolor="#ffffff" align="center" border="0" cellpadding="0" cellspacing="0" style="background-color: #ffffff;">
+						<tr>
+							<td align="left" style="vertical-align: top; padding: 0px 12px 14px 12px;">
+								<table width="100%" border="0" cellpadding="0" cellspacing="0">
+									<tr>
+										<td align="left" style="vertical-align: top; padding: 0px 0px 0px 0px;">
+											<table width="100%" border="0" cellpadding="0" cellspacing="0">
+												<tr>
+													<td align="left" style="vertical-align: top; padding: 0px 0px 0px 0px;">
+														<table width="100%" border="0" cellpadding="0" cellspacing="0">
+															<tr>
+																<td align="left" style="vertical-align: top; padding: 12px 0px 0px 0px; line-height: 0px;">
+																	<img class="full" src="http://images.bfi0.com/creative/2015/bristol-myers_squibb/0915/BMSQ-1020/images/bmsq-regimen-hcp-rt-opdivo-yervoy-logos.gif" width="228" height="82" alt="OPDIVO(TM) (nivolumab) + YERVOY(ipilimumab) REGIMEN " style="border: 0; display: block; max-width: 228px !important;" />
+																</td>
+															</tr>
+														</table>
+													</td>
+													<td class="hide" align="left" width="185" style="vertical-align: top; padding: 0px 0px 0px 0px;">
+														<table class="hide" width="100%" border="0" cellpadding="0" cellspacing="0">
+															<tr class="hide">
+																<td class="hide" align="right" width="185" style="vertical-align: top; padding: 52px 6px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #ec008c; font-weight: bold;">
+																	[Rep Name]<br />
+																	[Rep Work Phone #]<br />
+																	[Rep Mobile #]
+																</td>
+															</tr>
+														</table>
+													</td>
+													<td align="left" style="vertical-align: top; padding: 0px 0px 0px 0px;">
+														<table width="100%" border="0" cellpadding="0" cellspacing="0">
+															<tr>
+																<td align="right" style="vertical-align: top; padding: 0px 3px 0px 0px; line-height: 0px;">
+																	<img class="hide" src="http://images.bfi0.com/creative/2015/bristol-myers_squibb/0915/BMSQ-1020/images/bmsq-regimen-hcp-rt-profile-pic-bottom.gif" width="98" height="65" style="border: 0; display: block;" />
+																</td>
+															</tr>
+															<!--[if !mso]><!--> 
+															<tr class="show-block" style="width: 0px; height: 0px; overflow: hidden; display: none; visibility: hidden; float: left;">
+																<td class="show-block" align="right" style="vertical-align: top; padding: 0px 3px 0px 0px; line-height: 0px; width: 0px; height: 0px; overflow: hidden; display: none; visibility: hidden; float: left;">
+																	<span class="show-block" style="width: 0px; height: 0px; overflow: hidden; display: none; visibility: hidden; float: left;"> <img src="http://images.bfi0.com/creative/2015/bristol-myers_squibb/0915/BMSQ-1020/images/bmsq-regimen-hcp-rt-profile-pic-bottom-mobile.gif" width="69" height="38" style="border: 0; display: block; width: 69px !important;" /> </span> 
+																</td>
+															</tr>
+															<tr class="show-block" style="width: 0px; height: 0px; overflow: hidden; display: none; visibility: hidden; float: left;">
+																<td class="show-block" align="right" width="185" style="vertical-align: top; padding: 0px 0px 8px 0px; width: 0px; height: 0px; overflow: hidden; display: none; visibility: hidden; float: left;">
+																	<table class="show-block" width="100%" border="0" cellpadding="0" cellspacing="0" style="width: 0px; height: 0px; overflow: hidden; display: none; visibility: hidden; float: left;">
+																		<tr>
+																			<td align="right" style="vertical-align: top; padding: 0px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #ec008c; font-weight: bold;">
+																				[Rep Name]<br />
+																				[Rep Work Phone #]<br />
+																				[Rep Mobile #]
+																			</td>
+																		</tr>
+																	</table>
+																</td>
+															</tr>
+															<!--<![endif]-->
+															<tr>
+																<td align="left" style="vertical-align: top; padding: 0px 0px 0px 0px;">
+																	<table align="right" border="0" cellpadding="0" cellspacing="0">
+																		<tr>
+																			<td align="left" bgcolor="#007d99" style="vertical-align: top; padding: 9px 4px 9px 4px; font-family: Arial, Helvetica, sans-serif; font-size: 9px; color: #fefefe; font-weight: bold; font-style: italic; white-space: nowrap !important;"><a href="#" style="color: #fefefe; text-decoration: none;" target="_blank">Request a Rep Visit &gt;</a></td>
+																		</tr>
+																	</table>
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									<tr>
+										<td align="left" style="vertical-align: top; padding: 35px 0px 10px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #000000; line-height: 13px;">
+											<strong style="font-size: 18px; color: #003a5c; line-height: normal;">Demonstrated Unprecedented Efficacy With the First and Only Combination of Immune Checkpoint Inhibitors<sup class="sup" style="vertical-align: text-top .6em; line-height: .6em; font-size: 60%;">1</sup></strong><br /><br />
+											<span style="font-size: 16px; color: #58595b; line-height: normal;">Dear <span style="color: #ec008c;">[Title Name]</span>,<br /><br />
+											<span style="color: #ec008c;">[Optional Variable Opening]</span> Bristol-Myers Squibb is pleased to share the results of the CHECKMATE 069 Study, the first pivotal study investigating dual immune checkpoint inhibition in the treatment of patients with unresectable or metastatic melanoma.</span><br /><br /><br />
+											<strong style="font-size: 13px; color: #003a5c; line-height: normal;">Indication</strong><br /><br />
+											OPDIVO<sup class="sup" style="vertical-align: text-top .6em; line-height: .6em; font-size: 60%;">&reg;</sup> in combination with YERVOY<sup class="sup" style="vertical-align: text-top .6em; line-height: .6em; font-size: 60%;">&reg;</sup> is indicated for the treatment of patients with unresectable or metastatic melanoma<br />
+											This indication is approved under accelerated approval based on tumor response rate and durability of response. Continued approval for this indication may be contingent upon verification and description of clinical benefit in the confirmatory trials.<br /><br />
+											<strong style="font-size: 13px; color: #003a5c; line-height: normal;">Select Important Safety Information</strong>
+										</td>
+									</tr>
+									<tr>
+										<td class="isi" align="left" style="vertical-align: top; padding: 6px 8px 6px 8px; border: 1px solid #000000;">
+											<table width="100%" border="0" cellpadding="0" cellspacing="0">
+												<tr>
+													<td align="left" style="padding:0px 1px 0px 0px;vertical-align:top;"> 
+														<!-- Content Area -->
+														<table width="100%" border="0" cellpadding="0" cellspacing="0">
+															<tr>
+																<td align="left" style="vertical-align: top; padding: 0px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #000000; font-weight: bold;">
+														WARNING: IMMUNE-MEDIATED ADVERSE REACTIONS<br /><br />
+														YERVOY can result in severe and fatal immune-mediated adverse reactions due to T-cell activation and proliferation. These immune-mediated reactions may involve any organ system; however, the most common severe immune-mediated adverse reactions are enterocolitis, hepatitis, dermatitis (including toxic epidermal necrolysis), neuropathy, and endocrinopathy. The majority of these immune-mediated reactions initially manifested during treatment; however, a minority occurred weeks to months after discontinuation of YERVOY.
+													</td>
+															</tr>
+														</table>
+														<!-- Hide/Expand Area -->
+														<div class="block">
+															<table width="100%" border="0" cellpadding="0" cellspacing="0">
+																<tr>
+																	<td align="left" style="padding:8px 0px 0px 0px;vertical-align:top;">
+																		<!--[if !mso]><!--> 
+																		<a class="less" href="#url" tabindex="1"><span class="linkpad2" style="width:0; overflow:hidden; float:left; display:none;">&mdash;</span><span class="linkpad" style="width:0; overflow:hidden; float:left; display:none;"></span></a> <a class="more" href="#url" tabindex="1"><span class="linkpad" style="width:0; overflow:hidden; float:left; display:none;">See More +</span></a><br />
+																		<!--<![endif]-->
+																		<div class="section">
+																			<table width="100%" border="0" cellpadding="0" cellspacing="0">
+																				<tr>
+																					<td align="left" style="vertical-align: top; padding: 0px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #000000; font-weight: bold;">
+														
+														Assess patients for signs and symptoms of enterocolitis, dermatitis, neuropathy, and endocrinopathy and evaluate clinical chemistries including liver function tests (LFTs) and thyroid function tests at baseline and before each dose.<br /><br />
+														Permanently discontinue YERVOY and initiate systemic high-dose corticosteroid therapy for severe immune-mediated reactions.<br /><br />
+														Please see additional Important Safety Information below.
+													</td>
+																				</tr>
+																			</table>
+																		</div>
+																		<!-- section --> 
+																	</td>
+																</tr>
+															</table>
+															<!-- /Hide/Expand --> 
+														</div>
+														<!-- block --> 
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td align="left" style="vertical-align: top; padding: 24px 12px 0px 12px; border-top: 1px solid #d7d7d7;">
+								<table width="100%" border="0" cellpadding="0" cellspacing="0">
+									<tr>
+										<td align="left" style="vertical-align: top; padding: 0px 0px 0px 0px;">
+											<table align="left" border="0" bgcolor="#007d99" cellpadding="0" cellspacing="0" style="background-color: #007d99;">
+												<tr>
+													<td align="left" width="5" style="vertical-align: top; padding: 0px 0px 0px 0px; line-height: 0px;">
+														<img src="http://images.bfi0.com/creative/2015/bristol-myers_squibb/0915/BMSQ-1020/images/cta-btn-corner-top-left.png" width="5" height="5" style="border: 0; display: block;" />
+													</td>
+													<td align="left" style="vertical-align: top; padding: 0px 0px 0px 0px; line-height: 0px;">
+													</td>
+													<td align="left" width="5" style="vertical-align: top; padding: 0px 0px 0px 0px; line-height: 0px;">
+														<img src="http://images.bfi0.com/creative/2015/bristol-myers_squibb/0915/BMSQ-1020/images/cta-btn-corner-top-right.png" width="5" height="5" style="border: 0; display: block;" />
+													</td>
+												</tr>
+												<tr>
+													<td align="left" width="5" style="vertical-align: top; padding: 6px 0px 6px 0px;">
+													</td>
+													<td align="left" style="vertical-align: top; padding: 6px 12px 6px 12px; font-family: Arial, Helvetica, sans-serif; font-size: 16px; color: #fefefe; font-weight: bold; font-style: italic;">
+														<a href="http://www.OpdivoYervoyHCP.com" style="color: #fefefe; text-decoration: none;" target="_blank">FOR MORE ON THE CHECKMATE 069 STUDY<br />
+														VISIT OpdivoYervoyHCP.com  &gt;</a>
+													</td>
+													<td align="left" width="5" style="vertical-align: top; padding: 6px 0px 6px 0px;">
+													</td>
+												</tr>
+												<tr>
+													<td align="left" width="5" style="vertical-align: top; padding: 0px 0px 0px 0px; line-height: 0px;">
+														<img src="http://images.bfi0.com/creative/2015/bristol-myers_squibb/0915/BMSQ-1020/images/cta-btn-corner-bottom-left.png" width="5" height="5" style="border: 0; display: block;" />
+													</td>
+													<td align="left" style="vertical-align: top; padding: 0px 0px 0px 0px; line-height: 0px;">
+													</td>
+													<td align="left" width="5" style="vertical-align: top; padding: 0px 0px 0px 0px; line-height: 0px;">
+														<img src="http://images.bfi0.com/creative/2015/bristol-myers_squibb/0915/BMSQ-1020/images/cta-btn-corner-bottom-right.png" width="5" height="5" style="border: 0; display: block;" />
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									<tr>
+										<td align="left" style="vertical-align: top; padding: 20px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 16px; color: #003b5c; font-weight: bold;">
+											OPDIVO+YERVOY demonstrated Unprecedented Efficacy vs YERVOY alone
+										</td>
+									</tr>
+									<tr class="hide-414">
+										<td class="hide-414" align="center" style="vertical-align: top; padding: 16px 0px 0px 0px; line-height: 0px;">
+											<img class="hide-414" src="http://images.bfi0.com/creative/2015/bristol-myers_squibb/0915/BMSQ-1020/images/bmsq-regimen-hcp-rt-chart-significantly-superior-response.gif" width="515" height="362" alt="Significantly Superior Response Rate Among BRAF WT Patients(1,2)" style="border: 0; display: block; width: 100%;" />
+										</td>
+									</tr>
+									<tr class="show-block-414" style="width: 0px; height: 0px; overflow: hidden; display: none; visibility: hidden; float: left;">
+										<td class="show-block-414 pad7" align="center" style="vertical-align: top; padding: 0px 0px 0px 0px; line-height: 0px; width: 0px; height: 0px; overflow: hidden; display: none; visibility: hidden; float: left;">
+											<img class="show-block-414 full" src="http://images.bfi0.com/creative/2015/bristol-myers_squibb/0915/BMSQ-1020/images/bmsq-regimen-hcp-rt-chart-significantly-superior-response-mobile.gif" width="280" height="331" alt="Significantly Superior Response Rate Among BRAF WT Patients(1,2)" style="border: 0; display: block; max-width: 280px !important;" />
+										</td>
+									</tr>
+									<tr>
+										<td align="left" style="vertical-align: top; padding: 5px 0px 0px 0px;">
+											<table width="100%" border="0" cellpadding="0" cellspacing="0">
+												<tr>
+													<td width="12" align="left" style="vertical-align: top; padding: 0px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 16px; color: #004165; font-weight: bold;">
+														&bull;
+													</td>
+													<td align="left" style="vertical-align: top; padding: 0px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 16px; color: #004165; font-weight: bold;">
+														<span style="color: #009cbf;">More than 1 in 5</span> patients (16/72) experienced a complete<br />
+														response in the <em>BRAF WT</em> population<sup class="sup" style="vertical-align: text-top .6em; line-height: .6em; font-size: 60%;">1,2</sup>
+													</td>
+												</tr>
+												<tr>
+													<td width="12" align="left" style="vertical-align: top; padding: 10px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 15px; color: #004165; font-weight: bold;">
+														&bull;
+													</td>
+													<td align="left" style="vertical-align: top; padding: 10px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 15px; color: #004165; font-weight: bold;">
+														Results were consistent across BRAF status<sup class="sup" style="vertical-align: text-top .6em; line-height: .6em; font-size: 60%;">1,2</sup>
+													</td>
+												</tr>
+												<tr>
+													<td width="12" align="left" style="vertical-align: top; padding: 10px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 15px; color: #004165; font-weight: bold;">
+														&bull;
+													</td>
+													<td align="left" style="vertical-align: top; padding: 10px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 15px; color: #004165; font-weight: bold;">
+														The minimum follow-up period after randomization was 11 months
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									<tr>
+										<td align="left" style="vertical-align: top; padding: 20px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 15px; color: #000000;">
+											<strong style="font-size: 16px; color: #003b5c;">Select Important Safety Information</strong><br />
+											The most common adverse reaction (&ge;20%) reported with OPDIVO in combination with YERVOY were rash, pruritus, headache, vomiting, and colitis.<br /><br />
+											In a separate YERVOY Phase 3 study, the most common adverse reactions (&ge;5%) in patients who received YERVOY at 3 mg/kg were fatigue (41%), diarrhea (32%), pruritus (31%), rash (29%), and colitis (8%).<br /><br />
+											<span style="font-size: 12px; color: #58595b;">WT=wild-type; CI=confidence interval; CR=complete response; PR=patient response.</span>
+										</td>
+									</tr>
+									<tr>
+										<td align="center" style="vertical-align: top; padding: 25px 0px 0px 0px; line-height: 0px;">
+											<img class="full" src="http://images.bfi0.com/creative/2015/bristol-myers_squibb/0915/BMSQ-1020/images/bmsq-regimen-hcp-rt-orange-border.gif" width="513" height="1" style="border: 0; display: block; min-height: 1px !important;" />
+										</td>
+									</tr>
+									<tr>
+										<td align="left" style="vertical-align: top; padding: 20px 0px 15px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 16px; color: #58595b;">
+											<strong style="color: #003b5c;">CHECKMATE 069 Study Design</strong><br /><br />
+											OPDIVO + YERVOY Regimen was evaluated in a double-blind randomized study of previously untreated patients with unresectable or metastatic melanoma. Patients were randomized (2:1) to receive OPDIVO + YERVOY Regimen (OPDIVO 1 mg/kg and YERVOY 3 mg/kg q3w x 4 doses, followed by OPDIVO monotherapy 3 mg/kg q2w) or YERVOY 3 mg/kg q3w x 4 doses plus placebo. The primary endpoint was overall response rate (ORR) in <em>BRAF WT</em> patients. Secondary endpoints included progression-free survival (PFS) in <em>BRAF WT</em> patients, and PFS and ORR in <em>BRAF</em> mutant patients.<br /><br />
+											<em style="color: #000000;">OPDIVO (10 mg/mL) and YERVOY (5 mg/mL) are injections for intravenous (IV) use.</em><br /><br />
+											<strong style="font-size: 18px; color: #003b5c;">IMPORTANT SAFETY INFORMATION</strong>
+										</td>
+									</tr>
+									<tr>
+										<td align="left" bgcolor="#e5f2f5" style="vertical-align: top; padding: 6px 6px 6px 6px; font-family: Arial, Helvetica, sans-serif; font-size: 15px; color: #000000; font-weight: bold;">
+											WARNING: IMMUNE-MEDIATED ADVERSE REACTIONS<br /><br />
+											YERVOY can result in severe and fatal immune-mediated adverse reactions due to T-cell activation and proliferation. These immune-mediated reactions may involve any organ system; however, the most common severe immune-mediated adverse reactions are enterocolitis, hepatitis, dermatitis (including toxic epidermal necrolysis), neuropathy, and endocrinopathy. The majority of these immune-mediated reactions initially manifested during treatment; however, a minority occurred weeks to months after discontinuation of YERVOY.<br /><br />
+											Assess patients for signs and symptoms of enterocolitis, dermatitis, neuropathy, and endocrinopathy and evaluate clinical chemistries including liver function tests (LFTs) and thyroid function tests at baseline and before each dose.<br /><br />
+											Permanently discontinue YERVOY and initiate systemic high-dose corticosteroid therapy for severe immune-mediated reactions.
+										</td>
+									</tr>
+									<tr>
+										<td align="left" style="vertical-align: top; padding: 18px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 15px; color: #58595b;">
+											<strong style="color: #003b5c;">Immune-Mediated Pneumonitis</strong><br />
+											Severe pneumonitis or interstitial lung disease, including fatal cases, occurred with OPDIVO treatment. Across the clinical trial experience in 691 patients with solid tumors, fatal immune-mediated pneumonitis occurred in 0.7% (5/691) of patients receiving OPDIVO as a single agent. Across the clinical trial experience in 188 patients with melanoma who received OPDIVO in combination with YERVOY, fatal immune-mediated pneumonitis occurred in 0.5% (1/188) of patients. This fatal case was reported in Trial 4. In Trial 4, pneumonitis, including interstitial lung disease, occurred in 11% (10/94) of patients receiving OPDIVO in combination with YERVOY and 4.3% (2/46) of patients receiving YERVOY. Immune-mediated pneumonitis occurred in 6% (6/94) of patients receiving OPDIVO in combination with YERVOY: one with Grade 5, two with Grade 3 and three with Grade 2 pneumonitis. Monitor patients for signs and symptoms of pneumonitis. Administer corticosteroids for Grade 2 or greater pneumonitis. Permanently discontinue for Grade 3 or 4 and withhold until resolution for Grade 2.<br /><br />
+											<strong style="color: #003b5c;">Immune-Mediated Colitis</strong><br />
+											In Trial 4, diarrhea or colitis occurred in 57% (54/94) of patients receiving OPDIVO in combination with YERVOY and 46% (21/46) of patients receiving YERVOY. Immune-mediated colitis occurred in 33% (31/94) of patients receiving OPDIVO in combination with YERVOY: one patient with Grade 4, 16 patients with Grade 3, nine patients with Grade 2, and five patients with Grade 1 colitis. Monitor patients for immune-mediated colitis. Administer corticosteroids for Grade 2 (of more than 5 days duration), 3, or 4 colitis. Withhold for Grade 2. Permanently discontinue for Grade 3 or 4 colitis or recurrent colitis upon restarting OPDIVO.<br /><br />
+											In a separate YERVOY Phase 3 study, severe, life-threatening, or fatal (diarrhea of &ge;7 stools above baseline, fever, ileus, peritoneal signs; Grade 3-5) immune-mediated enterocolitis occurred in 34 (7%) patients. Across all YERVOY-treated patients in that study (n=511), 5 (1%) developed intestinal perforation, 4 (0.8%) died as a result of complications, and 26 (5%) were hospitalized for severe enterocolitis.<br /><br />
+											<strong style="color: #003b5c;">Immune-Mediated Hepatitis</strong><br />
+											In Trial 4, immune-mediated hepatitis occurred in 15% (14/94) of patients receiving OPDIVO in combination with YERVOY: three patients with Grade 4, nine patients with Grade 3, and two patients with Grade 2 hepatitis. Monitor patients for abnormal liver tests prior to and periodically during treatment. Administer corticosteroids for Grade 2 or greater transaminase elevations. Withhold for Grade 2 and permanently discontinue for Grade 3 or 4 immune-mediated hepatitis.<br /><br />
+											In a separate YERVOY Phase 3 study, severe, life-threatening, or fatal hepatotoxicity (AST or ALT elevations >5x the ULN or total bilirubin elevations >3x the ULN; Grade 3-5) occurred in 8 (2%) patients, with fatal hepatic failure in 0.2% and hospitalization in 0.4%.<br /><br />
+											<strong style="color: #003b5c;">Immune-mediated Dermatitis</strong><br />
+											In a separate YERVOY Phase 3 study, severe, life-threatening, or fatal immune-mediated dermatitis (eg, Stevens-Johnson syndrome, toxic epidermal necrolysis, or rash complicated by full thickness dermal ulceration, or necrotic, bullous, or hemorrhagic manifestations; Grade 3-5) occurred in 13 (2.5%) patients. 1 (0.2%) patient died as a result of toxic epidermal necrolysis. 1 additional patient required hospitalization for severe dermatitis.<br /><br />
+											<strong style="color: #003b5c;">Immune-mediated Neuropathies</strong><br />
+											In a separate YERVOY Phase 3 study, 1 case of fatal Guillain-Barr&eacute; syndrome and 1 case of severe (Grade 3) peripheral motor neuropathy were reported.<br /><br />
+											<strong style="color: #003b5c;">Immune-mediated Endocrinopathies:</strong><br />
+											In a separate YERVOY Phase 3 study, severe to life-threatening immune-mediated endocrinopathies (requiring hospitalization, urgent medical intervention, or interfering with activities of daily living; Grade 3-4) occurred in 9 (1.8%) patients. All 9 patients had hypopituitarism, and some had additional concomitant endocrinopathies such as adrenal insufficiency, hypogonadism, and hypothyroidism. 6 of the 9 patients were hospitalized for severe endocrinopathies.<br /><br />
+											<strong style="color: #003b5c;">Immune-Mediated Hypophysitis</strong><br />
+											In Trial 4, hypophysitis occurred in 13% (12/94) of patients receiving OPDIVO in combination with YERVOY: two patients with Grade 3 and 10 patients with Grade 2 hypophysitis. Monitor patients for signs and symptoms of hypophysitis. Administer corticosteroids for Grade 2 or greater hypophysitis. Withhold for Grade 2 or 3 and permanently discontinue for Grade 4.<br /><br />
+											<strong style="color: #003b5c;">Immune-Mediated Adrenal Insufficiency</strong><br />
+											In Trial 4, adrenal insufficiency occurred in 9% (8/94) of patients receiving OPDIVO in combination with YERVOY: three patients with Grade 3, four patients with Grade 2, and one patient with Grade 1 adrenal insufficiency. Monitor patients for signs and symptoms of adrenal insufficiency during and after treatment. Administer corticosteroids for Grade 3 or 4 adrenal insufficiency. Withhold for Grade 2 and permanently discontinue for Grade 3 or 4.<br /><br />
+											<strong style="color: #003b5c;">Immune-Mediated Nephritis and Renal Dysfunction</strong><br />
+											In Trial 4, Grade 2 or 4 immune-mediated nephritis or renal dysfunction occurred in 2.1% (2/94) of patients. Monitor patients for elevated serum creatinine prior to and periodically during treatment. For Grade 2 or 3 serum creatinine elevation, withhold and administer corticosteroids; if worsening or no improvement occurs, permanently discontinue. Administer corticosteroids for Grade 4 serum creatinine elevation and permanently discontinue.<br /><br />
+											<strong style="color: #003b5c;">Immune-Mediated Hypothyroidism and Hyperthyroidism</strong><br />
+											In Trial 4, where patients were evaluated at baseline and during the trial for thyroid function, hypothyroidism occurred in 19% (18/94) of patients receiving OPDIVO in combination with YERVOY. All were Grade 1 or 2 in severity except for one patient who experienced Grade 3 autoimmune thyroiditis. Grade 1 hyperthyroidism occurred in 2.1% (2/94) of patients receiving OPDIVO in combination with YERVOY. Monitor thyroid function prior to and periodically during treatment. Administer hormone replacement therapy for hypothyroidism. Initiate medical management for control of hyperthyroidism.<br /><br />
+											<strong style="color: #003b5c;">Immune-Mediated Rash</strong><br />
+											In Trial 4, immune-mediated rash occurred in 37% (35/94) of patients receiving OPDIVO in combination with YERVOY: six patients with Grade 3, ten patients with Grade 2, and nineteen patients with Grade 1 rash. Monitor patients for rash. Administer corticosteroids for Grade 3 or 4 rash. Withhold for Grade 3 and permanently discontinue for Grade 4.<br /><br />
+											<strong style="color: #003b5c;">Other Immune-Mediated Adverse Reactions</strong><br />
+											In Trial 4, the following additional immune-mediated adverse reactions occurred in 1% of patients treated with OPDIVO in combination with YERVOY: Guillain-Barr&eacute; syndrome and hypopituitarism. Across clinical trials of OPDIVO in combination with YERVOY, the following additional clinically significant, immune-mediated adverse reactions were identified: sarcoidosis, duodenitis, and gastritis. Based on the severity of adverse reaction, permanently discontinue or withhold OPDIVO in combination with YERVOY, administer high-dose corticosteroids, and, if appropriate, initiate hormone-replacement therapy.<br /><br />
+											<strong style="color: #003b5c;">Infusion Reactions</strong><br />
+											Severe hypersensitivity/infusion reactions (including anaphylactic reaction) have been reported in &lt;1% of patients in clinical trials of OPDIVO. In case of a severe infusion reaction, OPDIVO infusion must be discontinued and appropriate medical therapy administered. Patients with mild or moderate infusion reaction may receive OPDIVO with close monitoring.<br /><br />
+											<strong style="color: #003b5c;">Embryofetal Toxicity</strong><br />
+											Based on its mechanism of action, OPDIVO can cause fetal harm when administered to a pregnant woman. Advise pregnant women of the potential risk to a fetus. Advise females of reproductive potential to use effective contraception during treatment with OPDIVO-containing regimen and for at least 5 months after the last dose of OPDIVO.<br /><br />
+											<strong style="color: #003b5c;">Lactation</strong><br />
+											It is not known whether OPDIVO is present in human milk. Because many drugs, including antibodies, are excreted in human milk and because of the potential for serious adverse reactions in nursing infants from OPDIVO, advise women to discontinue breastfeeding during treatment.<br /><br />
+											<strong style="color: #003b5c;">Serious Adverse Reactions</strong><br />
+											Serious adverse reactions occurred in 65% of patients receiving OPDIVO in combination with YERVOY. Grade 3 and 4 adverse reactions occurred in 42% of patients receiving OPDIVO. The most frequent Grade 3 and 4 adverse drug reactions reported in 2% to &lt;5% of patients receiving OPDIVO were abdominal pain, hyponatremia, increased aspartate aminotransferase, and increased lipase.<br /><br /> 
+											<strong style="color: #003b5c;">Common Adverse Reactions</strong><br />
+											The most common adverse reaction (&ge;20%) reported with OPDIVO in combination with YERVOY were rash, pruritus, headache, vomiting, and colitis.<br /><br />
+											In a separate YERVOY Phase 3 study, the most common adverse reactions (&ge;5%) in patients who received YERVOY at 3 mg/kg were fatigue (41%), diarrhea (32%), pruritus (31%), rash (29%), and colitis (8%).<br /><br />
+											Please see <a href="http://packageinserts.bms.com/pi/" style="color: #003b5c; text-decoration: underline;" target="_blank" >U.S. FULL PRESCRIBING INFORMATION</a>, including <strong>BOXED WARNING regarding immune-mediated adverse reactions</strong> for YERVOY.<br /><br />
+											Please see <a href="http://packageinserts.bms.com/pi/" style="color: #003b5c; text-decoration: underline;" target="_blank" >U.S. FULL PRESCRIBING INFORMATION</a> for OPDIVO.<br /><br /><br />
+											<strong>For additional information, call <span>1</span>-<span>855</span>-<span>OPDIVO</span>-<span>1</span></strong> (<span>1</span>-<span>855</span>-<span>673</span>-<span>4861</span>). Responses provided between 8:00 am and 8:00 pm ET, Monday-Friday. Or visit <a href="http://www.OpdivoYervoyHCP.com" style="color: #003b5c; text-decoration: underline;" target="_blank" >OpdivoYervoyHCP.com</a>.
+										</td>
+									</tr>
+									<tr>
+										<td align="left" style="vertical-align: top; padding: 20px 0px 0px 0px;">
+											<table align="left" border="0" bgcolor="#007d99" cellpadding="0" cellspacing="0" style="background-color: #007d99;">
+												<tr>
+													<td align="left" width="5" style="vertical-align: top; padding: 0px 0px 0px 0px; line-height: 0px;">
+														<img src="http://images.bfi0.com/creative/2015/bristol-myers_squibb/0915/BMSQ-1020/images/cta-btn-corner-top-left.png" width="5" height="5" style="border: 0; display: block;" />
+													</td>
+													<td align="left" style="vertical-align: top; padding: 0px 0px 0px 0px; line-height: 0px;">
+													</td>
+													<td align="left" width="5" style="vertical-align: top; padding: 0px 0px 0px 0px; line-height: 0px;">
+														<img src="http://images.bfi0.com/creative/2015/bristol-myers_squibb/0915/BMSQ-1020/images/cta-btn-corner-top-right.png" width="5" height="5" style="border: 0; display: block;" />
+													</td>
+												</tr>
+												<tr>
+													<td align="left" width="5" style="vertical-align: top; padding: 6px 0px 6px 0px;">
+													</td>
+													<td align="left" style="vertical-align: top; padding: 6px 12px 6px 12px; font-family: Arial, Helvetica, sans-serif; font-size: 16px; color: #fefefe; font-weight: bold; font-style: italic;">
+														<a href="#" style="color: #fefefe; text-decoration: none;" target="_blank">REQUEST A REP VISIT &gt;</a>
+													</td>
+													<td align="left" width="5" style="vertical-align: top; padding: 6px 0px 6px 0px;">
+													</td>
+												</tr>
+												<tr>
+													<td align="left" width="5" style="vertical-align: top; padding: 0px 0px 0px 0px; line-height: 0px;">
+														<img src="http://images.bfi0.com/creative/2015/bristol-myers_squibb/0915/BMSQ-1020/images/cta-btn-corner-bottom-left.png" width="5" height="5" style="border: 0; display: block;" />
+													</td>
+													<td align="left" style="vertical-align: top; padding: 0px 0px 0px 0px; line-height: 0px;">
+													</td>
+													<td align="left" width="5" style="vertical-align: top; padding: 0px 0px 0px 0px; line-height: 0px;">
+														<img src="http://images.bfi0.com/creative/2015/bristol-myers_squibb/0915/BMSQ-1020/images/cta-btn-corner-bottom-right.png" width="5" height="5" style="border: 0; display: block;" />
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									<tr>
+										<td align="left" style="vertical-align: top; padding: 55px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #58595b;">
+											<span style="font-size: 16px; line-height:27px;">Sincerely,<br />
+											<span style="color: #ec008c;">&lt;first name&gt;&lt;last name&gt;</span><br />
+											at Bristol-Myers Squibb</span><br /><br />
+											<strong>References:</strong><br />
+											1. OPDIVO [package insert]. Princeton, NJ: Bristol-Myers Squibb Company; 2015. <br />
+											2. YERVOY [package insert]. Princeton, NJ: Bristol-Myers Squibb Company; 2015.<br /><br />
+											You can stop Bristol-Myers Squibb marketing communications by clicking <a href="http://www.unsubscribec." style="color: #003b5c; text-decoration: underline;" target="_blank" >here</a>, calling 1-855-OPDIVO-1 (1-855-673-4861), or mailing your request to Bristol-Myers Squibb, P.O. Box 869, Palatine, IL 60078-0869.
+										</td>
+									</tr>
+									<tr>
+										<td align="left" style="vertical-align: top; padding: 42px 0px 0px 0px; line-height: 0px;">
+											<img class="full" src="http://images.bfi0.com/creative/2015/bristol-myers_squibb/0915/BMSQ-1020/images/bmsq-regimen-hcp-rt-bmsq-logo-footer.gif" width="285" height="40" alt="Bristol-Myers Squibb" style="border: 0; display: block; max-width: 285px !important;" />
+										</td>
+									</tr>
+									<tr>
+										<td align="left" style="vertical-align: top; padding: 15px 0px 20px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #58595b;">
+											<a href="http://www.bms.com/legal/pages/" style="color: #003b5c; text-decoration: underline;" target="_blank" >Legal Notice</a>  |  <a href="http://www.bms.com/legal/pages/" style="color: #003b5c; text-decoration: underline;" target="_blank" >Privacy Policy</a> | <a href="http://www.unsubscribec." style="color: #003b5c; text-decoration: underline;" target="_blank" >Unsubscribe</a><br /><br />
+											&copy; 2015 Bristol-Myers Squibb Company.<br />
+											OPDIVO<sup class="sup" style="vertical-align: text-top .6em; line-height: .6em; font-size: 60%;">&reg;</sup>, YERVOY<sup class="sup" style="vertical-align: text-top .6em; line-height: .6em; font-size: 60%;">&reg;</sup>, and the related logos are trademarks of<br /> 
+											Bristol-Myers Squibb Company.<br />
+											7356US1501401-01-01  09/15 
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>
